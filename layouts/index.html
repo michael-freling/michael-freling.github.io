@@ -1,0 +1,19 @@
+{{- define "main" }}
+<main class="content">
+  <div>
+    {{ .Content }}
+  </div>
+  <div>
+    <h1>All posts</h1>
+    {{ range .Site.Sections }}
+      {{ if (eq .Name "Posts") }}
+        {{ range first 20 .Pages }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ dateFormat "1/2/2006" .Date }} {{ .Name }}</a>
+          </li>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </div>
+</main>
+{{- end }}
