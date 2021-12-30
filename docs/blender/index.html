@@ -14,12 +14,12 @@ Modeling Basics  In order to set real-world size, enable Viewport Overlays > Mea
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://michael-freling.github.io/docs/blender/"><meta property="article:section" content="docs">
 <meta property="article:published_time" content="2021-12-24T13:08:16-08:00">
-<meta property="article:modified_time" content="2021-12-29T16:14:43-08:00">
+<meta property="article:modified_time" content="2021-12-30T11:13:46-08:00">
 <meta itemprop=name content="Blender">
 <meta itemprop=description content="Written in December 2021, with Blender 2.93 or 3.0.
 Modeling Basics  In order to set real-world size, enable Viewport Overlays > Measurement > Edge length during &#34;Edit mode&#34; and show the size of meshes. See this StackExchange answer for more details.  Materials Basics  In order to assign a different material on the face of a mesh from the other faces, go to Edit Mode, select the face, and assign the material."><meta itemprop=datePublished content="2021-12-24T13:08:16-08:00">
-<meta itemprop=dateModified content="2021-12-29T16:14:43-08:00">
-<meta itemprop=wordCount content="930">
+<meta itemprop=dateModified content="2021-12-30T11:13:46-08:00">
+<meta itemprop=wordCount content="1070">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Blender">
 <meta name=twitter:description content="Written in December 2021, with Blender 2.93 or 3.0.
@@ -206,6 +206,25 @@ This is from <a href=https://blender.stackexchange.com/questions/127152/rotation
 </ol>
 </li>
 </ol>
+<h2 id=action>Action</h2>
+<p>Action is a way to reuse a specific animation of one object.
+There are two important editors to</p>
+<ul>
+<li><strong>Dope Sheet > Action Editor mode</strong>: To edit an action itself. It's better to start an action from 1st frame</li>
+<li><strong>Nonlinear Animation</strong>: To use multiple actions, animate a scene</li>
+</ul>
+<p>To understand an action, see next informative video for how to use Action.</p>
+<iframe width=560 height=315 src=https://www.youtube.com/embed/Vuph3QHDroI title="YouTube video player" frameborder=0 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>There are a few important things to use Action</p>
+<ul>
+<li>To change the speed of an action, go to <strong>Strip > Action Clip</strong> and set the "Playback Scale" value</li>
+<li>To repeat an action multiple times, go to <strong>Strip > Action Clip</strong> and set the "Repeat" value</li>
+</ul>
+<p>Questions to me is</p>
+<ul>
+<li>Can an action be created for multiple objects? - It looks no.</li>
+<li>Is there any way to combine actions of multiple objects and use them? - I cannot find it.</li>
+</ul>
 <h1 id=examples>Examples</h1>
 <h2 id=door>Door</h2>
 <h3 id=modeling-1>Modeling</h3>
