@@ -89,6 +89,27 @@ This solution is from [this answer in Stack Exchange](https://blender.stackexcha
     In order to move the 3D cursor back, **Object > Snap > Cursor to World Origin**.
     This is from [the answer of StackExchange](https://blender.stackexchange.com/questions/127152/rotation-animation-isnt-fixed-on-the-pivot-point).
 
+Action
+---
+
+Action is a way to reuse a specific animation of one object.
+There are two important editors to
+- **Dope Sheet > Action Editor mode**: To edit an action itself. It's better to start an action from 1st frame
+- **Nonlinear Animation**: To use multiple actions, animate a scene
+
+To understand an action, see next informative video for how to use Action.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Vuph3QHDroI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+There are a few important things to use Action
+- To change the speed of an action, go to **Strip > Action Clip** and set the "Playback Scale" value
+- To repeat an action multiple times, go to **Strip > Action Clip** and set the "Repeat" value
+
+
+Questions to me is
+- Can an action be created for multiple objects? - It looks no.
+- Is there any way to combine actions of multiple objects and use them? - I cannot find it.
+
 Examples
 ===
 
