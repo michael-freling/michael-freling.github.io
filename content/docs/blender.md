@@ -4,7 +4,7 @@ date: 2021-12-24T13:08:16-08:00
 draft: false
 ---
 
-Written in December 2021, with Blender 2.93.
+Written in December 2021, with Blender 2.93 or 3.0.
 
 Modeling
 ===
@@ -13,26 +13,6 @@ Basics
 ---
 - In order to set real-world size, enable **Viewport Overlays > Measurement > Edge length** during "Edit mode" and show the size of meshes.
   See [this StackExchange answer](https://blender.stackexchange.com/questions/164091/real-world-scale-size) for more details.
-
-
-Model example
----
-
-### Door
-
-There are a few things to consider before modeling a door
-1. The aspect ratio: According to [this article](https://interiordesignassist.wordpress.com/2019/02/25/door-proportions/), most of doors have either of following aspect ratios:
-    - Two squares: `1:2`
-    - Golden proportion: `1:1.61`
-1. Swing direction: A door is designed differently if it's for a right hand or left hand as well as it is opened to an inward or outward direction. See [this article](https://ezhangdoor.com/how-to-determine-door-swing-direction/#:~:text=To%20determine%20the%20door%20swing%20while%20replacing%20an%20existing%20door,the%20door%20is%20left%20handed.) for each case.
-
-
-#### Handle
-See [this video](https://youtu.be/x0of3b6KGRE) for modeling a handle.
-
-#### Board
-See [this article](https://thilakanathanstudios.com/2014/10/beginner-tutorial-how-to-create-and-setup-a-door-for-animation-in-blender/) for each step.
-
 
 
 Materials
@@ -94,7 +74,60 @@ This solution is from [this answer in Stack Exchange](https://blender.stackexcha
 ===
 
 1. In order to add an object into your Timeline Editor, choose an object, right click, and click to **_Insert Keyframe** and select one of them like **Location and Rotation**.
+1. Set a parent into an object
+    1. Click a child object and then click a parent object
+    1. Select **Object > Parent > Object**
+        Now you can see the child object under the parent object in the Outliner editor.
+    You can see the details of parent objects in [the manual](https://docs.blender.org/manual/en/3.0/scene_layout/object/editing/parent.html?highlight=parent).
+1. To animate objects based on an arbitary axis instead of the world origin, the origin of an object can be updated.
+    1. Select an object you wanna change the axis
+    1. Go to Edit Mode
+    1. Select **Mesh > Snap > Cursor to Selected**
+    1. Go to Object mode
+    1. Select **Object > Set Origin > Origin to 3D Cursor**
+    Now the object will move, rotate, or scale based on the 3D cursor you set.
+    In order to move the 3D cursor back, **Object > Snap > Cursor to World Origin**.
+    This is from [the answer of StackExchange](https://blender.stackexchange.com/questions/127152/rotation-animation-isnt-fixed-on-the-pivot-point).
 
+Examples
+===
+
+Door
+---
+
+### Modeling
+There are a few things to consider before modeling a door
+1. The aspect ratio: According to [this article](https://interiordesignassist.wordpress.com/2019/02/25/door-proportions/), most of doors have either of following aspect ratios:
+    - Two squares: `1:2`
+    - Golden proportion: `1:1.61`
+1. Swing direction: A door is designed differently if it's for a right hand or left hand as well as it is opened to an inward or outward direction. See [this article](https://ezhangdoor.com/how-to-determine-door-swing-direction/#:~:text=To%20determine%20the%20door%20swing%20while%20replacing%20an%20existing%20door,the%20door%20is%20left%20handed.) for each case.
+
+
+#### Handle
+I checked [this video](https://www.youtube.com/watch?v=FsVtNFY_jBY) to see how to make a model
+
+1. If you can't choose a Single Vert mesh, go to **Edit > Preferences > Add-ons** and enable "Add Mesh: Extra Objects" at first
+1. Design a handle using vertexes, so the shape will not be of cylinders.
+    1. Select **Add > Mesh > Single Vert > Add Single Vert** and add the mesh
+    1. Extrude the mesh to change the shape of a handle you wanna design
+        - Note that it has to be Vertex select mode, not Edge select nor Face select mode to see extrude vertexes
+1. From vertexes, convert them into the set of cylinders
+    1. Change the mode to Object mode and select **Object > Convert > Curve**
+    1. Go to **Properties Editor > Object Data Properties > Geometry > Bevel** and
+        1. Increase the Depth
+        1. Increase the Resolution
+1. Edit the handle as a mesh and complete modeling
+    1. Select the curve and then **Object > Convert > Mesh**
+    
+I checked [this slide](https://www.researchgate.net/publication/336988496_BLENDER_TUTORIAL_CREATING_DOOR_HANDLE_WITH_USING_90_EXTRUDE) or [this video](https://youtu.be/x0of3b6KGRE).
+
+#### Board
+See [this article](https://thilakanathanstudios.com/2014/10/beginner-tutorial-how-to-create-and-setup-a-door-for-animation-in-blender/) for each step.
+
+#### Animation
+- Parent objects are important to rotate 
+- The handle must be a child of the main board
+- The mainboard should rotate around one of the edge. There should be an object for the edge so that it can be rotated around it
 
 
 Free materials
@@ -119,3 +152,10 @@ In each model, it usually has a license so if you plan to use it for non-persona
 Motion captures
 ---
 - [Mixamo](https://www.mixamo.com/#/): a web serivce to host animation model, with like fbx format.
+
+
+
+Learning web site
+===
+
+- [LinkedIn Learning: Introducing Blender 2.8 for beginners](https://www.linkedin.com/learning/blender-2-8-essential-training-2/introducing-blender-2-8-for-beginners?autoplay=true)
