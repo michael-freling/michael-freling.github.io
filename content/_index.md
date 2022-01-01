@@ -10,4 +10,5 @@ Animation notes
 * [2D animation](./docs/2d-animation)
 * 3D animation
     * [Blender](./docs/blender)
+    * [VRoid Studio](./docs/vroid_studio)
 * [Video editing](./docs/video-editing)
