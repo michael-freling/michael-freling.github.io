@@ -15,6 +15,24 @@ Basics
   See [this StackExchange answer](https://blender.stackexchange.com/questions/164091/real-world-scale-size) for more details.
 
 
+Change a mesh using another mesh
+---
+We can select faces from the shape of another object using `Knife Project`.
+**Note that how to use seems to be changed in some point, probably Blender 2.8.**
+
+1. Select an object you want to change
+1. Go to "Edit Mode"
+1. Select another object to cut
+1. Select **Mesh > Knife Project**
+1. The faces of the object will be selected on the object. Cut the face or extrude it as you like
+
+See next video for how to use Knife project.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rnDzzHAWEHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Knife project cannot be used with a Link collection.
+
+
+
 Materials
 ===
 
@@ -70,6 +88,7 @@ Then delete images you want, or click Purge to delete every data, including imag
 This solution is from [this answer in Stack Exchange](https://blender.stackexchange.com/a/142340), and there is an image in the answer.
 
 
+
 3D animation
 ===
 
@@ -109,6 +128,33 @@ There are a few important things to use Action
 Questions to me is
 - Can an action be created for multiple objects? - It looks no.
 - Is there any way to combine actions of multiple objects and use them? - I cannot find it.
+
+
+
+Rigging
+---
+
+- During pose mode, to reset all poses, select **Pose > Clear Transform > All**.
+
+
+
+Working on multiple blender files
+===
+
+In order to share materials from other blender files, use [Link or Append](https://docs.blender.org/manual/en/3.0/files/linked_libraries/link_append.html).
+It's better to import Collection from an blender file instead of Objects.
+
+- Link: Creates a reference to the data. When an original file is changed, the imported data by Link is also updated
+    - If objects are imported, they cannot be change the location, rotation, or scale. But if collections are imported, they can
+    - In order to reload the new changes of a source blender file, go to **Outliner Editor > Blender File Display Mode**, right click a link file, and select "Reload".
+- Append: Make a full copy of data. Unlike Link, the imported data isn't updated when an original file is updated
+
+
+See next video for how to use Link and Append.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ldHOfvE52QA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 
 Examples
 ===
@@ -151,6 +197,43 @@ See [this article](https://thilakanathanstudios.com/2014/10/beginner-tutorial-ho
 - The mainboard should rotate around one of the edge. There should be an object for the edge so that it can be rotated around it
 
 
+Use other tools or services
+===
+
+[Mixamo](https://www.mixamo.com/#/)
+---
+
+Mixamo hosts character animaitons and they can be downloaded used.
+Their animations can be downloaded like a fbx file format and they can be imported into Blender.
+There is also an addon for [Blender](https://substance3d.adobe.com/plugins/mixamo-in-blender/) to reuse animations with the same model easily.
+See next video for more details for how to use this addon.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yDc-E-o_I-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+[VRoid Studio](https://vroid.com/en/studio)
+---
+
+VRoid Studio is a tool to make 3D character very easily.
+
+In order to import the `.vrm` file exported from VRoid Studio, Use [VRM Addon for Blender](https://github.com/saturday06/VRM_Addon_for_Blender) addon.
+After importing, it can also validate a model or add rigs automatically.
+
+
+However, I failed to apply Mixamo animation to a VRoid model.
+These are issues I faced
+
+
+- Import a VRoid model to Mixamo
+    - Failed to import the model with a fbx file, but sometimes, it succeeds for some reasons
+        - Exporting a fbx file with "Apply Transform" didn't help
+    - Failed to import the model after exporting a fbx file with "Copy Path" Mode and "Embed Textures", to export materials
+- Import a Mixamo animation into Blender
+    - Failed to apply animation to the original Armature from imported Mixamo animation. Some animations succeeded for some reasons, though
+        - Importing a fbx file with "Apply Transform" or "Manual Operation" didn't help
+
+
+
 Free materials
 ===
 
@@ -161,7 +244,7 @@ In each model, it usually has a license so if you plan to use it for non-persona
 - [cgtrader](https://www.cgtrader.com/)
 - [Free 3D](https://free3d.com/)
 - [Sketchfab](https://sketchfab.com/feed)
-- [TURBOSQUID](https://www.turbosquid.com/): 
+- [TURBOSQUID](https://www.turbosquid.com/)
 
 
 ### Note to import 3D models
@@ -170,9 +253,9 @@ In each model, it usually has a license so if you plan to use it for non-persona
 1. Make sure that the textures are imported correctly. Many of 3D models use textures and they are distributed in a different file sometimes.
      We need to download them and map textures with those files correctly on Blender.
 
-Motion captures
+Animation
 ---
-- [Mixamo](https://www.mixamo.com/#/): a web serivce to host animation model, with like fbx format.
+- [Mixamo](https://www.mixamo.com/#/)
 
 
 
