@@ -92,6 +92,13 @@ This solution is from [this answer in Stack Exchange](https://blender.stackexcha
 3D animation
 ===
 
+During 3D animation, a 3D model keeps changing temporarily.
+There are mainly 2 ways to achieve this, using bones or shape keys.
+Bones are objects while shape keys aren't.
+
+
+Basics with bones,
+
 1. In order to add an object into your Timeline Editor, choose an object, right click, and click to **_Insert Keyframe** and select one of them like **Location and Rotation**.
 1. Set a parent into an object
     1. Click a child object and then click a parent object
@@ -107,6 +114,27 @@ This solution is from [this answer in Stack Exchange](https://blender.stackexcha
     Now the object will move, rotate, or scale based on the 3D cursor you set.
     In order to move the 3D cursor back, **Object > Snap > Cursor to World Origin**.
     This is from [the answer of StackExchange](https://blender.stackexchange.com/questions/127152/rotation-animation-isnt-fixed-on-the-pivot-point).
+
+Basics with shape keys
+- In order to animate a model using shape keys, go to **Dope Sheet Editor > Shape Key Editor Mode**
+- In order to control shape keys by bones, use [Drivers](https://docs.blender.org/manual/en/latest/animation/drivers/introduction.html). See next video for more details for how to configure. Briefly explaning,
+    - Go to **Object Data Properties > Shape Keys** and right cilck the value of a shape key.
+    - Choose "Add Driver" to add the driver for the shape key.
+    - Edit property like Object, Bone, Type, or Space
+    - They can be also edited on **Drivers Editor > Drivers tool menu** 
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cc3uoHMo7pA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+See [this article](https://all3dp.com/2/blender-shape-keys-simply-explained/) for more details about shape keys.
+
+
+
+Rigging
+---
+
+- During pose mode, to reset all poses, select **Pose > Clear Transform > All**.
+
 
 Action
 ---
@@ -128,13 +156,6 @@ There are a few important things to use Action
 Questions to me is
 - Can an action be created for multiple objects? - It looks no.
 - Is there any way to combine actions of multiple objects and use them? - I cannot find it.
-
-
-
-Rigging
----
-
-- During pose mode, to reset all poses, select **Pose > Clear Transform > All**.
 
 
 
@@ -197,6 +218,81 @@ See [this article](https://thilakanathanstudios.com/2014/10/beginner-tutorial-ho
 - The mainboard should rotate around one of the edge. There should be an object for the edge so that it can be rotated around it
 
 
+Character
+---
+
+### Lip sync
+
+There are multiple addons for Lip sync.
+
+- [Blender Market: Syncnix: Blender Lip Sync Action](https://blendermarket.com/products/syncnix
+    - $5 to buy
+- [GitHub: Blender Rhubarb Lip Sync](https://github.com/scaredyfish/blender-rhubarb-lipsync)
+    - Requires software Rhubarb
+    - Requires 9 mouth positions in a pose library
+    - Uses a sound file and an optional script file for an animation. It's recommended to use a script file
+- [GitHub: io_import_lipSync-blender2.8](https://github.com/iCEE-HAM/io_import_lipSync-blender2.8)
+    - Requires software Papagayo-NG
+    - Requires mouth positions in a pose library, and there are rules for the names of each pose and the pose library
+    - Use Papagayo to generate a dat file
+
+
+I used Rhubarb Lip Sync addon because it's free and also it's easier to use than Papagayo.
+
+#### Rhubarb Lip Sync
+
+This addon requires a pose library [as of January 2022](https://github.com/scaredyfish/blender-rhubarb-lipsync/issues/28).
+In order to animate a model by shape keys, drivers of shape keys with bones have to be set.
+See next video for how to.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vZVtUEEssxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+##### Troubleshootings
+
+If you face an issue and couldn't see any messages on the Blender, a blender should start from CLI like Windows Powershell in order to figure out what happens.
+
+```
+PS C:\path> blender.exe
+```
+
+
+###### The file format isn't supported
+
+The audio file format must be either of a wav or ogg.
+
+If you start a Blender from Powershell and try to read an audio file other than the above two formats, you can see an error message like next.
+
+```
+{ "type": "start", "file": "C:\\path\\to\\Recording.m4a", "log": { "level": "Info", "message": "Application startup. Input file: C:\\path\\to\\Recording.m4a." } }
+{ "type": "failure", "reason": "Error processing file C:\\path\\to\\Recording.m4a.\nCould not open sound file C:\\path\\to\\Recording.m4a.\nUnsupported file extension '.m4a'. Supported extensions are '.wav' and '.ogg'.", "log": { "level": "Fatal", "message": "Application terminating with error: Error processing file C:\\path\\to\\Recording.m4a.\nCould not open sound file C:\\path\\to\\Recording.m4a.\nUnsupported file extension '.m4a'. Supported extensions are '.wav' and '.ogg'." } }
+
+Error!!!
+```
+
+
+###### File sampling rate is too low
+
+The sampling rate of an audio file format must be equal to 16K Hz or more.
+
+Otherwise, you'll see an error message on Powershell like next.
+
+```
+{ "type": "start", "file": "C:\\path\\to\\Recording.wav", "log": { "level": "Info", "message": "Application startup. Input file: C:\\path\\to\\Recording.wav." } }
+{ "type": "progress", "value": 0.00, "log": { "level": "Trace", "message": "Progress: 0%" } }
+{ "type": "progress", "value": 0.01, "log": { "level": "Trace", "message": "Progress: 1%" } }
+{ "type": "progress", "value": 0.02, "log": { "level": "Trace", "message": "Progress: 2%" } }
+{ "type": "progress", "value": 0.03, "log": { "level": "Trace", "message": "Progress: 3%" } }
+{ "type": "progress", "value": 0.04, "log": { "level": "Trace", "message": "Progress: 4%" } }
+{ "type": "progress", "value": 0.05, "log": { "level": "Trace", "message": "Progress: 5%" } }
+{ "type": "progress", "value": 0.06, "log": { "level": "Trace", "message": "Progress: 6%" } }
+{ "type": "failure", "reason": "Error processing file C:\\path\\to\\Recording.wav.\nError performing speech recognition via PocketSphinx tools.\nUpsampling not supported. Input sample rate must not be below 16000Hz.", "log": { "level": "Fatal", "message": "Application terminating with error: Error processing file C:\\path\\to\\Recording.wav.\nError performing speech recognition via PocketSphinx tools.\nUpsampling not supported. Input sample rate must not be below 16000Hz." } }
+
+Error!!!
+```
+
+
+
 Use other tools or services
 ===
 
@@ -211,6 +307,7 @@ See next video for more details for how to use this addon.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yDc-E-o_I-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+
 [VRoid Studio](https://vroid.com/en/studio)
 ---
 
@@ -219,8 +316,13 @@ VRoid Studio is a tool to make 3D character very easily.
 In order to import the `.vrm` file exported from VRoid Studio, Use [VRM Addon for Blender](https://github.com/saturday06/VRM_Addon_for_Blender) addon.
 After importing, it can also validate a model or add rigs automatically.
 
+Once it's imported, there are some data in the model
 
-However, I failed to apply Mixamo animation to a VRoid model.
+- Facial expressions: Face mesh has shape keys for facial expressions.
+
+
+### With Mixamo
+I failed to apply Mixamo animation to a VRoid model.
 These are issues I faced
 
 
