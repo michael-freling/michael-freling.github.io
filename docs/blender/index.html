@@ -14,12 +14,12 @@ Modeling Basics  In order to set real-world size, enable Viewport Overlays > Mea
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://michael-freling.github.io/docs/blender/"><meta property="article:section" content="docs">
 <meta property="article:published_time" content="2021-12-24T13:08:16-08:00">
-<meta property="article:modified_time" content="2022-01-01T09:20:16-08:00">
+<meta property="article:modified_time" content="2022-01-02T12:25:20-08:00">
 <meta itemprop=name content="Blender">
 <meta itemprop=description content="Written in December 2021, with Blender 2.93 or 3.0.
 Modeling Basics  In order to set real-world size, enable Viewport Overlays > Measurement > Edge length during &#34;Edit mode&#34; and show the size of meshes. See this StackExchange answer for more details.  Change a mesh using another mesh We can select faces from the shape of another object using Knife Project. Note that how to use seems to be changed in some point, probably Blender 2."><meta itemprop=datePublished content="2021-12-24T13:08:16-08:00">
-<meta itemprop=dateModified content="2022-01-01T09:20:16-08:00">
-<meta itemprop=wordCount content="1502">
+<meta itemprop=dateModified content="2022-01-02T12:25:20-08:00">
+<meta itemprop=wordCount content="2150">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Blender">
 <meta name=twitter:description content="Written in December 2021, with Blender 2.93 or 3.0.
@@ -203,6 +203,10 @@ In order to delete it completely, Go to <strong>Outliner Editor > Orphan Data Di
 Then delete images you want, or click Purge to delete every data, including images.</p>
 <p>This solution is from <a href=https://blender.stackexchange.com/a/142340>this answer in Stack Exchange</a>, and there is an image in the answer.</p>
 <h1 id=3d-animation>3D animation</h1>
+<p>During 3D animation, a 3D model keeps changing temporarily.
+There are mainly 2 ways to achieve this, using bones or shape keys.
+Bones are objects while shape keys aren't.</p>
+<p>Basics with bones,</p>
 <ol>
 <li>In order to add an object into your Timeline Editor, choose an object, right click, and click to <strong>_Insert Keyframe</strong> and select one of them like <strong>Location and Rotation</strong>.</li>
 <li>Set a parent into an object
@@ -226,6 +230,27 @@ This is from <a href=https://blender.stackexchange.com/questions/127152/rotation
 </ol>
 </li>
 </ol>
+<p>Basics with shape keys</p>
+<ul>
+<li>
+<p>In order to animate a model using shape keys, go to <strong>Dope Sheet Editor > Shape Key Editor Mode</strong></p>
+</li>
+<li>
+<p>In order to control shape keys by bones, use <a href=https://docs.blender.org/manual/en/latest/animation/drivers/introduction.html>Drivers</a>. See next video for more details for how to configure. Briefly explaning,</p>
+<ul>
+<li>Go to <strong>Object Data Properties > Shape Keys</strong> and right cilck the value of a shape key.</li>
+<li>Choose "Add Driver" to add the driver for the shape key.</li>
+<li>Edit property like Object, Bone, Type, or Space</li>
+<li>They can be also edited on <strong>Drivers Editor > Drivers tool menu</strong></li>
+</ul>
+<iframe width=560 height=315 src=https://www.youtube.com/embed/cc3uoHMo7pA title="YouTube video player" frameborder=0 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</li>
+</ul>
+<p>See <a href=https://all3dp.com/2/blender-shape-keys-simply-explained/>this article</a> for more details about shape keys.</p>
+<h2 id=rigging>Rigging</h2>
+<ul>
+<li>During pose mode, to reset all poses, select <strong>Pose > Clear Transform > All</strong>.</li>
+</ul>
 <h2 id=action>Action</h2>
 <p>Action is a way to reuse a specific animation of one object.
 There are two important editors to</p>
@@ -244,10 +269,6 @@ There are two important editors to</p>
 <ul>
 <li>Can an action be created for multiple objects? - It looks no.</li>
 <li>Is there any way to combine actions of multiple objects and use them? - I cannot find it.</li>
-</ul>
-<h2 id=rigging>Rigging</h2>
-<ul>
-<li>During pose mode, to reset all poses, select <strong>Pose > Clear Transform > All</strong>.</li>
 </ul>
 <h1 id=working-on-multiple-blender-files>Working on multiple blender files</h1>
 <p>In order to share materials from other blender files, use <a href=https://docs.blender.org/manual/en/3.0/files/linked_libraries/link_append.html>Link or Append</a>.
@@ -316,7 +337,61 @@ It's better to import Collection from an blender file instead of Objects.</p>
 <li>The handle must be a child of the main board</li>
 <li>The mainboard should rotate around one of the edge. There should be an object for the edge so that it can be rotated around it</li>
 </ul>
-<h1 id=use-other-tools-or-services>Use other tools or services</h1>
+<h2 id=character>Character</h2>
+<h3 id=lip-sync>Lip sync</h3>
+<p>There are multiple addons for Lip sync.</p>
+<ul>
+<li>[Blender Market: Syncnix: Blender Lip Sync Action](<a href=https://blendermarket.com/products/syncnix>https://blendermarket.com/products/syncnix</a>
+<ul>
+<li>$5 to buy</li>
+</ul>
+</li>
+<li><a href=https://github.com/scaredyfish/blender-rhubarb-lipsync>GitHub: Blender Rhubarb Lip Sync</a>
+<ul>
+<li>Requires software Rhubarb</li>
+<li>Requires 9 mouth positions in a pose library</li>
+<li>Uses a sound file and an optional script file for an animation. It's recommended to use a script file</li>
+</ul>
+</li>
+<li><a href=https://github.com/iCEE-HAM/io_import_lipSync-blender2.8>GitHub: io_import_lipSync-blender2.8</a>
+<ul>
+<li>Requires software Papagayo-NG</li>
+<li>Requires mouth positions in a pose library, and there are rules for the names of each pose and the pose library</li>
+<li>Use Papagayo to generate a dat file</li>
+</ul>
+</li>
+</ul>
+<p>I used Rhubarb Lip Sync addon because it's free and also it's easier to use than Papagayo.</p>
+<h4 id=rhubarb-lip-sync>Rhubarb Lip Sync</h4>
+<p>This addon requires a pose library <a href=https://github.com/scaredyfish/blender-rhubarb-lipsync/issues/28>as of January 2022</a>.
+In order to animate a model by shape keys, drivers of shape keys with bones have to be set.
+See next video for how to.</p>
+<iframe width=560 height=315 src=https://www.youtube.com/embed/vZVtUEEssxQ title="YouTube video player" frameborder=0 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h5 id=troubleshootings-1>Troubleshootings</h5>
+<p>If you face an issue and couldn't see any messages on the Blender, a blender should start from CLI like Windows Powershell in order to figure out what happens.</p>
+<pre tabindex=0><code>PS C:\path&gt; blender.exe
+</code></pre><h6 id=the-file-format-isnt-supported>The file format isn't supported</h6>
+<p>The audio file format must be either of a wav or ogg.</p>
+<p>If you start a Blender from Powershell and try to read an audio file other than the above two formats, you can see an error message like next.</p>
+<pre tabindex=0><code>{ &quot;type&quot;: &quot;start&quot;, &quot;file&quot;: &quot;C:\\path\\to\\Recording.m4a&quot;, &quot;log&quot;: { &quot;level&quot;: &quot;Info&quot;, &quot;message&quot;: &quot;Application startup. Input file: C:\\path\\to\\Recording.m4a.&quot; } }
+{ &quot;type&quot;: &quot;failure&quot;, &quot;reason&quot;: &quot;Error processing file C:\\path\\to\\Recording.m4a.\nCould not open sound file C:\\path\\to\\Recording.m4a.\nUnsupported file extension '.m4a'. Supported extensions are '.wav' and '.ogg'.&quot;, &quot;log&quot;: { &quot;level&quot;: &quot;Fatal&quot;, &quot;message&quot;: &quot;Application terminating with error: Error processing file C:\\path\\to\\Recording.m4a.\nCould not open sound file C:\\path\\to\\Recording.m4a.\nUnsupported file extension '.m4a'. Supported extensions are '.wav' and '.ogg'.&quot; } }
+
+Error!!!
+</code></pre><h6 id=file-sampling-rate-is-too-low>File sampling rate is too low</h6>
+<p>The sampling rate of an audio file format must be equal to 16K Hz or more.</p>
+<p>Otherwise, you'll see an error message on Powershell like next.</p>
+<pre tabindex=0><code>{ &quot;type&quot;: &quot;start&quot;, &quot;file&quot;: &quot;C:\\path\\to\\Recording.wav&quot;, &quot;log&quot;: { &quot;level&quot;: &quot;Info&quot;, &quot;message&quot;: &quot;Application startup. Input file: C:\\path\\to\\Recording.wav.&quot; } }
+{ &quot;type&quot;: &quot;progress&quot;, &quot;value&quot;: 0.00, &quot;log&quot;: { &quot;level&quot;: &quot;Trace&quot;, &quot;message&quot;: &quot;Progress: 0%&quot; } }
+{ &quot;type&quot;: &quot;progress&quot;, &quot;value&quot;: 0.01, &quot;log&quot;: { &quot;level&quot;: &quot;Trace&quot;, &quot;message&quot;: &quot;Progress: 1%&quot; } }
+{ &quot;type&quot;: &quot;progress&quot;, &quot;value&quot;: 0.02, &quot;log&quot;: { &quot;level&quot;: &quot;Trace&quot;, &quot;message&quot;: &quot;Progress: 2%&quot; } }
+{ &quot;type&quot;: &quot;progress&quot;, &quot;value&quot;: 0.03, &quot;log&quot;: { &quot;level&quot;: &quot;Trace&quot;, &quot;message&quot;: &quot;Progress: 3%&quot; } }
+{ &quot;type&quot;: &quot;progress&quot;, &quot;value&quot;: 0.04, &quot;log&quot;: { &quot;level&quot;: &quot;Trace&quot;, &quot;message&quot;: &quot;Progress: 4%&quot; } }
+{ &quot;type&quot;: &quot;progress&quot;, &quot;value&quot;: 0.05, &quot;log&quot;: { &quot;level&quot;: &quot;Trace&quot;, &quot;message&quot;: &quot;Progress: 5%&quot; } }
+{ &quot;type&quot;: &quot;progress&quot;, &quot;value&quot;: 0.06, &quot;log&quot;: { &quot;level&quot;: &quot;Trace&quot;, &quot;message&quot;: &quot;Progress: 6%&quot; } }
+{ &quot;type&quot;: &quot;failure&quot;, &quot;reason&quot;: &quot;Error processing file C:\\path\\to\\Recording.wav.\nError performing speech recognition via PocketSphinx tools.\nUpsampling not supported. Input sample rate must not be below 16000Hz.&quot;, &quot;log&quot;: { &quot;level&quot;: &quot;Fatal&quot;, &quot;message&quot;: &quot;Application terminating with error: Error processing file C:\\path\\to\\Recording.wav.\nError performing speech recognition via PocketSphinx tools.\nUpsampling not supported. Input sample rate must not be below 16000Hz.&quot; } }
+
+Error!!!
+</code></pre><h1 id=use-other-tools-or-services>Use other tools or services</h1>
 <h2 id=mixamohttpswwwmixamocom><a href=https://www.mixamo.com/#/>Mixamo</a></h2>
 <p>Mixamo hosts character animaitons and they can be downloaded used.
 Their animations can be downloaded like a fbx file format and they can be imported into Blender.
@@ -327,7 +402,12 @@ See next video for more details for how to use this addon.</p>
 <p>VRoid Studio is a tool to make 3D character very easily.</p>
 <p>In order to import the <code>.vrm</code> file exported from VRoid Studio, Use <a href=https://github.com/saturday06/VRM_Addon_for_Blender>VRM Addon for Blender</a> addon.
 After importing, it can also validate a model or add rigs automatically.</p>
-<p>However, I failed to apply Mixamo animation to a VRoid model.
+<p>Once it's imported, there are some data in the model</p>
+<ul>
+<li>Facial expressions: Face mesh has shape keys for facial expressions.</li>
+</ul>
+<h3 id=with-mixamo>With Mixamo</h3>
+<p>I failed to apply Mixamo animation to a VRoid model.
 These are issues I faced</p>
 <ul>
 <li>Import a VRoid model to Mixamo
