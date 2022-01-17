@@ -21,10 +21,10 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   url = "docs/"
 
 # Additional header item
-# [[menu.main]]
-#   name = "Example"
-#   weight = 3
-#   url = "https://docs.neuralvibes.com"
+[[menu.main]]
+  name = "English Learner's blog"
+  weight = 3
+  url = "https://michael-english.vercel.app"
 
 [markup]
   [markup.goldmark]
@@ -60,16 +60,21 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   # disable showing line numbers by default. Switch to `true` if you'd rather have them on.
   codeLineNumbers = false
 
-#  # Site logo
-#  [params.logo]
-#    lightMode = "images/compose.svg"
-#    darkMode = "images/compose-light.svg"
+# # Site logo
+# [params.logo]
+#   lightMode = "images/compose.svg"
+#   darkMode = "images/compose-light.svg"
 
   # # optional
   # # attribution. Feel free to delete this
   # [params.author]
   #   name = "Weru"
   #   url = "https://neuralvibes.com/author/"
+
+[params.source]
+  iconLight = "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+  iconDark = "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+  url = "https://github.com/michael-freling/michael-freling.github.io"
 
 # Enable search
 [outputs]
