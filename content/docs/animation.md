@@ -53,7 +53,7 @@ Character modeling
 ---
 
 - [VRoid Studio](https://vroid.com/en/studio) is the tool to create a 3D data of the avator very easily.
-
+    - There are some free models in [VRoid Hub](https://hub.vroid.com/en/), but they cannot be imported into VRoid Studio.
 
 ### Reference
 - [VRM: VRM applications](https://vrm.dev/en/vrm_applications/)
@@ -76,6 +76,7 @@ The software that can change both of pitch and formant is better to change a hum
 
 - [Koigoe](http://koigoemoe.g2.xrea.com/koigoe/koigoe.html)
     - Pitch and formant can be changed manually
+    - Japanese language has to be installed in Windows
 - [Rovee](https://www.kvraudio.com/product/rovee-by-g200kg)
     - This is a VST plugin and this may need to use a VST Host application. I couldn't use some applications for this plugin probably because this plugin is old.
 - [Gachikoe! Core](https://booth.pm/en/items/1236505)
@@ -103,3 +104,7 @@ But it was hard to change a voice because most of them supports only changing a 
 There are some articles or videos to introduce some voice changers, for example,
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/z1Rf9ovAqn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+For VST plugins, there are other plugins so that we can use to get some effects, like a noise reduction.
+- [Article about a few noise reduction plugins](https://midination.com/vst/free-vst-plugins/free-noise-gate-vst-plugins/)

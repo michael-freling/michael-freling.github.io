@@ -13,6 +13,12 @@ Basics
 ---
 - In order to set real-world size, enable **Viewport Overlays > Measurement > Edge length** during "Edit mode" and show the size of meshes.
   See [this StackExchange answer](https://blender.stackexchange.com/questions/164091/real-world-scale-size) for more details.
+- To hide a mesh in an edit mode,
+     - H: To hide the selected mesh
+     - Shift H: To hide everything but the selected mesh
+     - Alt H: To unhide everything
+  This information is from [this article](https://www.blenderaid.com/post/40675509859/part-of-objects-mesh-hidden-in-object-mode).
+  This is useful to edit meshes that are complicated.
 
 
 Change a mesh using another mesh
@@ -30,6 +36,24 @@ See next video for how to use Knife project.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rnDzzHAWEHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Knife project cannot be used with a Link collection.
+
+
+Light
+---
+
+Light is an invisible object in Blender to emit lights.
+
+### Workaround to apply modifiers
+Modifiers cannot be applied to Light objects directly, like Array or Mirror.
+In order to apply them, use [`Faces of Instancing`](https://docs.blender.org/manual/en/latest/scene_layout/object/properties/instancing/faces.html).
+- Create new meash like a face
+- Make the mesh a parent of a lamp
+- Select the mesh and go to **Properties Editor > Object Properties > Instaning** and select Faces
+- Add a Modifier like Array into the mesh. Then the lamp should be created on each duplicated mesh
+
+You can see more details in next video.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j6zf5eQ3D5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
@@ -159,6 +183,31 @@ Questions to me is
 
 
 
+Camera
+---
+
+In order to switch Active Camera during animation, makers are helpful.
+- In the timeline, add a marker by **Marker > Add Marker**
+- Select a camera you want to activate
+- Select **Marker > Bind Camera to Markers** to set a camera on your animation scene
+
+
+Multiple scenes
+---
+
+On Blender, multiple scenes can be created from a menu bar.
+
+To animate and switch the scenes, 
+- Create another Scene
+- Use Video Editing Layout or Video Sequencer Editor
+- Add each scenes on the Sequencer view
+
+
+To make a better transition on each scenes
+- Select multiple scenes' strips on Sequencer
+- Go to **Add > Transition** and choose a Transition suits for your animation, like Cross
+
+
 Working on multiple blender files
 ===
 
@@ -175,6 +224,13 @@ See next video for how to use Link and Append.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ldHOfvE52QA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+And in order to edit bones for linked models, select the object and go to **Object > Relations > Make Library Override**.
+Then the bones can be edited and the model can be animated.
+For the details of Library Overrides, see an [official manual](https://docs.blender.org/manual/en/latest/files/linked_libraries/library_overrides.html).
+
+However, a few things cannot be edited.
+For example, it looks Materials cannot be updated directly, though for some properties of Materials like color, there is a [workaround](https://blender.stackexchange.com/questions/215663/override-a-material-on-a-linked-object-2-92).
 
 
 Examples
@@ -292,6 +348,23 @@ Error!!!
 ```
 
 
+Particle animation
+---
+
+The next video was helpful to see how to set a particle animation.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2bv973aqx-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+In order to do a similar thing
+- Add a "Particle System" into a Modifier of an object
+- Change these parameters in **Properties Editor > Particle Properties**
+    - To stop particles falling down, set **Field Weights > Gravitiy** to 0
+    - To increase the number of particles, set **Emission > Number**
+    - To change the mesh of eacah particle, set **Render > Render As** from Halo to others like Object
+    - To change the the size of each article, set **Render > Scale**
+- To change how each particle moves, add one of Force Field mesh, like Turbulence
+
+
 
 Use other tools or services
 ===
@@ -334,6 +407,29 @@ These are issues I faced
     - Failed to apply animation to the original Armature from imported Mixamo animation. Some animations succeeded for some reasons, though
         - Importing a fbx file with "Apply Transform" or "Manual Operation" didn't help
 
+
+Other addons
+---
+
+There are many free addons for Blender.
+For example, the next video explains 15 free addons.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ggrict0I_M8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+- [Text FX addon by Monaime](https://blender-addons.org/text-fx-addon/)
+    - Animate a text easily
+- [MB-Lab](https://mb-lab-community.github.io/MB-Lab.github.io/)
+    - Model a human character
+- [Building Tools](https://github.com/ranjian0/building_tools)
+    - Model an architecture easily
+- [Drop it](https://andreasaust.gumroad.com/l/drop_it)
+    - Drop an object to a surface
+
+Paid
+- [Blender-Archipack](https://blender-archipack.org/)
+    - Build an architecture like a door easily
+- [Neoner](https://blendermarket.com/products/neoner)
+    - Make a neon light effect
 
 
 Free materials
