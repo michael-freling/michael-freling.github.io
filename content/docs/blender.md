@@ -129,15 +129,18 @@ Basics with bones,
     1. Select **Object > Parent > Object**
         Now you can see the child object under the parent object in the Outliner editor.
     You can see the details of parent objects in [the manual](https://docs.blender.org/manual/en/3.0/scene_layout/object/editing/parent.html?highlight=parent).
-1. To animate objects based on an arbitary axis instead of the world origin, the origin of an object can be updated.
-    1. Select an object you wanna change the axis
-    1. Go to Edit Mode
-    1. Select **Mesh > Snap > Cursor to Selected**
-    1. Go to Object mode
-    1. Select **Object > Set Origin > Origin to 3D Cursor**
-    Now the object will move, rotate, or scale based on the 3D cursor you set.
-    In order to move the 3D cursor back, **Object > Snap > Cursor to World Origin**.
-    This is from [the answer of StackExchange](https://blender.stackexchange.com/questions/127152/rotation-animation-isnt-fixed-on-the-pivot-point).
+1. To animate objects based on an arbitary axis instead of the world origin,
+    - the origin of an object can be updated.
+        1. Select an object you wanna change the axis
+        1. Go to Edit Mode
+        1. Select **Mesh > Snap > Cursor to Selected**
+        1. Go to Object mode
+        1. Select **Object > Set Origin > Origin to 3D Cursor**
+        Now the object will move, rotate, or scale based on the 3D cursor you set.
+        In order to move the 3D cursor back, **Object > Snap > Cursor to World Origin**.
+        This is from [the answer of StackExchange](https://blender.stackexchange.com/questions/127152/rotation-animation-isnt-fixed-on-the-pivot-point).
+    - There is a way to update the default configuration for [orbit around](https://www.versluis.com/2019/11/how-to-orbit-around-selections-in-blender/) under **Edit > Preference > Navigation > Orbit and Pan** and turn on Orbit Around Selection.
+      But I couldn't rotate an object from another object using this configuration.
 
 Basics with shape keys
 - In order to animate a model using shape keys, go to **Dope Sheet Editor > Shape Key Editor Mode**
@@ -180,6 +183,8 @@ There are a few important things to use Action
 Questions to me is
 - Can an action be created for multiple objects? - It looks no.
 - Is there any way to combine actions of multiple objects and use them? - I cannot find it.
+- If one action starts from the locations of the end of another action
+    - No smart way. Some people recommended to use Delta transform in [this answer](https://blender.stackexchange.com/questions/223194/creating-actions-based-on-local-location-rotation-scale-of-an-object) or [this answer](https://blender.stackexchange.com/questions/139234/how-to-change-an-action-starting-position).
 
 
 
@@ -190,6 +195,26 @@ In order to switch Active Camera during animation, makers are helpful.
 - In the timeline, add a marker by **Marker > Add Marker**
 - Select a camera you want to activate
 - Select **Marker > Bind Camera to Markers** to set a camera on your animation scene
+
+
+Output
+---
+
+Go to **Properties Editor > Output Properties > Output** and change outputs to
+- File Format
+- Container
+- Video Codec
+- Audio Codec
+
+See [this answer](https://blender.stackexchange.com/questions/15142/how-to-render-an-animation-as-video-in-blender) for more details.
+
+In order to view rendering result, go to **Image Editor** and see Render Result.
+Or **Render > Render animation** to output your animation.
+If rendering result turns out pure black, then something might be wrong, like in a Composition Editor, Render Layers doesn't connect to Composite Node.
+
+See these answers for more details.
+- [Possible causes for blank output on rendering](https://blender.stackexchange.com/questions/53632/render-result-is-completely-blank)
+- [Render turns black when finished](https://blender.stackexchange.com/questions/14377/render-turns-black-when-finished).
 
 
 Multiple scenes
@@ -206,6 +231,11 @@ To animate and switch the scenes,
 To make a better transition on each scenes
 - Select multiple scenes' strips on Sequencer
 - Go to **Add > Transition** and choose a Transition suits for your animation, like Cross
+
+
+However, there is a bug at least on v3.0 to use other scenes.
+That is when there are multiple strips of the same scene but different input, camera and sequencer, it doesn't play any audio.
+[This](https://developer.blender.org/T69444) is a bug report in Blender.
 
 
 Working on multiple blender files

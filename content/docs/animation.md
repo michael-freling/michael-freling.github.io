@@ -68,7 +68,50 @@ Motion Capture
 - [Deepmotion](https://www.deepmotion.com/) can change a video file into a motion capture data (bvh).
 
 
-### Voice changer
+
+Sound effects
+---
+
+There are some web sites to download sound effects freely.
+Some of them may be under licenses like [Creative Commons](https://creativecommons.org/licenses/).
+
+- [freesound](https://freesound.org/)
+- [mixkit](https://mixkit.co/free-sound-effects/)
+- [pixaboy](https://pixabay.com/sound-effects/)
+
+
+
+Text to Speech
+---
+
+### Web services
+
+Free
+1. [https://voicemaker.in/](https://voicemaker.in/): 200 characters at most. There are some features like emphathize something or pitch.
+    - Are voices from Amazon Polly?
+1. [TTSMP3](https://ttsmp3.com/): 3,000 characters limit 
+    - Are voices from Amazon Polly?
+1. [NaturalReader](https://www.naturalreaders.com/index.html): For public use, it's not free
+1. [fromtexttospeech](http://fromtexttospeech.com/)
+1. [textfromtospeech](https://www.textfromtospeech.com/en/text-to-voice/)
+    - It looks like it uses Windows text-to-speech for voices
+
+
+Paid
+1. [LOVO](https://www.lovo.ai/)
+1. [Play.ht](https://play.ht/pricing/)
+    - There are types of Voices like Chat or Cheer
+1. [Amazon Polly](https://aws.amazon.com/polly/)
+    - $4 per 1 million characterrs. Are voices from Amazon Polly's Standard?
+
+
+### Others
+
+Windows has Text to Speech feature.
+See [this support page](https://support.microsoft.com/en-us/topic/how-to-download-text-to-speech-languages-for-windows-10-d5a6b612-b3ae-423f-afa5-4f6caf1ec5d3) of Microsoft for more details.
+
+Voice changer
+---
 
 Voice changers might be helpful to change voices and record voices for animations.
 
