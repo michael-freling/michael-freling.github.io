@@ -16,10 +16,16 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 #  menu items
 [[menu.main]]
-  name = "Docs"
+  name = "Top"
   weight = 2
-  url = "docs/"
-  
+  url = "/"
+
+#  menu items
+# [[menu.main]]
+#   name = "Docs"
+#   weight = 2
+#   url = "/docs/"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
@@ -56,8 +62,8 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 # # Site logo
   [params.logo]
-    lightMode = "images/compose.svg"
-    darkMode = "images/compose-light.svg"
+    lightMode = "/icons/moon.svg"
+    darkMode = "/icons/sun.svg"
 
   # # optional
   # # attribution. Feel free to delete this
