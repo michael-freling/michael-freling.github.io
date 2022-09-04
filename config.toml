@@ -19,13 +19,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   name = "Docs"
   weight = 2
   url = "docs/"
-
-# Additional header item
-[[menu.main]]
-  name = "English Learner's blog"
-  weight = 3
-  url = "https://michael-english.vercel.app"
-
+  
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
@@ -61,9 +55,9 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   codeLineNumbers = false
 
 # # Site logo
-# [params.logo]
-#   lightMode = "images/compose.svg"
-#   darkMode = "images/compose-light.svg"
+  [params.logo]
+    lightMode = "images/compose.svg"
+    darkMode = "images/compose-light.svg"
 
   # # optional
   # # attribution. Feel free to delete this

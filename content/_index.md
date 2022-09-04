@@ -29,3 +29,9 @@ Nothing hasn't been released yet.
 - [CI for Next.js with GraphQL by Cypress and GitHub Actions](./posts/2022/09/03/ci-for-next.js-with-graphql-by-cypress-and-github-actions/)
 
 ---
+
+# Others
+
+There is also [another blog](https://michael-english.vercel.app) as an English learner.
+
+---
