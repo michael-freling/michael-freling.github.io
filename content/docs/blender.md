@@ -1,16 +1,21 @@
 ---
 title: "Blender"
-date: 2021-12-24T13:08:16-08:00
+date: 2021-12-24
+lastmod: 2023-12-16
 draft: false
 ---
 
+# Table of contents
+- [Gradient color](/posts/2023/12/16/blender-gradient-color/)
+
+
+# Old contents
+
 Written in December 2021, with Blender 2.93 or 3.0.
 
-Modeling
-===
+## Modeling
 
-Basics
----
+### Basics
 - In order to set real-world size, enable **Viewport Overlays > Measurement > Edge length** during "Edit mode" and show the size of meshes.
   See [this StackExchange answer](https://blender.stackexchange.com/questions/164091/real-world-scale-size) for more details.
 - To hide a mesh in an edit mode,
@@ -21,8 +26,8 @@ Basics
   This is useful to edit meshes that are complicated.
 
 
-Change a mesh using another mesh
----
+### Change a mesh using another mesh
+
 We can select faces from the shape of another object using `Knife Project`.
 **Note that how to use seems to be changed in some point, probably Blender 2.8.**
 
@@ -38,12 +43,11 @@ See next video for how to use Knife project.
 Knife project cannot be used with a Link collection.
 
 
-Light
----
+### Light
 
 Light is an invisible object in Blender to emit lights.
 
-### Workaround to apply modifiers
+#### Workaround to apply modifiers
 Modifiers cannot be applied to Light objects directly, like Array or Mirror.
 In order to apply them, use [`Faces of Instancing`](https://docs.blender.org/manual/en/latest/scene_layout/object/properties/instancing/faces.html).
 - Create new meash like a face
@@ -57,17 +61,15 @@ You can see more details in next video.
 
 
 
-Materials
-===
+## Materials
 
-Basics
----
+### Basics
+
 - In order to assign a different material on the face of a mesh from the other faces, go to Edit Mode, select the face, and assign the material.
 
-Use cases
----
+### Use cases
 
-### Make a glass material
+#### Make a glass material
 
 In order to make a glass material like a window, it looks we can do by setting these things.
 
@@ -93,18 +95,16 @@ See following materials for more details
 
 
 
-Images
-===
+## Images
 
-Troubleshootings
----
+### Troubleshootings
 
-### How to find missing texture files and update them?
+#### How to find missing texture files and update them?
 Go to **File > External Data > Find missing files** and select a correct directory for texture files.
 
 This solution is from [this answer in Stack Exchange](https://blender.stackexchange.com/questions/96587/how-to-re-link-missing-blender-files).
 
-### How to remove images completely from a blender file?
+#### How to remove images completely from a blender file?
 Even if you delete a material using an image file, it can still be selected on a Mateiral.
 In order to delete it completely, Go to **Outliner Editor > Orphan Data Display Mode**.
 Then delete images you want, or click Purge to delete every data, including images.
@@ -113,8 +113,7 @@ This solution is from [this answer in Stack Exchange](https://blender.stackexcha
 
 
 
-3D animation
-===
+## 3D animation
 
 During 3D animation, a 3D model keeps changing temporarily.
 There are mainly 2 ways to achieve this, using bones or shape keys.
@@ -157,14 +156,12 @@ See [this article](https://all3dp.com/2/blender-shape-keys-simply-explained/) fo
 
 
 
-Rigging
----
+### Rigging
 
 - During pose mode, to reset all poses, select **Pose > Clear Transform > All**.
 
 
-Action
----
+### Action
 
 Action is a way to reuse a specific animation of one object.
 There are two important editors to
@@ -188,8 +185,7 @@ Questions to me is
 
 
 
-Camera
----
+### Camera
 
 In order to switch Active Camera during animation, makers are helpful.
 - In the timeline, add a marker by **Marker > Add Marker**
@@ -197,8 +193,7 @@ In order to switch Active Camera during animation, makers are helpful.
 - Select **Marker > Bind Camera to Markers** to set a camera on your animation scene
 
 
-Output
----
+### Output
 
 Go to **Properties Editor > Output Properties > Output** and change outputs to
 - File Format
@@ -217,8 +212,7 @@ See these answers for more details.
 - [Render turns black when finished](https://blender.stackexchange.com/questions/14377/render-turns-black-when-finished).
 
 
-Multiple scenes
----
+### Multiple scenes
 
 On Blender, multiple scenes can be created from a menu bar.
 
@@ -238,8 +232,7 @@ That is when there are multiple strips of the same scene but different input, ca
 [This](https://developer.blender.org/T69444) is a bug report in Blender.
 
 
-Working on multiple blender files
-===
+## Working on multiple blender files
 
 In order to share materials from other blender files, use [Link or Append](https://docs.blender.org/manual/en/3.0/files/linked_libraries/link_append.html).
 It's better to import Collection from an blender file instead of Objects.
@@ -263,13 +256,11 @@ However, a few things cannot be edited.
 For example, it looks Materials cannot be updated directly, though for some properties of Materials like color, there is a [workaround](https://blender.stackexchange.com/questions/215663/override-a-material-on-a-linked-object-2-92).
 
 
-Examples
-===
+## Examples
 
-Door
----
+### Door
 
-### Modeling
+#### Modeling
 There are a few things to consider before modeling a door
 1. The aspect ratio: According to [this article](https://interiordesignassist.wordpress.com/2019/02/25/door-proportions/), most of doors have either of following aspect ratios:
     - Two squares: `1:2`
@@ -277,7 +268,7 @@ There are a few things to consider before modeling a door
 1. Swing direction: A door is designed differently if it's for a right hand or left hand as well as it is opened to an inward or outward direction. See [this article](https://ezhangdoor.com/how-to-determine-door-swing-direction/#:~:text=To%20determine%20the%20door%20swing%20while%20replacing%20an%20existing%20door,the%20door%20is%20left%20handed.) for each case.
 
 
-#### Handle
+##### Handle
 I checked [this video](https://www.youtube.com/watch?v=FsVtNFY_jBY) to see how to make a model
 
 1. If you can't choose a Single Vert mesh, go to **Edit > Preferences > Add-ons** and enable "Add Mesh: Extra Objects" at first
@@ -295,19 +286,18 @@ I checked [this video](https://www.youtube.com/watch?v=FsVtNFY_jBY) to see how t
     
 I checked [this slide](https://www.researchgate.net/publication/336988496_BLENDER_TUTORIAL_CREATING_DOOR_HANDLE_WITH_USING_90_EXTRUDE) or [this video](https://youtu.be/x0of3b6KGRE).
 
-#### Board
+##### Board
 See [this article](https://thilakanathanstudios.com/2014/10/beginner-tutorial-how-to-create-and-setup-a-door-for-animation-in-blender/) for each step.
 
-#### Animation
+##### Animation
 - Parent objects are important to rotate 
 - The handle must be a child of the main board
 - The mainboard should rotate around one of the edge. There should be an object for the edge so that it can be rotated around it
 
 
-Character
----
+### Character
 
-### Lip sync
+#### Lip sync
 
 There are multiple addons for Lip sync.
 
@@ -325,7 +315,7 @@ There are multiple addons for Lip sync.
 
 I used Rhubarb Lip Sync addon because it's free and also it's easier to use than Papagayo.
 
-#### Rhubarb Lip Sync
+##### Rhubarb Lip Sync
 
 This addon requires a pose library [as of January 2022](https://github.com/scaredyfish/blender-rhubarb-lipsync/issues/28).
 In order to animate a model by shape keys, drivers of shape keys with bones have to be set.
@@ -334,7 +324,7 @@ See next video for how to.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vZVtUEEssxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-##### Troubleshootings
+###### Troubleshootings
 
 If you face an issue and couldn't see any messages on the Blender, a blender should start from CLI like Windows Powershell in order to figure out what happens.
 
@@ -343,7 +333,7 @@ PS C:\path> blender.exe
 ```
 
 
-###### The file format isn't supported
+####### The file format isn't supported
 
 The audio file format must be either of a wav or ogg.
 
@@ -357,7 +347,7 @@ Error!!!
 ```
 
 
-###### File sampling rate is too low
+####### File sampling rate is too low
 
 The sampling rate of an audio file format must be equal to 16K Hz or more.
 
@@ -378,8 +368,7 @@ Error!!!
 ```
 
 
-Particle animation
----
+### Particle animation
 
 The next video was helpful to see how to set a particle animation.
 
@@ -396,11 +385,9 @@ In order to do a similar thing
 
 
 
-Use other tools or services
-===
+## Use other tools or services
 
-[Mixamo](https://www.mixamo.com/#/)
----
+### [Mixamo](https://www.mixamo.com/#/)
 
 Mixamo hosts character animaitons and they can be downloaded used.
 Their animations can be downloaded like a fbx file format and they can be imported into Blender.
@@ -411,8 +398,7 @@ See next video for more details for how to use this addon.
 
 
 
-[VRoid Studio](https://vroid.com/en/studio)
----
+### [VRoid Studio](https://vroid.com/en/studio)
 
 VRoid Studio is a tool to make 3D character very easily.
 
@@ -424,7 +410,7 @@ Once it's imported, there are some data in the model
 - Facial expressions: Face mesh has shape keys for facial expressions.
 
 
-### With Mixamo
+#### With Mixamo
 I failed to apply Mixamo animation to a VRoid model.
 These are issues I faced
 
@@ -438,8 +424,7 @@ These are issues I faced
         - Importing a fbx file with "Apply Transform" or "Manual Operation" didn't help
 
 
-Other addons
----
+### Other addons
 
 There are many free addons for Blender.
 For example, the next video explains 15 free addons.
@@ -462,11 +447,10 @@ Paid
     - Make a neon light effect
 
 
-Free materials
-===
+## Free materials
 
-3D Models
----
+### 3D Models
+
 In each model, it usually has a license so if you plan to use it for non-personal use, you need to check the license and whether it can be used or not.
 
 - [cgtrader](https://www.cgtrader.com/)
@@ -475,19 +459,18 @@ In each model, it usually has a license so if you plan to use it for non-persona
 - [TURBOSQUID](https://www.turbosquid.com/)
 
 
-### Note to import 3D models
+#### Note to import 3D models
 
 1. Make sure that 3D models can be imported into Blender. Some models are exported from other modeling tools and cannot be imported into Blender.
 1. Make sure that the textures are imported correctly. Many of 3D models use textures and they are distributed in a different file sometimes.
      We need to download them and map textures with those files correctly on Blender.
 
-Animation
----
+### Animation
+
 - [Mixamo](https://www.mixamo.com/#/)
 
 
 
-Learning web site
-===
+## Learning web site
 
 - [LinkedIn Learning: Introducing Blender 2.8 for beginners](https://www.linkedin.com/learning/blender-2-8-essential-training-2/introducing-blender-2-8-for-beginners?autoplay=true)
