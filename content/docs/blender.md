@@ -6,7 +6,7 @@ draft: false
 ---
 
 # Table of contents
-- [Gradient color](/posts/2023/12/16/blender-gradient-color/)
+- [Gradient color](/posts/2023/12/16/blender-animate-a-gradient-material/)
 
 
 # Old contents
