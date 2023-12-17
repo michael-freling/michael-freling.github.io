@@ -1,7 +1,7 @@
 ---
 title: "Blender: Animate a gradient material"
 date: 2023-12-16T15:17:29-08:00
-draft: true
+draft: false
 tags:
   - blender
   - blender_4.0
