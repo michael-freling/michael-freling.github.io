@@ -6,7 +6,9 @@ draft: false
 ---
 
 # Table of contents
-- [Gradient color](/posts/2023/12/16/blender-animate-a-gradient-material/)
+- [Gradient color of a text](/posts/2023/12/16/blender-animate-a-gradient-material/)
+- Animation examples of text
+    - [Fade in: pop up each letter of a text](/posts/2023/12/17/blender-scale-text-by-each-letter/)
 
 
 # Old contents

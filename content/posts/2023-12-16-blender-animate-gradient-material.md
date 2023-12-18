@@ -4,7 +4,7 @@ date: 2023-12-16T15:17:29-08:00
 draft: false
 tags:
   - blender
-  - blender_4.0
+  - blender 4.0
 ---
 
 This post was written using Blender 4.0.
