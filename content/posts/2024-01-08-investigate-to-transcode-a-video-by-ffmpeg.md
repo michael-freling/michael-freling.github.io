@@ -15,7 +15,6 @@ tags:
 
 In this article, the video 
 
-<link href="//vjs.zencdn.net/8.3.0/video-js.min.css" rel="stylesheet">
 <video id="video" class="video-js vjs-default-skin" controls>
     <source src="/posts/2024/01/08/investigate-to-transcode-a-video-for-a-video-on-demand-streaming-by-ffmpeg/videos/playlist.m3u8" type="application/x-mpegURL" />
     Your browser does not support the video tag.
@@ -341,9 +340,8 @@ There are also other resources that describe more details about video transcodin
 - <a id="4">[4]</a> [FFmpeg API: Media Bitrate vs. Frame Rate: A Detailed Exploration](https://ffmpeg-api.com/learn/ffmpeg/guide/bitrate-vs-frame-rate)
 - <a id="5">[5]</a> [epiphan video: H.264 vs. H.265: Video codecs compared](https://www.epiphan.com/blog/h264-vs-h265/)
 
-
 <script src="//vjs.zencdn.net/8.3.0/video.min.js"></script>
 <script src="https://unpkg.com/@videojs/http-streaming@3.8.0/dist/videojs-http-streaming.min.js"></script>
 <script>
-   videojs('video');
-</script>
+    videojs('video');
+ </script>
