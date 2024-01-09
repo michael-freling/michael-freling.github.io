@@ -13,14 +13,16 @@ tags:
 
 > **_NOTE:_**: This was written using ffmpeg version 4.4.2-0ubuntu0.22.04.1, and it's not been used on the production environment.
 
-In this article, the video 
+I investigated how to transcode a video by `ffmpeg` and play it on a browser, and in order to do it, it was required to understand the theory of how it works. 
+In this article, I described the basics of a video streaming like CMAF, HLS and DASH, and actual commands or codes to transcode and play a video on a browser.
+
+The video I transcoded is something like next, which I made on the Blender quickly.
+The audio is from [Beauteous of AlexiAction](https://pixabay.com/music/future-bass-beauteous-upbeat-electronic-162757/) in the Pixabay.
 
 <video id="video" class="video-js vjs-default-skin" controls>
     <source src="/posts/2024/01/08/investigate-to-transcode-a-video-for-a-video-on-demand-streaming-by-ffmpeg/videos/playlist.m3u8" type="application/x-mpegURL" />
     Your browser does not support the video tag.
 </video>
-
-The audio in the above video was from [Beauteous of AlexiAction](https://pixabay.com/music/future-bass-beauteous-upbeat-electronic-162757/) in the Pixabay.
 
 
 This article doesn't go into many topics for transcoding like
