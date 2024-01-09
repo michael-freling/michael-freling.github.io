@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//vjs.zencdn.net/8.3.0/video-js.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <video id="video" class="video-js vjs-default-skin" controls>
+            <source src="./animation_with_audio/playlist.m3u8" type="application/x-mpegURL" />
+            
+            Your browser does not support the video tag.
+         </video>
+         <video id="video2" class="video-js vjs-default-skin" controls>
+            <source src="./animation_without_audio/playlist.m3u8" type="application/x-mpegURL" />
+            
+            Your browser does not support the video tag.
+         </video>
+
+         <script src="//vjs.zencdn.net/8.3.0/video.min.js"></script>
+         <script src="https://unpkg.com/@videojs/http-streaming@3.8.0/dist/videojs-http-streaming.min.js"></script>
+         <script>
+            videojs('video');
+            videojs('video2');
+         </script>
+    </body>
+</html>
