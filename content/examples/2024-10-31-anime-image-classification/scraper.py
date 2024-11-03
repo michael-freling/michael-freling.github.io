@@ -9,40 +9,75 @@ from PIL import Image
 
 IMAGE_COUNT=2
 SOURCE_DIR='./source'
+SOURCE_DIGIKAM_DIR='./source/digikam'
 OUTPUT_DIR='./datasets'
 
-def download_images():
-    response = requests.get(
-        f'https://api.nekosia.cat/api/v1/images/catgirl?rating=safe&count={IMAGE_COUNT}'
-    )
-    if response.status_code != 200:
-        print('Failed to fetch data ' + str(response.json()))
-        return
+from libxmp.utils import file_to_dict
 
-    data = response.json()
+def read_digikam_files(source_dir: str):
+    xmp_files = [file for file in os.listdir(source_dir) if file.endswith('.xmp')]
 
-    if not os.path.exists(f'{SOURCE_DIR}'):
-        os.makedirs(f'{SOURCE_DIR}')
+    with open(f'{source_dir}/metadata.jsonl', 'w') as output_file:
+        for xmp_file in xmp_files:
+            xmp: dict = file_to_dict(f'{source_dir}/{xmp_file}')
+            image_file = xmp_file.replace('.xmp', '')
 
-    images = data['images']
-    for index in range(len(images)):
-        id, url, extension = images[index]['id'], images[index]['image']['original']['url'], images[index]['metadata']['original']['extension']
-        image_response = requests.get(url)
-        if image_response.status_code != 200:
-            print('Failed to fetch image ' + url)
-            continue
+            tags: list[str] = []
+            digiKamMetadata: list[tuple[str, str,dict]] = xmp['http://www.digikam.org/ns/1.0/']
+            for t in digiKamMetadata:
+                dom, value, _ = t
+                if not dom.startswith('digiKam:TagsList['):
+                    continue
+                parts = value.split('/')
+                if len(parts) == 3 and parts[2].startswith('Season'):
+                    # series season tag: Anime/{Series name}/{Season 1}
+                    tags.append(parts[1])
+                    tags.append(parts[2])
+                    continue
+                if len(parts) == 4 and parts[2].startswith('Characters'):
+                    # character tag: Anime/{Series name}/Characters/{Character name}
+                    tags.append(parts[3])
+                    continue
+                tags.append(value)
 
-        image = image_response.content
-        file_name = f'{id}.{extension}'
+            line = {
+                'file_name': image_file,
+                'tags': tags
+            }
+            output_file.write(json.dumps(line) + '\n')
 
-        with open(f'{SOURCE_DIR}/{file_name}', 'wb') as f:
-            f.write(image)
+# def download_images():
+#     response = requests.get(
+#         f'https://api.nekosia.cat/api/v1/images/catgirl?rating=safe&count={IMAGE_COUNT}'
+#     )
+#     if response.status_code != 200:
+#         print('Failed to fetch data ' + str(response.json()))
+#         return
 
-    metadata_file = f'{SOURCE_DIR}/metadata.jsonl'
-    with open(metadata_file, 'w') as f:
-        for index in range(len(images)):
-            line = images[index]
-            f.write(json.dumps(line) + '\n')
+#     data = response.json()
+
+#     if not os.path.exists(f'{SOURCE_DIR}'):
+#         os.makedirs(f'{SOURCE_DIR}')
+
+#     images = data['images']
+#     for index in range(len(images)):
+#         id, url, extension = images[index]['id'], images[index]['image']['original']['url'], images[index]['metadata']['original']['extension']
+#         image_response = requests.get(url)
+#         if image_response.status_code != 200:
+#             print('Failed to fetch image ' + url)
+#             continue
+
+#         image = image_response.content
+#         file_name = f'{id}.{extension}'
+
+#         with open(f'{SOURCE_DIR}/{file_name}', 'wb') as f:
+#             f.write(image)
+
+#     metadata_file = f'{SOURCE_DIR}/metadata.jsonl'
+#     with open(metadata_file, 'w') as f:
+#         for index in range(len(images)):
+#             line = images[index]
+#             f.write(json.dumps(line) + '\n')
 
 def preprocess(input_dir: str):
     if os.path.exists(f'{OUTPUT_DIR}'):
@@ -65,8 +100,10 @@ def preprocess(input_dir: str):
             os.makedirs(f'{OUTPUT_DIR}/{dir}')
 
     for index in range(len(images)):
-        id, extension, tags = images[index]['id'], images[index]['metadata']['original']['extension'], images[index]['tags']
-        file_name = f'{id}.{extension}'
+        # id, extension, tags = images[index]['id'], images[index]['metadata']['original']['extension'], images[index]['tags']
+        # file_name = f'{id}.{extension}'
+        tags = images[index]['tags']
+        file_name = images[index]['file_name']
 
         # For multi label classifications, use one-hot encoding
         encoded_tags = [0] * len(all_tags)
@@ -75,7 +112,6 @@ def preprocess(input_dir: str):
 
         for split in splits.keys():
             splits[split].append({
-                'id': id,
                 'file_name': file_name,
                 'tags': encoded_tags
             })
@@ -91,5 +127,8 @@ def preprocess(input_dir: str):
         f.write(json.dumps(all_tags))
 
 if __name__ == '__main__':
-    download_images()
-    preprocess(SOURCE_DIR)
+    # download_images()
+    # preprocess(SOURCE_DIR)
+
+    read_digikam_files(SOURCE_DIGIKAM_DIR)
+    preprocess(SOURCE_DIGIKAM_DIR)

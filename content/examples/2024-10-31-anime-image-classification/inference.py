@@ -14,11 +14,14 @@ image = Image.open(response.raw).convert("RGB")
 
 inputs = processor(images=image, return_tensors="pt")
 outputs = model(**inputs)
-logits = outputs.logits
+logits = torch.sigmoid(outputs.logits)
+# Top 5
+# logits = torch.topk(logits, top_k, dim=1).indices.squeeze(0)
+
 # model predicts one of the 1000 ImageNet classes
 print(logits)
 
-threshold = 0.3
+threshold = 0.5
 predicted_indices = (logits > threshold).nonzero(as_tuple=True)[1]
 print(predicted_indices)
 predicted_labels = [model.config.id2label[idx.item()] for idx in predicted_indices]

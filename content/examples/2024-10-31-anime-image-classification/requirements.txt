@@ -41,6 +41,7 @@ protobuf==5.28.3
 psutil==6.1.0
 pyarrow==18.0.0
 python-dateutil==2.9.0.post0
+python-xmp-toolkit==2.0.2
 pytz==2024.2
 PyYAML==6.0.2
 regex==2024.9.11
