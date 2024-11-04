@@ -6,16 +6,18 @@ import datasets
 import shutil
 import torch
 from PIL import Image
+import multiprocessing as mp
+import typing
+import signal
 
 IMAGE_COUNT=2
-SOURCE_DIR='./source'
-SOURCE_DIGIKAM_DIR='./source/digikam'
-OUTPUT_DIR='./datasets'
 
 from libxmp.utils import file_to_dict
 
 def read_digikam_files(source_dir: str):
     xmp_files = [file for file in os.listdir(source_dir) if file.endswith('.xmp')]
+    # For debugging with a small number of images
+    # xmp_files= xmp_files[:10]
 
     with open(f'{source_dir}/metadata.jsonl', 'w') as output_file:
         for xmp_file in xmp_files:
@@ -46,42 +48,83 @@ def read_digikam_files(source_dir: str):
             }
             output_file.write(json.dumps(line) + '\n')
 
-# def download_images():
-#     response = requests.get(
-#         f'https://api.nekosia.cat/api/v1/images/catgirl?rating=safe&count={IMAGE_COUNT}'
-#     )
-#     if response.status_code != 200:
-#         print('Failed to fetch data ' + str(response.json()))
-#         return
+def download_images():
+    response = requests.get(
+        f'https://api.nekosia.cat/api/v1/images/catgirl?rating=safe&count={IMAGE_COUNT}'
+    )
+    if response.status_code != 200:
+        print('Failed to fetch data ' + str(response.json()))
+        return
 
-#     data = response.json()
+    data = response.json()
 
-#     if not os.path.exists(f'{SOURCE_DIR}'):
-#         os.makedirs(f'{SOURCE_DIR}')
+    if not os.path.exists(f'{SOURCE_DIR}'):
+        os.makedirs(f'{SOURCE_DIR}')
 
-#     images = data['images']
-#     for index in range(len(images)):
-#         id, url, extension = images[index]['id'], images[index]['image']['original']['url'], images[index]['metadata']['original']['extension']
-#         image_response = requests.get(url)
-#         if image_response.status_code != 200:
-#             print('Failed to fetch image ' + url)
-#             continue
+    images = data['images']
+    for index in range(len(images)):
+        id, url, extension = images[index]['id'], images[index]['image']['original']['url'], images[index]['metadata']['original']['extension']
+        image_response = requests.get(url)
+        if image_response.status_code != 200:
+            print('Failed to fetch image ' + url)
+            continue
 
-#         image = image_response.content
-#         file_name = f'{id}.{extension}'
+        image = image_response.content
+        file_name = f'{id}.{extension}'
 
-#         with open(f'{SOURCE_DIR}/{file_name}', 'wb') as f:
-#             f.write(image)
+        with open(f'{SOURCE_DIR}/{file_name}', 'wb') as f:
+            f.write(image)
 
-#     metadata_file = f'{SOURCE_DIR}/metadata.jsonl'
-#     with open(metadata_file, 'w') as f:
-#         for index in range(len(images)):
-#             line = images[index]
-#             f.write(json.dumps(line) + '\n')
+    metadata_file = f'{SOURCE_DIR}/metadata.jsonl'
+    with open(metadata_file, 'w') as f:
+        for index in range(len(images)):
+            line = images[index]
+            f.write(json.dumps(line) + '\n')
 
-def preprocess(input_dir: str):
-    if os.path.exists(f'{OUTPUT_DIR}'):
-        shutil.rmtree(OUTPUT_DIR)
+splits = [
+    'train',
+    'validation'
+]
+def write_image(index: int, images: list[dict], all_tags: list[str], tags2id: dict[str, int], input_dir: str, output_dir: str):
+    # id, extension, tags = images[index]['id'], images[index]['metadata']['original']['extension'], images[index]['tags']
+    # file_name = f'{id}.{extension}'
+    tags = images[index]['tags']
+    file_name = images[index]['file_name']
+
+    for split in splits:
+        shutil.copyfile(f'{input_dir}/{file_name}', f'{output_dir}/{split}/{file_name}')
+
+    # For multi label classifications, use one-hot encoding
+    encoded_tags = [0] * len(all_tags)
+    for tag in tags:
+        encoded_tags[tags2id[tag]] = 1.0
+    return{
+        'file_name': file_name,
+        'tags': encoded_tags
+    }
+
+class MetadataWriter:
+    def __init__(self, output_dir: str):
+        self.output_dir = output_dir
+        self.files = {}
+
+    # Handle open and exit: https://stackoverflow.com/a/3774396/24068435
+    def __enter__(self) -> typing.Self:
+        for split in splits:
+            self.files[split] = open(f'{output_dir}/{split}/metadata.jsonl', 'w')
+        return self
+
+    def __exit__(self, exception_type, exception_value, exception_traceback):
+        for f in self.files.values():
+            f.close()
+
+    def callback(self, line: str):
+        for f in self.files.values():
+            f.write(json.dumps(line) + "\n")
+
+def preprocess(input_dir: str, output_dir: str):
+    if os.path.exists(f'{output_dir}'):
+        shutil.rmtree(output_dir)
 
     with open(f'{input_dir}/metadata.jsonl', 'r') as f:
         images = [json.loads(line) for line in f]
@@ -91,44 +134,34 @@ def preprocess(input_dir: str):
 
     tags2id = {tag: id for id, tag in enumerate(all_tags)}
 
-    splits = {
-        'train': [],
-        'validation': [],
-    }
-    for dir in splits.keys():
-        if not os.path.exists(f'{OUTPUT_DIR}/{dir}'):
-            os.makedirs(f'{OUTPUT_DIR}/{dir}')
+    for dir in splits:
+        if not os.path.exists(f'{output_dir}/{dir}'):
+            os.makedirs(f'{output_dir}/{dir}')
 
-    for index in range(len(images)):
-        # id, extension, tags = images[index]['id'], images[index]['metadata']['original']['extension'], images[index]['tags']
-        # file_name = f'{id}.{extension}'
-        tags = images[index]['tags']
-        file_name = images[index]['file_name']
+    # https://www.machinelearningplus.com/python/parallel-processing-python/
+    # Handle an KeyboardInterrupt on the parent process: https://stackoverflow.com/questions/72967793/keyboardinterrupt-with-python-multiprocessing-pool
+    with mp.Pool(mp.cpu_count(), initializer=signal.signal, initargs=(signal.SIGINT, signal.SIG_IGN)) as pool, MetadataWriter(output_dir) as writer:
+        # metadata = pool.starmap_async(write_image, [(index, images, all_tags, tags2id, input_dir, output_dir) for index in range(len(images))]).get()
+        for index in range(len(images)):
+            pool.apply_async(write_image, args=(index, images, all_tags, tags2id, input_dir, output_dir), callback=writer.callback)
 
-        # For multi label classifications, use one-hot encoding
-        encoded_tags = [0] * len(all_tags)
-        for tag in tags:
-            encoded_tags[tags2id[tag]] = 1.0
+        with open(f'{output_dir}/tags.json', 'w') as f:
+            f.write(json.dumps(all_tags))
 
-        for split in splits.keys():
-            splits[split].append({
-                'file_name': file_name,
-                'tags': encoded_tags
-            })
-            shutil.copyfile(f'{input_dir}/{file_name}', f'{OUTPUT_DIR}/{split}/{file_name}')
+        pool.close()
+        pool.join()
 
-    for split, metadata in splits.items():
-        metadata_file = f'{OUTPUT_DIR}/{split}/metadata.jsonl'
-        with open(metadata_file, 'w') as f:
-            for line in metadata:
-                f.write(json.dumps(line) + '\n')
 
-    with open(f'{OUTPUT_DIR}/tags.json', 'w') as f:
-        f.write(json.dumps(all_tags))
+import sys
 
 if __name__ == '__main__':
     # download_images()
     # preprocess(SOURCE_DIR)
 
-    read_digikam_files(SOURCE_DIGIKAM_DIR)
-    preprocess(SOURCE_DIGIKAM_DIR)
+    if len(sys.argv) < 3:
+        print('Usage: scraper.py <source_dir> <output_dir>')
+        sys.exit(1)
+    source_dir = sys.argv[1]
+    output_dir = sys.argv[2]
+    read_digikam_files(source_dir)
+    preprocess(source_dir, output_dir)
