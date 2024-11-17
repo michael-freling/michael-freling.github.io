@@ -2,9 +2,15 @@ from transformers import ViTImageProcessor, ViTForImageClassification
 from PIL import Image
 import requests
 import torch
+import sys
 
-processor = ViTImageProcessor.from_pretrained('./trained')
-model = ViTForImageClassification.from_pretrained('./trained')
+if len(sys.argv) < 2:
+    print('Usage: inference.py <model_path>')
+    sys.exit(1)
+
+model_path = sys.argv[1]
+processor = ViTImageProcessor.from_pretrained(model_path)
+model = ViTForImageClassification.from_pretrained(model_path)
 
 # url = 'http://images.cocodataset.org/val2017/000000039769.jpg'
 url = 'https://cdn.nekosia.cat/images/catgirl/66b0128c36c1176963856fd6.jpg'
@@ -23,7 +29,9 @@ print(logits)
 
 threshold = 0.5
 predicted_indices = (logits > threshold).nonzero(as_tuple=True)[1]
+predicted_probs = logits[0, predicted_indices]
+predicted_indices = predicted_indices[predicted_probs.argsort(descending=True)]
 print(predicted_indices)
-predicted_labels = [model.config.id2label[idx.item()] for idx in predicted_indices]
 
+predicted_labels = [model.config.id2label[idx.item()] for idx in predicted_indices]
 print("Predicted class:", predicted_labels)

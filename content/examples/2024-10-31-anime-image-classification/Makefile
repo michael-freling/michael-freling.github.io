@@ -12,3 +12,9 @@ setup:
 download:
 	source ./.venv/bin/activate
 	python scraper.py
+
+compress:
+	zip -r source.zip source
+
+uncompress:
+	unzip source.zip

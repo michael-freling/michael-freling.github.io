@@ -2,6 +2,11 @@
 
 import datasets
 import json
+import sys
+import multiprocessing as mp
+
+datasets_dir = sys.argv[1] if len(sys.argv) >= 2 else './datasets'
+output_dir = sys.argv[2] if len(sys.argv) >= 3 else './model'
 
 ds = datasets.load_dataset('imagefolder', data_dir='./datasets')
 with open('./datasets/tags.json', 'r') as f:
@@ -67,11 +72,8 @@ model = ViTForImageClassification.from_pretrained(
 from transformers import TrainingArguments
 
 training_args = TrainingArguments(
-  output_dir="./trained",
-#   per_device_train_batch_size=16,
-#   evaluation_strategy="steps",
-#   num_train_epochs=4,
-#   fp16=True,
+  output_dir=output_dir,
+  fp16=True,
 #   save_steps=2,
 #   eval_steps=2,
 #   logging_steps=1,
@@ -80,7 +82,11 @@ training_args = TrainingArguments(
   remove_unused_columns=False,
 #   push_to_hub=False,
 #   report_to='tensorboard',
-#   load_best_model_at_end=True,
+
+  load_best_model_at_end=True,
+  eval_strategy="steps",
+  # Data Preloading parameters: https://huggingface.co/docs/transformers/perf_train_gpu_one
+  dataloader_num_workers=4,
 )
 
 from transformers import Trainer
