@@ -8,8 +8,9 @@ import multiprocessing as mp
 datasets_dir = sys.argv[1] if len(sys.argv) >= 2 else './datasets'
 output_dir = sys.argv[2] if len(sys.argv) >= 3 else './model'
 
-ds = datasets.load_dataset('imagefolder', data_dir='./datasets')
-with open('./datasets/tags.json', 'r') as f:
+# https://huggingface.co/docs/datasets/image_load#imagefolder
+ds = datasets.load_dataset('imagefolder', data_dir=datasets_dir, num_proc=mp.cpu_count())
+with open(f'{datasets_dir}/tags.json', 'r') as f:
     tags = json.loads(f.read())
 # print(tags)
 

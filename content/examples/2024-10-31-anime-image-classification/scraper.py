@@ -28,22 +28,16 @@ def read_digikam_files(source_dir: str):
         for xmp_file in xmp_files:
             xmp: dict = file_to_dict(xmp_file)
             image_file = xmp_file.replace('.xmp', '')
+            namespace = 'http://www.digikam.org/ns/1.0/'
+            if not namespace in xmp:
+                print(f"Namespace {namespace} not found in {xmp_file}")
+                continue
 
             tags: list[str] = []
-            digiKamMetadata: list[tuple[str, str,dict]] = xmp['http://www.digikam.org/ns/1.0/']
+            digiKamMetadata: list[tuple[str, str,dict]] = xmp[]
             for t in digiKamMetadata:
                 dom, value, _ = t
                 if not dom.startswith('digiKam:TagsList['):
-                    continue
-                parts = value.split('/')
-                if len(parts) == 3 and parts[2].startswith('Season'):
-                    # series season tag: Anime/{Series name}/{Season 1}
-                    tags.append(parts[1])
-                    tags.append(parts[2])
-                    continue
-                if len(parts) == 4 and parts[2].startswith('Characters'):
-                    # character tag: Anime/{Series name}/Characters/{Character name}
-                    tags.append(parts[3])
                     continue
                 tags.append(value)
 
@@ -118,7 +112,7 @@ class MetadataWriter:
         self.files = {}
 
     # Handle open and exit: https://stackoverflow.com/a/3774396/24068435
-    def __enter__(self) -> typing.Self:
+    def __enter__(self):
         for split in splits:
             self.files[split] = open(f'{output_dir}/{split}/metadata.jsonl', 'w')
         return self

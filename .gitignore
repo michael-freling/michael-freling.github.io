@@ -4,3 +4,4 @@ node_modules
 
 # Sub modules
 themes/compose
+.venv

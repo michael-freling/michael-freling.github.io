@@ -13,7 +13,16 @@ processor = ViTImageProcessor.from_pretrained(model_path)
 model = ViTForImageClassification.from_pretrained(model_path)
 
 # url = 'http://images.cocodataset.org/val2017/000000039769.jpg'
-url = 'https://cdn.nekosia.cat/images/catgirl/66b0128c36c1176963856fd6.jpg'
+# url = 'https://cdn.nekosia.cat/images/catgirl/66b0128c36c1176963856fd6.jpg'
+
+# Sakayanagi Arisu
+url = 'https://th.bing.com/th/id/OIP.PuDt_Zt7xsuWf8K5SJGEDwHaHa?w=600&h=601&rs=1&pid=ImgDetMain'
+url = 'https://i.pinimg.com/736x/d2/22/f2/d222f256e31646455433d8704546e750.jpg'
+
+# Lena
+# url = 'https://th.bing.com/th/id/OIP.Dub-gPiubjtoIucef8n6nAHaIr?rs=1&pid=ImgDetMain'
+url = 'https://th.bing.com/th/id/OIP.AU4q4USoIk3ksrM47nBaowAAAA?rs=1&pid=ImgDetMain'
+
 response = requests.get(url, stream=True)
 # print(response.text)
 image = Image.open(response.raw).convert("RGB")
@@ -32,6 +41,8 @@ predicted_indices = (logits > threshold).nonzero(as_tuple=True)[1]
 predicted_probs = logits[0, predicted_indices]
 predicted_indices = predicted_indices[predicted_probs.argsort(descending=True)]
 print(predicted_indices)
+
+print(model.config.id2label)
 
 predicted_labels = [model.config.id2label[idx.item()] for idx in predicted_indices]
 print("Predicted class:", predicted_labels)
