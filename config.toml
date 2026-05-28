@@ -1,5 +1,6 @@
 baseURL = "https://michael-freling.github.io"
 languageCode = "en-us"
+relativeURLs = true
 title = "Notes for self made anime"
 enableRobotsTXT = true
 

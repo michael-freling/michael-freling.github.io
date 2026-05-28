@@ -1,7 +1,7 @@
 {{- $s := .Site }}
 {{- $sp := $s.Params }}
 <nav class="wrap nav menu">
-	<a href="{{ $s.BaseURL }}" class="nav_brand">
+	<a href="{{ relURL "" }}" class="nav_brand">
 		{{- $logos := $sp.logo }}
 		{{- $litPath := absURL ($logos.lightMode) }}
 		{{- $darkPath := absURL ($logos.darkMode) }}
