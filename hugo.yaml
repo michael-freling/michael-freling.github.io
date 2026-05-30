@@ -1,0 +1,99 @@
+baseURL: https://michael-freling.github.io
+languageCode: en-us
+title: Notes for self made anime
+enableRobotsTXT: true
+enableGitInfo: true
+
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+permalinks:
+  posts: /:sections/:year/:month/:day/:slug/
+
+menu:
+  main:
+    - name: Docs
+      pageRef: /docs
+      weight: 1
+    - name: Posts
+      pageRef: /posts
+      weight: 2
+    - name: Tags
+      pageRef: /tags
+      weight: 3
+    - name: Search
+      weight: 4
+      params:
+        type: search
+    - name: GitHub
+      weight: 5
+      url: https://github.com/michael-freling/michael-freling.github.io
+      params:
+        icon: github
+
+  sidebar:
+    - name: More
+      params:
+        type: separator
+      weight: 1
+    - name: GitHub
+      url: https://github.com/michael-freling/michael-freling.github.io
+      weight: 2
+      params:
+        icon: github
+
+taxonomies:
+  tag: tags
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      typographer: false
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: false
+    noClasses: false
+    style: monokai
+    tabWidth: 2
+  tableOfContents:
+    endLevel: 4
+    startLevel: 2
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  theme:
+    default: system
+    displayToggle: true
+
+  navbar:
+    displayTitle: true
+    displayLogo: false
+
+  blog:
+    list:
+      displayTags: true
+    article:
+      displayPagination: true
+
+  search:
+    type: flexsearch
+    flexsearch:
+      index: content
+      tokenize: forward
+
+  editURL:
+    enable: false
+
+  page:
+    width: normal
