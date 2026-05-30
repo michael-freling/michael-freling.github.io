@@ -1,8 +1,177 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blender 4.0 on Notes for self made anime</title><link>https://michael-freling.github.io/tags/blender-4.0/</link><description>Recent content in blender 4.0 on Notes for self made anime</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 17 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://michael-freling.github.io/tags/blender-4.0/index.xml" rel="self" type="application/rss+xml"/><item><title>Blender Scale Text by Each Letter</title><link>https://michael-freling.github.io/posts/2023/12/17/blender-scale-text-by-each-letter/</link><pubDate>Sun, 17 Dec 2023 00:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2023/12/17/blender-scale-text-by-each-letter/</guid><description>This was written using Blender 4.0 by a Blender novice.
-The animation in this post looks like next.
-Except step 4, I referred to this stackexchange answer.
-Step 1: Scale an entire text on Geometry Nodes Add a Instances &amp;gt; Scale Instances node and connect between Group Input and Group Output Set Y of Scale to 2.0 and make sure the text scales Add a Utilities &amp;gt; Text &amp;gt; String to Curves node and set the String field on the node Connect from Curve Instances of String to Curves to Instances of Scale Instances instead of Group Input.</description></item><item><title>Blender: Animate a gradient material</title><link>https://michael-freling.github.io/posts/2023/12/16/blender-animate-a-gradient-material/</link><pubDate>Sat, 16 Dec 2023 15:17:29 -0800</pubDate><guid>https://michael-freling.github.io/posts/2023/12/16/blender-animate-a-gradient-material/</guid><description>This post was written using Blender 4.0.
-This blog is about to create the animation for color gradient. The final output of this post is like next:
-Step 1. Add a color gradient To add color gradient to a material, go to the Sharding tab and update nodes like the next.
-This is basically by:
-Add a Texture &amp;gt; Gradient Texture node Add a Converter &amp;gt; Color Ramp node between Gradient Texture and Principled BSDF Step 2.</description></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes for self made anime – Blender 4.0</title><link>https://michael-freling.github.io/tags/blender-4.0/</link><description>Recent content in Blender 4.0 on Notes for self made anime</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 17 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://michael-freling.github.io/tags/blender-4.0/index.xml" rel="self" type="application/rss+xml"/><item><title>Blender Scale Text by Each Letter</title><link>https://michael-freling.github.io/posts/2023/12/17/blender-scale-text-by-each-letter/</link><pubDate>Sun, 17 Dec 2023 00:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2023/12/17/blender-scale-text-by-each-letter/</guid><description>
+&lt;p&gt;This was written using Blender 4.0 by a Blender novice.&lt;/p&gt;
+&lt;p&gt;The animation in this post looks like next.&lt;/p&gt;
+&lt;p&gt;&lt;video src="https://michael-freling.github.io/posts/2023/2023-12-17-blender-scale-text-by-each-letter/videos/step4.mp4" width="100%" height="auto" controls&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;p&gt;Except step 4, I referred to &lt;a href="https://blender.stackexchange.com/questions/277352/scale-individual-letters-separately-from-string-to-curves-geometry-nodes-in-blen"target="_blank" rel="noopener"&gt;this stackexchange answer&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Step 1: Scale an entire text on Geometry Nodes&lt;span class="hx:absolute hx:-mt-20" id="step-1-scale-an-entire-text-on-geometry-nodes"&gt;&lt;/span&gt;
+&lt;a href="#step-1-scale-an-entire-text-on-geometry-nodes" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src="https://michael-freling.github.io/posts/2023/2023-12-17-blender-scale-text-by-each-letter/images/step1.png" alt="" loading="lazy" /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add a &lt;strong&gt;Instances &amp;gt; Scale Instances&lt;/strong&gt; node and connect between &lt;strong&gt;Group Input&lt;/strong&gt; and &lt;strong&gt;Group Output&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Set &lt;strong&gt;Y&lt;/strong&gt; of &lt;strong&gt;Scale&lt;/strong&gt; to 2.0 and make sure the text scales&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Add a &lt;strong&gt;Utilities &amp;gt; Text &amp;gt; String to Curves&lt;/strong&gt; node and set the &lt;strong&gt;String&lt;/strong&gt; field on the node
+&lt;ul&gt;
+&lt;li&gt;Connect from &lt;strong&gt;Curve Instances&lt;/strong&gt; of &lt;strong&gt;String to Curves&lt;/strong&gt; to &lt;strong&gt;Instances&lt;/strong&gt; of &lt;strong&gt;Scale Instances&lt;/strong&gt; instead of &lt;strong&gt;Group Input&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Add a &lt;strong&gt;Curve &amp;gt; Operations &amp;gt; Fill Curve&lt;/strong&gt; and put it between &lt;strong&gt;String to Curves&lt;/strong&gt; and &lt;strong&gt;Scale Instances&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Note that I couldn't figure out how to use the text of its mesh from the &lt;strong&gt;Geometry Input&lt;/strong&gt; node for following animation steps correctly.&lt;/p&gt;
+&lt;h2&gt;Step 2: Animate texts by time frame&lt;span class="hx:absolute hx:-mt-20" id="step-2-animate-texts-by-time-frame"&gt;&lt;/span&gt;
+&lt;a href="#step-2-animate-texts-by-time-frame" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;video src="https://michael-freling.github.io/posts/2023/2023-12-17-blender-scale-text-by-each-letter/videos/step2.mp4" width="100%" height="auto" controls&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add a &lt;strong&gt;Input &amp;gt; Scene &amp;gt; Scene Time&lt;/strong&gt; node&lt;/li&gt;
+&lt;li&gt;Add a &lt;strong&gt;Utilities &amp;gt; Math &amp;gt; Map Range&lt;/strong&gt; node and on the node,
+&lt;ul&gt;
+&lt;li&gt;Connect the &lt;strong&gt;Frame&lt;/strong&gt; of the &lt;strong&gt;Scene Time&lt;/strong&gt; node to the &lt;strong&gt;Value&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Connect the &lt;strong&gt;Result&lt;/strong&gt; to the &lt;strong&gt;Scale&lt;/strong&gt; of the &lt;strong&gt;Scale Instances&lt;/strong&gt; node&lt;/li&gt;
+&lt;li&gt;Update the &lt;strong&gt;From Max&lt;/strong&gt; and &lt;strong&gt;To Max&lt;/strong&gt; values for testing. For example,
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;From Max&lt;/strong&gt;: Set 10 so that the text gets the biggest size at 10 keyframe&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;To Max&lt;/strong&gt;: The max scale size of the text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;This is optional for an animation to change pop up a text from the bottom center instaed of bottom left of each letter. On the &lt;strong&gt;String to Curve&lt;/strong&gt; node,
+&lt;ul&gt;
+&lt;li&gt;Updbate &lt;strong&gt;Pivot Point&lt;/strong&gt; to &lt;strong&gt;Bottom Center&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Connect the output of &lt;strong&gt;Pivot Point&lt;/strong&gt; to &lt;strong&gt;Center&lt;/strong&gt; of &lt;strong&gt;Scale Instance&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;What Map Range does is to convert the value from &lt;code&gt;(From Min, From Max)&lt;/code&gt; to &lt;code&gt;(To Min, To Max)&lt;/code&gt; &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;h2&gt;Step 3: Animate texts by each letter&lt;span class="hx:absolute hx:-mt-20" id="step-3-animate-texts-by-each-letter"&gt;&lt;/span&gt;
+&lt;a href="#step-3-animate-texts-by-each-letter" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;video src="https://michael-freling.github.io/posts/2023/2023-12-17-blender-scale-text-by-each-letter/videos/step3.mp4" width="100%" height="auto" controls&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;p&gt;Now use the &lt;strong&gt;Index&lt;/strong&gt;&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt; node to change the scale for each letter via &lt;strong&gt;Map Range&lt;/strong&gt; node.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add a &lt;strong&gt;Geometry &amp;gt; Read &amp;gt; Index&lt;/strong&gt; node&lt;/li&gt;
+&lt;li&gt;Add a &lt;strong&gt;Utilities &amp;gt; Math &amp;gt; Math&lt;/strong&gt; node, which is used for the interval frames of each letter, and on the node
+&lt;ul&gt;
+&lt;li&gt;Update the function to &lt;strong&gt;Multiply&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Connect the output from the &lt;strong&gt;Index&lt;/strong&gt; node to one of &lt;strong&gt;Value&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Connect the output of &lt;strong&gt;Value&lt;/strong&gt; on this node to the &lt;strong&gt;From Min&lt;/strong&gt; of the &lt;strong&gt;Map Range&lt;/strong&gt; node&lt;/li&gt;
+&lt;li&gt;Set another &lt;strong&gt;Value&lt;/strong&gt; to an arbitarily number like 10 for the interval&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Add a &lt;strong&gt;Utilities &amp;gt; Math &amp;gt; Math&lt;/strong&gt; node, which is used for how long it takes to scale each letter, and on the node,
+&lt;ul&gt;
+&lt;li&gt;Update the function to &lt;strong&gt;Add&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Connect the output of &lt;strong&gt;Value&lt;/strong&gt; on the &lt;strong&gt;Multiply&lt;/strong&gt; node to the one of the &lt;strong&gt;Value&lt;/strong&gt; of this node&lt;/li&gt;
+&lt;li&gt;Connect the output of &lt;strong&gt;Value&lt;/strong&gt; on this node to the &lt;strong&gt;From Max&lt;/strong&gt; of the &lt;strong&gt;Map Range&lt;/strong&gt; node&lt;/li&gt;
+&lt;li&gt;Set another &lt;strong&gt;Value&lt;/strong&gt; to an arbitarily number like 20 for how long takes to animate each letter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Step 4: Animate texts like soft objects&lt;span class="hx:absolute hx:-mt-20" id="step-4-animate-texts-like-soft-objects"&gt;&lt;/span&gt;
+&lt;a href="#step-4-animate-texts-like-soft-objects" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Animate texts like following squash and stretch principle.
+I couldn't refer to anywhere, so there might be a better way.&lt;/p&gt;
+&lt;p&gt;&lt;video src="https://michael-freling.github.io/posts/2023/2023-12-17-blender-scale-text-by-each-letter/videos/step4.mp4" width="100%" height="auto" controls&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;p&gt;The logic of this animation looks like next.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Decide what is the max scale of each letter, let's say &lt;code&gt;threshold&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Assuming the value of the &lt;strong&gt;Map Range&lt;/strong&gt; node is &lt;code&gt;v_index&lt;/code&gt;,
+&lt;ul&gt;
+&lt;li&gt;Set the &lt;strong&gt;To Max&lt;/strong&gt; of the &lt;strong&gt;Map Range&lt;/strong&gt; node to &lt;code&gt;2 * (threshold - 1) + 1&lt;/code&gt;, let's say &lt;code&gt;t_max&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Set the scale
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;t_max + 1 - s&lt;/code&gt; if &lt;code&gt;v_index &amp;gt; threshold&lt;/code&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;v_index&lt;/code&gt; otherwise&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note that the speed for a text to be bigger than 1.0 to &lt;code&gt;threshold&lt;/code&gt;, and from &lt;code&gt;threshold&lt;/code&gt; to 1.0 is the same.&lt;/p&gt;
+&lt;p&gt;To change the scale value based on the value by the above formula, I used &lt;strong&gt;Greater Than&lt;/strong&gt; and &lt;strong&gt;Mix&lt;/strong&gt; nodes by connecting the output of &lt;strong&gt;Greater Than&lt;/strong&gt; to &lt;strong&gt;Factor&lt;/strong&gt; of &lt;strong&gt;Mix&lt;/strong&gt;.
+Other than that, add many &lt;strong&gt;Math&lt;/strong&gt; nodes to calculate the above.&lt;/p&gt;
+&lt;h1&gt;Reference&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blender.stackexchange.com/questions/277352/scale-individual-letters-separately-from-string-to-curves-geometry-nodes-in-blen"target="_blank" rel="noopener"&gt;Stackexchange answer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="footnotes" role="doc-endnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="https://docs.blender.org/manual/en/4.0/modeling/geometry_nodes/utilities/math/map_range.html"target="_blank" rel="noopener"&gt;Blender 4.0 Manual: Map Range node&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;&lt;a href="https://docs.blender.org/manual/en/4.0/modeling/geometry_nodes/geometry/read/input_index.html"target="_blank" rel="noopener"&gt;Blender 4.0 Manual: Index node&lt;/a&gt;&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description></item><item><title>Blender: Animate a gradient material</title><link>https://michael-freling.github.io/posts/2023/12/16/blender-animate-a-gradient-material/</link><pubDate>Sat, 16 Dec 2023 15:17:29 -0800</pubDate><guid>https://michael-freling.github.io/posts/2023/12/16/blender-animate-a-gradient-material/</guid><description>
+&lt;p&gt;This post was written using Blender 4.0.&lt;/p&gt;
+&lt;p&gt;This blog is about to create the animation for color gradient.
+The final output of this post is like next:&lt;/p&gt;
+&lt;p&gt;&lt;video src="https://michael-freling.github.io/posts/2023/2023-12-16-blender-animate-a-gradient-material/videos/final.mp4" width="100%" height="auto" controls&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;h2&gt;Step 1. Add a color gradient&lt;span class="hx:absolute hx:-mt-20" id="step-1-add-a-color-gradient"&gt;&lt;/span&gt;
+&lt;a href="#step-1-add-a-color-gradient" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;To add color gradient to a material, go to the &lt;strong&gt;Sharding&lt;/strong&gt; tab and update nodes like the next.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://michael-freling.github.io/posts/2023/2023-12-16-blender-animate-a-gradient-material/images/gradient.png" alt="" loading="lazy" /&gt;&lt;/p&gt;
+&lt;p&gt;This is basically by:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add a &lt;strong&gt;Texture &amp;gt; Gradient Texture&lt;/strong&gt; node&lt;/li&gt;
+&lt;li&gt;Add a &lt;strong&gt;Converter &amp;gt; Color Ramp&lt;/strong&gt; node between &lt;strong&gt;Gradient Texture&lt;/strong&gt; and &lt;strong&gt;Principled BSDF&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Step 2. Animate a color gradient&lt;span class="hx:absolute hx:-mt-20" id="step-2-animate-a-color-gradient"&gt;&lt;/span&gt;
+&lt;a href="#step-2-animate-a-color-gradient" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Add &lt;strong&gt;Vector &amp;gt; Mapping&lt;/strong&gt;, &lt;strong&gt;Input &amp;gt; Texture Coordinate&lt;/strong&gt;, and &lt;strong&gt;Converter &amp;gt; Separate XYZ&lt;/strong&gt; nodes&lt;/li&gt;
+&lt;li&gt;Connect inputs and outputs of each node by followings:
+&lt;ul&gt;
+&lt;li&gt;Connect &lt;strong&gt;Generated&lt;/strong&gt; of Texture Coordinate to &lt;strong&gt;Vector&lt;/strong&gt; of &lt;strong&gt;Mapping&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Connect &lt;strong&gt;Vector&lt;/strong&gt; of &lt;strong&gt;Mapping&lt;/strong&gt; to &lt;strong&gt;Vector&lt;/strong&gt; of &lt;strong&gt;Separate XYZ&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Connect &lt;strong&gt;Z&lt;/strong&gt; of &lt;strong&gt;Separate XYZ&lt;/strong&gt; to &lt;strong&gt;Fac&lt;/strong&gt; of &lt;strong&gt;Color Ramp&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;This value will be changed on the step 3, but change the Z value of the &lt;strong&gt;Mapping&lt;/strong&gt; node and insert the keyframe on a frame appropriately to animate.
+&lt;ol&gt;
+&lt;li&gt;Set the same color for the pos = 0 and pos = 1 on &lt;code&gt;Color Ramp&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Set z=1 on 100 frames, z=-1 on 101 frames, and z=1 on 200 frames&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;By following the above, the animation becomes like next.&lt;/p&gt;
+&lt;p&gt;&lt;video src="https://michael-freling.github.io/posts/2023/2023-12-16-blender-animate-a-gradient-material/videos/step2.mp4" width="100%" height="auto" controls&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;p&gt;Now it's possible to animate, but there is an issue that the animation shows the red color too long and not smooth to transition to another color.&lt;/p&gt;
+&lt;h4&gt;Step 3: Smoothly loop the gradient animation&lt;span class="hx:absolute hx:-mt-20" id="step-3-smoothly-loop-the-gradient-animation"&gt;&lt;/span&gt;
+&lt;a href="#step-3-smoothly-loop-the-gradient-animation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;To solve the issue on the step 2, update nodes like next&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add 3 &lt;strong&gt;Converter &amp;gt; Math&lt;/strong&gt; nodes and change 2 nodes from &lt;strong&gt;Add&lt;/strong&gt; to &lt;strong&gt;Truncated Modulo&lt;/strong&gt; and &lt;strong&gt;Less Than&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Update values of the nodes to followings
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Truncated Modulo&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;1st Value: the &lt;strong&gt;Z&lt;/strong&gt; of the &lt;strong&gt;Separate XYZ&lt;/strong&gt; node&lt;/li&gt;
+&lt;li&gt;2nd Value: 1.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Less Than&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;1st Value: the &lt;strong&gt;Value&lt;/strong&gt; of the &lt;strong&gt;Truncated Modulo&lt;/strong&gt; node&lt;/li&gt;
+&lt;li&gt;2nd Value: 0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Add&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;1st Value: &lt;strong&gt;Value&lt;/strong&gt; of the &lt;strong&gt;Truncated Modulo&lt;/strong&gt; node&lt;/li&gt;
+&lt;li&gt;2nd Value: &lt;strong&gt;Value&lt;/strong&gt; of the &lt;strong&gt;Less Than&lt;/strong&gt; node&lt;/li&gt;
+&lt;li&gt;Output Value: &lt;strong&gt;Fac&lt;/strong&gt; of the &lt;strong&gt;Color Ramp&lt;/strong&gt; node&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Change the Z of the &lt;strong&gt;Mapping&lt;/strong&gt; node on
+&lt;ul&gt;
+&lt;li&gt;1st frame: 0&lt;/li&gt;
+&lt;li&gt;100 frame: 5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The each Math node is described in &lt;a href="https://docs.blender.org/manual/en/latest/compositing/types/converter/math.html#properties"target="_blank" rel="noopener"&gt;this official document&lt;/a&gt;.
+I think these nodes are to convert the value of &lt;strong&gt;Z&lt;/strong&gt; of &lt;strong&gt;Mapping&lt;/strong&gt; between 0.0 to 1.0.&lt;/p&gt;
+&lt;p&gt;By following the above steps, we completed the gradient animation and made the one like the first video on the top of this post.&lt;/p&gt;
+&lt;h1&gt;Reference&lt;/h1&gt;&lt;p&gt;For Step 1, I referred to the next video.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/CIjCqR3g_Es?si=t-MfjklU456b5Y4v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;For Step 2, I referred to the next video.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ViqfL0LOwUM?si=GAv_9XIujyL7rvYu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;For Step 3, I referred to &lt;a href="https://blender.stackexchange.com/questions/129918/how-to-animate-a-gradient-moving-over-an-object"target="_blank" rel="noopener"&gt;this stackoverflow answer&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>

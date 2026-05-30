@@ -1,12 +1,972 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Notes for self made anime</title><link>https://michael-freling.github.io/docs/</link><description>Recent content in Docs on Notes for self made anime</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 24 Dec 2021 13:08:16 -0800</lastBuildDate><atom:link href="https://michael-freling.github.io/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>VRoid Studio</title><link>https://michael-freling.github.io/docs/vroid_studio/</link><pubDate>Fri, 24 Dec 2021 13:08:16 -0800</pubDate><guid>https://michael-freling.github.io/docs/vroid_studio/</guid><description>Export There are multiple options for License. In order to understand each license option, the wikipedia is most useful to understand.</description></item><item><title>Blender</title><link>https://michael-freling.github.io/docs/blender/</link><pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate><guid>https://michael-freling.github.io/docs/blender/</guid><description>Table of contents Gradient color of a text Animation examples of text Fade in: pop up each letter of a text Old contents Written in December 2021, with Blender 2.93 or 3.0.
-Modeling Basics In order to set real-world size, enable Viewport Overlays &amp;gt; Measurement &amp;gt; Edge length during &amp;quot;Edit mode&amp;quot; and show the size of meshes. See this StackExchange answer for more details. To hide a mesh in an edit mode, H: To hide the selected mesh Shift H: To hide everything but the selected mesh Alt H: To unhide everything This information is from this article.</description></item><item><title>Animation</title><link>https://michael-freling.github.io/docs/animation/</link><pubDate>Sat, 13 Mar 2021 13:38:20 +0900</pubDate><guid>https://michael-freling.github.io/docs/animation/</guid><description>General Color Skin color pallete
-Anime CGing Tutorial: Color Choice Skin color palette Color palette for skin, hair, and eyes Real Skin Tones Color Scheme Skin colors European Example 1 from Anime CGing Tutorial.
-base: #ecc4b8 shadow: #c78d7d highlight: #f8e9e6 2D animation Adobe After Effects is mainly described in this page.
-How to show that a camera moves on one image Scale in/out the image Change the position of the image How to organize assets Use pre-compose.</description></item><item><title>Basics</title><link>https://michael-freling.github.io/docs/basics/</link><pubDate>Fri, 12 Mar 2021 01:51:07 +0900</pubDate><guid>https://michael-freling.github.io/docs/basics/</guid><description>Fonts How to choose fonts See this video for details Best 10 fonts for editings See this video for details Web service to browse a lot of fonts at the same time wordmark.it Image There is a tool to remove a background from an image, https://www.remove.bg/, if you want to clip images and use them somewhere. It's better to color edges of the clipped image like by a white color to use it</description></item><item><title>Video Editing</title><link>https://michael-freling.github.io/docs/video-editing/</link><pubDate>Wed, 10 Mar 2021 14:57:41 +0900</pubDate><guid>https://michael-freling.github.io/docs/video-editing/</guid><description>This is written in March 2021.
-In this page, Adobe Premiere Pro is mostly described.
-Workflow If you make a video from multiple other videos, then
-Prepare source videos Clip some videos to make import time shorter and easy to edit ffmpeg might be helpful to do this Import them into Premiere Pro Ingest settings: Use Proxy Codec: Apple ProRes or DNxHR Edit a video Codec Format H.264 ProRes DNxHD/HR/HQ Compression rate High Low ?</description></item><item><title>Digital paintings</title><link>https://michael-freling.github.io/docs/digital-painting/</link><pubDate>Mon, 08 Mar 2021 14:12:20 +0900</pubDate><guid>https://michael-freling.github.io/docs/digital-painting/</guid><description>This page is written on July 2020.
-For anime-style digital painting, these 2 channels are really helpful for wide topics, especially if you understand Japanese.
-YouTube: さいとうなおきチャンネル YouTube: Deep Blizzard's Art School In this page, you can see some links to videos on the above 2 channels, but in their videos, Japanese is mainly spoken and no English translations is added.
-Styles There are some styles to paint colors.
-Anime painting Watercolor painting Thick painting Deep Blizzard's Art School: かんたん！初心者向け厚塗り講座【超入門講座#20】 Grisaille method Deep Blizzard's Art School: キレイに塗れる！グリザイユ画法【超入門講座#27】 How to draw human characters Basics Colors Deep Blizzard's Art School: 色使いはセンスじゃ無い！【超入門講座#04】訂正版 Shade, shadow, and lights Deep Blizzard's Art School: 影って何？光って何？【超入門講座#06】 This is video about shade and shadow Anime-style painting Differences to draw men and women How to draw a man/woman (Japanese) How to draw backs of a man/woman (Japanese) Eyes Basically, our eyes are consist of these things.</description></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes for self made anime – Docs</title><link>https://michael-freling.github.io/docs/</link><description>Recent content in Docs on Notes for self made anime</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://michael-freling.github.io/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>VRoid Studio</title><link>https://michael-freling.github.io/docs/vroid_studio/</link><pubDate>Fri, 24 Dec 2021 13:08:16 -0800</pubDate><guid>https://michael-freling.github.io/docs/vroid_studio/</guid><description>
+&lt;h1&gt;Export&lt;/h1&gt;&lt;p&gt;There are multiple options for License.
+In order to understand each license option, &lt;a href="https://en.wikipedia.org/wiki/Creative_Commons_license#Types_of_license"target="_blank" rel="noopener"&gt;the wikipedia&lt;/a&gt; is most useful to understand.&lt;/p&gt;</description></item><item><title>Blender</title><link>https://michael-freling.github.io/docs/blender/</link><pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate><guid>https://michael-freling.github.io/docs/blender/</guid><description>
+&lt;h1&gt;Table of contents&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://michael-freling.github.io/posts/2023/12/16/blender-animate-a-gradient-material/"&gt;Gradient color of a text&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Animation examples of text
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://michael-freling.github.io/posts/2023/12/17/blender-scale-text-by-each-letter/"&gt;Fade in: pop up each letter of a text&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Old contents&lt;/h1&gt;&lt;p&gt;Written in December 2021, with Blender 2.93 or 3.0.&lt;/p&gt;
+&lt;h2&gt;Modeling&lt;span class="hx:absolute hx:-mt-20" id="modeling"&gt;&lt;/span&gt;
+&lt;a href="#modeling" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Basics&lt;span class="hx:absolute hx:-mt-20" id="basics"&gt;&lt;/span&gt;
+&lt;a href="#basics" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;In order to set real-world size, enable &lt;strong&gt;Viewport Overlays &amp;gt; Measurement &amp;gt; Edge length&lt;/strong&gt; during &amp;quot;Edit mode&amp;quot; and show the size of meshes.
+See &lt;a href="https://blender.stackexchange.com/questions/164091/real-world-scale-size"target="_blank" rel="noopener"&gt;this StackExchange answer&lt;/a&gt; for more details.&lt;/li&gt;
+&lt;li&gt;To hide a mesh in an edit mode,
+&lt;ul&gt;
+&lt;li&gt;H: To hide the selected mesh&lt;/li&gt;
+&lt;li&gt;Shift H: To hide everything but the selected mesh&lt;/li&gt;
+&lt;li&gt;Alt H: To unhide everything
+This information is from &lt;a href="https://www.blenderaid.com/post/40675509859/part-of-objects-mesh-hidden-in-object-mode"target="_blank" rel="noopener"&gt;this article&lt;/a&gt;.
+This is useful to edit meshes that are complicated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Change a mesh using another mesh&lt;span class="hx:absolute hx:-mt-20" id="change-a-mesh-using-another-mesh"&gt;&lt;/span&gt;
+&lt;a href="#change-a-mesh-using-another-mesh" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;We can select faces from the shape of another object using &lt;code&gt;Knife Project&lt;/code&gt;.
+&lt;strong&gt;Note that how to use seems to be changed in some point, probably Blender 2.8.&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Select an object you want to change&lt;/li&gt;
+&lt;li&gt;Go to &amp;quot;Edit Mode&amp;quot;&lt;/li&gt;
+&lt;li&gt;Select another object to cut&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Mesh &amp;gt; Knife Project&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;The faces of the object will be selected on the object. Cut the face or extrude it as you like&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;See next video for how to use Knife project.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/rnDzzHAWEHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;Knife project cannot be used with a Link collection.&lt;/p&gt;
+&lt;h3&gt;Light&lt;span class="hx:absolute hx:-mt-20" id="light"&gt;&lt;/span&gt;
+&lt;a href="#light" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Light is an invisible object in Blender to emit lights.&lt;/p&gt;
+&lt;h4&gt;Workaround to apply modifiers&lt;span class="hx:absolute hx:-mt-20" id="workaround-to-apply-modifiers"&gt;&lt;/span&gt;
+&lt;a href="#workaround-to-apply-modifiers" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Modifiers cannot be applied to Light objects directly, like Array or Mirror.
+In order to apply them, use &lt;a href="https://docs.blender.org/manual/en/latest/scene_layout/object/properties/instancing/faces.html"target="_blank" rel="noopener"&gt;&lt;code&gt;Faces of Instancing&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create new meash like a face&lt;/li&gt;
+&lt;li&gt;Make the mesh a parent of a lamp&lt;/li&gt;
+&lt;li&gt;Select the mesh and go to &lt;strong&gt;Properties Editor &amp;gt; Object Properties &amp;gt; Instaning&lt;/strong&gt; and select Faces&lt;/li&gt;
+&lt;li&gt;Add a Modifier like Array into the mesh. Then the lamp should be created on each duplicated mesh&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can see more details in next video.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/j6zf5eQ3D5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h2&gt;Materials&lt;span class="hx:absolute hx:-mt-20" id="materials"&gt;&lt;/span&gt;
+&lt;a href="#materials" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Basics&lt;span class="hx:absolute hx:-mt-20" id="basics-1"&gt;&lt;/span&gt;
+&lt;a href="#basics-1" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;In order to assign a different material on the face of a mesh from the other faces, go to Edit Mode, select the face, and assign the material.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Use cases&lt;span class="hx:absolute hx:-mt-20" id="use-cases"&gt;&lt;/span&gt;
+&lt;a href="#use-cases" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;Make a glass material&lt;span class="hx:absolute hx:-mt-20" id="make-a-glass-material"&gt;&lt;/span&gt;
+&lt;a href="#make-a-glass-material" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;In order to make a glass material like a window, it looks we can do by setting these things.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Enable alpha-based transparency
+&lt;ul&gt;
+&lt;li&gt;Go to &lt;strong&gt;Material &amp;gt; Settings &amp;gt; Blend Mode&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Select something like &lt;strong&gt;Alpha Blend&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Use Transparent BSDF Node. This is to show objects inside a glass material in Object Mode.
+&lt;ul&gt;
+&lt;li&gt;Open &lt;strong&gt;Shading&lt;/strong&gt; workspace&lt;/li&gt;
+&lt;li&gt;In &lt;strong&gt;Shader Editor&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Add &lt;strong&gt;Transparent BSDF&lt;/strong&gt; node&lt;/li&gt;
+&lt;li&gt;Add &lt;strong&gt;Mix Shader&lt;/strong&gt; node&lt;/li&gt;
+&lt;li&gt;Connect Shader of &lt;strong&gt;Mix Shader&lt;/strong&gt; to the &lt;strong&gt;Surface&lt;/strong&gt; of Material Output&lt;/li&gt;
+&lt;li&gt;Connect two &lt;strong&gt;Shader&lt;/strong&gt; of Mix Shader to the BSDF of Transparent BSDF and Principled BSDF&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Set glass like properties. This is to change a material like a glass and also show images outside of the glass.
+&lt;ul&gt;
+&lt;li&gt;Go to &lt;strong&gt;Material &amp;gt; Surface&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Transmission&lt;/strong&gt; to 1 or close to it.&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Roughness&lt;/strong&gt; as you like&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;See following materials for more details&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.katsbits.com/codex/alpha/"target="_blank" rel="noopener"&gt;Blender Knowledgebase: Basic Alpha Transparency&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blender.stackexchange.com/questions/168179/glass-increase-transmission-roughness-as-the-object-behind-goes-far"target="_blank" rel="noopener"&gt;StackExchange: Glass: Increase &amp;quot;Transmission Roughness&amp;quot; as the object behind goes far&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.blender.org/manual/en/latest/render/shader_nodes/shader/principled.html#inputs"target="_blank" rel="noopener"&gt;Blender 3.0 Manual: Principled BSDF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Images&lt;span class="hx:absolute hx:-mt-20" id="images"&gt;&lt;/span&gt;
+&lt;a href="#images" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Troubleshootings&lt;span class="hx:absolute hx:-mt-20" id="troubleshootings"&gt;&lt;/span&gt;
+&lt;a href="#troubleshootings" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;How to find missing texture files and update them?&lt;span class="hx:absolute hx:-mt-20" id="how-to-find-missing-texture-files-and-update-them"&gt;&lt;/span&gt;
+&lt;a href="#how-to-find-missing-texture-files-and-update-them" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Go to &lt;strong&gt;File &amp;gt; External Data &amp;gt; Find missing files&lt;/strong&gt; and select a correct directory for texture files.&lt;/p&gt;
+&lt;p&gt;This solution is from &lt;a href="https://blender.stackexchange.com/questions/96587/how-to-re-link-missing-blender-files"target="_blank" rel="noopener"&gt;this answer in Stack Exchange&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;How to remove images completely from a blender file?&lt;span class="hx:absolute hx:-mt-20" id="how-to-remove-images-completely-from-a-blender-file"&gt;&lt;/span&gt;
+&lt;a href="#how-to-remove-images-completely-from-a-blender-file" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Even if you delete a material using an image file, it can still be selected on a Mateiral.
+In order to delete it completely, Go to &lt;strong&gt;Outliner Editor &amp;gt; Orphan Data Display Mode&lt;/strong&gt;.
+Then delete images you want, or click Purge to delete every data, including images.&lt;/p&gt;
+&lt;p&gt;This solution is from &lt;a href="https://blender.stackexchange.com/a/142340"target="_blank" rel="noopener"&gt;this answer in Stack Exchange&lt;/a&gt;, and there is an image in the answer.&lt;/p&gt;
+&lt;h2&gt;3D animation&lt;span class="hx:absolute hx:-mt-20" id="3d-animation"&gt;&lt;/span&gt;
+&lt;a href="#3d-animation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;During 3D animation, a 3D model keeps changing temporarily.
+There are mainly 2 ways to achieve this, using bones or shape keys.
+Bones are objects while shape keys aren't.&lt;/p&gt;
+&lt;p&gt;Basics with bones,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In order to add an object into your Timeline Editor, choose an object, right click, and click to &lt;strong&gt;_Insert Keyframe&lt;/strong&gt; and select one of them like &lt;strong&gt;Location and Rotation&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Set a parent into an object
+&lt;ol&gt;
+&lt;li&gt;Click a child object and then click a parent object&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Object &amp;gt; Parent &amp;gt; Object&lt;/strong&gt;
+Now you can see the child object under the parent object in the Outliner editor.
+You can see the details of parent objects in &lt;a href="https://docs.blender.org/manual/en/3.0/scene_layout/object/editing/parent.html?highlight=parent"target="_blank" rel="noopener"&gt;the manual&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;To animate objects based on an arbitary axis instead of the world origin,
+&lt;ul&gt;
+&lt;li&gt;the origin of an object can be updated.
+&lt;ol&gt;
+&lt;li&gt;Select an object you wanna change the axis&lt;/li&gt;
+&lt;li&gt;Go to Edit Mode&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Mesh &amp;gt; Snap &amp;gt; Cursor to Selected&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Go to Object mode&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Object &amp;gt; Set Origin &amp;gt; Origin to 3D Cursor&lt;/strong&gt;
+Now the object will move, rotate, or scale based on the 3D cursor you set.
+In order to move the 3D cursor back, &lt;strong&gt;Object &amp;gt; Snap &amp;gt; Cursor to World Origin&lt;/strong&gt;.
+This is from &lt;a href="https://blender.stackexchange.com/questions/127152/rotation-animation-isnt-fixed-on-the-pivot-point"target="_blank" rel="noopener"&gt;the answer of StackExchange&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;There is a way to update the default configuration for &lt;a href="https://www.versluis.com/2019/11/how-to-orbit-around-selections-in-blender/"target="_blank" rel="noopener"&gt;orbit around&lt;/a&gt; under &lt;strong&gt;Edit &amp;gt; Preference &amp;gt; Navigation &amp;gt; Orbit and Pan&lt;/strong&gt; and turn on Orbit Around Selection.
+But I couldn't rotate an object from another object using this configuration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Basics with shape keys&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;In order to animate a model using shape keys, go to &lt;strong&gt;Dope Sheet Editor &amp;gt; Shape Key Editor Mode&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In order to control shape keys by bones, use &lt;a href="https://docs.blender.org/manual/en/latest/animation/drivers/introduction.html"target="_blank" rel="noopener"&gt;Drivers&lt;/a&gt;. See next video for more details for how to configure. Briefly explaning,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to &lt;strong&gt;Object Data Properties &amp;gt; Shape Keys&lt;/strong&gt; and right cilck the value of a shape key.&lt;/li&gt;
+&lt;li&gt;Choose &amp;quot;Add Driver&amp;quot; to add the driver for the shape key.&lt;/li&gt;
+&lt;li&gt;Edit property like Object, Bone, Type, or Space&lt;/li&gt;
+&lt;li&gt;They can be also edited on &lt;strong&gt;Drivers Editor &amp;gt; Drivers tool menu&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/cc3uoHMo7pA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://all3dp.com/2/blender-shape-keys-simply-explained/"target="_blank" rel="noopener"&gt;this article&lt;/a&gt; for more details about shape keys.&lt;/p&gt;
+&lt;h3&gt;Rigging&lt;span class="hx:absolute hx:-mt-20" id="rigging"&gt;&lt;/span&gt;
+&lt;a href="#rigging" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;During pose mode, to reset all poses, select &lt;strong&gt;Pose &amp;gt; Clear Transform &amp;gt; All&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Action&lt;span class="hx:absolute hx:-mt-20" id="action"&gt;&lt;/span&gt;
+&lt;a href="#action" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Action is a way to reuse a specific animation of one object.
+There are two important editors to&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Dope Sheet &amp;gt; Action Editor mode&lt;/strong&gt;: To edit an action itself. It's better to start an action from 1st frame&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Nonlinear Animation&lt;/strong&gt;: To use multiple actions, animate a scene&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To understand an action, see next informative video for how to use Action.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Vuph3QHDroI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;There are a few important things to use Action&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To change the speed of an action, go to &lt;strong&gt;Strip &amp;gt; Action Clip&lt;/strong&gt; and set the &amp;quot;Playback Scale&amp;quot; value&lt;/li&gt;
+&lt;li&gt;To repeat an action multiple times, go to &lt;strong&gt;Strip &amp;gt; Action Clip&lt;/strong&gt; and set the &amp;quot;Repeat&amp;quot; value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Questions to me is&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Can an action be created for multiple objects? - It looks no.&lt;/li&gt;
+&lt;li&gt;Is there any way to combine actions of multiple objects and use them? - I cannot find it.&lt;/li&gt;
+&lt;li&gt;If one action starts from the locations of the end of another action
+&lt;ul&gt;
+&lt;li&gt;No smart way. Some people recommended to use Delta transform in &lt;a href="https://blender.stackexchange.com/questions/223194/creating-actions-based-on-local-location-rotation-scale-of-an-object"target="_blank" rel="noopener"&gt;this answer&lt;/a&gt; or &lt;a href="https://blender.stackexchange.com/questions/139234/how-to-change-an-action-starting-position"target="_blank" rel="noopener"&gt;this answer&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Camera&lt;span class="hx:absolute hx:-mt-20" id="camera"&gt;&lt;/span&gt;
+&lt;a href="#camera" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;In order to switch Active Camera during animation, makers are helpful.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In the timeline, add a marker by &lt;strong&gt;Marker &amp;gt; Add Marker&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Select a camera you want to activate&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Marker &amp;gt; Bind Camera to Markers&lt;/strong&gt; to set a camera on your animation scene&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Output&lt;span class="hx:absolute hx:-mt-20" id="output"&gt;&lt;/span&gt;
+&lt;a href="#output" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Go to &lt;strong&gt;Properties Editor &amp;gt; Output Properties &amp;gt; Output&lt;/strong&gt; and change outputs to&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;File Format&lt;/li&gt;
+&lt;li&gt;Container&lt;/li&gt;
+&lt;li&gt;Video Codec&lt;/li&gt;
+&lt;li&gt;Audio Codec&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href="https://blender.stackexchange.com/questions/15142/how-to-render-an-animation-as-video-in-blender"target="_blank" rel="noopener"&gt;this answer&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;In order to view rendering result, go to &lt;strong&gt;Image Editor&lt;/strong&gt; and see Render Result.
+Or &lt;strong&gt;Render &amp;gt; Render animation&lt;/strong&gt; to output your animation.
+If rendering result turns out pure black, then something might be wrong, like in a Composition Editor, Render Layers doesn't connect to Composite Node.&lt;/p&gt;
+&lt;p&gt;See these answers for more details.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blender.stackexchange.com/questions/53632/render-result-is-completely-blank"target="_blank" rel="noopener"&gt;Possible causes for blank output on rendering&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blender.stackexchange.com/questions/14377/render-turns-black-when-finished"target="_blank" rel="noopener"&gt;Render turns black when finished&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Multiple scenes&lt;span class="hx:absolute hx:-mt-20" id="multiple-scenes"&gt;&lt;/span&gt;
+&lt;a href="#multiple-scenes" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;On Blender, multiple scenes can be created from a menu bar.&lt;/p&gt;
+&lt;p&gt;To animate and switch the scenes,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create another Scene&lt;/li&gt;
+&lt;li&gt;Use Video Editing Layout or Video Sequencer Editor&lt;/li&gt;
+&lt;li&gt;Add each scenes on the Sequencer view&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To make a better transition on each scenes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Select multiple scenes' strips on Sequencer&lt;/li&gt;
+&lt;li&gt;Go to &lt;strong&gt;Add &amp;gt; Transition&lt;/strong&gt; and choose a Transition suits for your animation, like Cross&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;However, there is a bug at least on v3.0 to use other scenes.
+That is when there are multiple strips of the same scene but different input, camera and sequencer, it doesn't play any audio.
+&lt;a href="https://developer.blender.org/T69444"target="_blank" rel="noopener"&gt;This&lt;/a&gt; is a bug report in Blender.&lt;/p&gt;
+&lt;h2&gt;Working on multiple blender files&lt;span class="hx:absolute hx:-mt-20" id="working-on-multiple-blender-files"&gt;&lt;/span&gt;
+&lt;a href="#working-on-multiple-blender-files" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;In order to share materials from other blender files, use &lt;a href="https://docs.blender.org/manual/en/3.0/files/linked_libraries/link_append.html"target="_blank" rel="noopener"&gt;Link or Append&lt;/a&gt;.
+It's better to import Collection from an blender file instead of Objects.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Link: Creates a reference to the data. When an original file is changed, the imported data by Link is also updated
+&lt;ul&gt;
+&lt;li&gt;If objects are imported, they cannot be change the location, rotation, or scale. But if collections are imported, they can&lt;/li&gt;
+&lt;li&gt;In order to reload the new changes of a source blender file, go to &lt;strong&gt;Outliner Editor &amp;gt; Blender File Display Mode&lt;/strong&gt;, right click a link file, and select &amp;quot;Reload&amp;quot;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Append: Make a full copy of data. Unlike Link, the imported data isn't updated when an original file is updated&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See next video for how to use Link and Append.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ldHOfvE52QA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;And in order to edit bones for linked models, select the object and go to &lt;strong&gt;Object &amp;gt; Relations &amp;gt; Make Library Override&lt;/strong&gt;.
+Then the bones can be edited and the model can be animated.
+For the details of Library Overrides, see an &lt;a href="https://docs.blender.org/manual/en/latest/files/linked_libraries/library_overrides.html"target="_blank" rel="noopener"&gt;official manual&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;However, a few things cannot be edited.
+For example, it looks Materials cannot be updated directly, though for some properties of Materials like color, there is a &lt;a href="https://blender.stackexchange.com/questions/215663/override-a-material-on-a-linked-object-2-92"target="_blank" rel="noopener"&gt;workaround&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Examples&lt;span class="hx:absolute hx:-mt-20" id="examples"&gt;&lt;/span&gt;
+&lt;a href="#examples" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Door&lt;span class="hx:absolute hx:-mt-20" id="door"&gt;&lt;/span&gt;
+&lt;a href="#door" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;Modeling&lt;span class="hx:absolute hx:-mt-20" id="modeling-1"&gt;&lt;/span&gt;
+&lt;a href="#modeling-1" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;There are a few things to consider before modeling a door&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The aspect ratio: According to &lt;a href="https://interiordesignassist.wordpress.com/2019/02/25/door-proportions/"target="_blank" rel="noopener"&gt;this article&lt;/a&gt;, most of doors have either of following aspect ratios:
+&lt;ul&gt;
+&lt;li&gt;Two squares: &lt;code&gt;1:2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Golden proportion: &lt;code&gt;1:1.61&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Swing direction: A door is designed differently if it's for a right hand or left hand as well as it is opened to an inward or outward direction. See &lt;a href="https://ezhangdoor.com/how-to-determine-door-swing-direction/#:~:text=To%20determine%20the%20door%20swing%20while%20replacing%20an%20existing%20door,the%20door%20is%20left%20handed."target="_blank" rel="noopener"&gt;this article&lt;/a&gt; for each case.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5&gt;Handle&lt;span class="hx:absolute hx:-mt-20" id="handle"&gt;&lt;/span&gt;
+&lt;a href="#handle" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;I checked &lt;a href="https://www.youtube.com/watch?v=FsVtNFY_jBY"target="_blank" rel="noopener"&gt;this video&lt;/a&gt; to see how to make a model&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If you can't choose a Single Vert mesh, go to &lt;strong&gt;Edit &amp;gt; Preferences &amp;gt; Add-ons&lt;/strong&gt; and enable &amp;quot;Add Mesh: Extra Objects&amp;quot; at first&lt;/li&gt;
+&lt;li&gt;Design a handle using vertexes, so the shape will not be of cylinders.
+&lt;ol&gt;
+&lt;li&gt;Select &lt;strong&gt;Add &amp;gt; Mesh &amp;gt; Single Vert &amp;gt; Add Single Vert&lt;/strong&gt; and add the mesh&lt;/li&gt;
+&lt;li&gt;Extrude the mesh to change the shape of a handle you wanna design
+&lt;ul&gt;
+&lt;li&gt;Note that it has to be Vertex select mode, not Edge select nor Face select mode to see extrude vertexes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;From vertexes, convert them into the set of cylinders
+&lt;ol&gt;
+&lt;li&gt;Change the mode to Object mode and select &lt;strong&gt;Object &amp;gt; Convert &amp;gt; Curve&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Go to &lt;strong&gt;Properties Editor &amp;gt; Object Data Properties &amp;gt; Geometry &amp;gt; Bevel&lt;/strong&gt; and
+&lt;ol&gt;
+&lt;li&gt;Increase the Depth&lt;/li&gt;
+&lt;li&gt;Increase the Resolution&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Edit the handle as a mesh and complete modeling
+&lt;ol&gt;
+&lt;li&gt;Select the curve and then &lt;strong&gt;Object &amp;gt; Convert &amp;gt; Mesh&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I checked &lt;a href="https://www.researchgate.net/publication/336988496_BLENDER_TUTORIAL_CREATING_DOOR_HANDLE_WITH_USING_90_EXTRUDE"target="_blank" rel="noopener"&gt;this slide&lt;/a&gt; or &lt;a href="https://youtu.be/x0of3b6KGRE"target="_blank" rel="noopener"&gt;this video&lt;/a&gt;.&lt;/p&gt;
+&lt;h5&gt;Board&lt;span class="hx:absolute hx:-mt-20" id="board"&gt;&lt;/span&gt;
+&lt;a href="#board" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;See &lt;a href="https://thilakanathanstudios.com/2014/10/beginner-tutorial-how-to-create-and-setup-a-door-for-animation-in-blender/"target="_blank" rel="noopener"&gt;this article&lt;/a&gt; for each step.&lt;/p&gt;
+&lt;h5&gt;Animation&lt;span class="hx:absolute hx:-mt-20" id="animation"&gt;&lt;/span&gt;
+&lt;a href="#animation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;Parent objects are important to rotate&lt;/li&gt;
+&lt;li&gt;The handle must be a child of the main board&lt;/li&gt;
+&lt;li&gt;The mainboard should rotate around one of the edge. There should be an object for the edge so that it can be rotated around it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Character&lt;span class="hx:absolute hx:-mt-20" id="character"&gt;&lt;/span&gt;
+&lt;a href="#character" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;Lip sync&lt;span class="hx:absolute hx:-mt-20" id="lip-sync"&gt;&lt;/span&gt;
+&lt;a href="#lip-sync" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;There are multiple addons for Lip sync.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[Blender Market: Syncnix: Blender Lip Sync Action](&lt;a href="https://blendermarket.com/products/syncnix"target="_blank" rel="noopener"&gt;https://blendermarket.com/products/syncnix&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;$5 to buy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/scaredyfish/blender-rhubarb-lipsync"target="_blank" rel="noopener"&gt;GitHub: Blender Rhubarb Lip Sync&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Requires software Rhubarb&lt;/li&gt;
+&lt;li&gt;Requires 9 mouth positions in a pose library&lt;/li&gt;
+&lt;li&gt;Uses a sound file and an optional script file for an animation. It's recommended to use a script file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/iCEE-HAM/io_import_lipSync-blender2.8"target="_blank" rel="noopener"&gt;GitHub: io_import_lipSync-blender2.8&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Requires software Papagayo-NG&lt;/li&gt;
+&lt;li&gt;Requires mouth positions in a pose library, and there are rules for the names of each pose and the pose library&lt;/li&gt;
+&lt;li&gt;Use Papagayo to generate a dat file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I used Rhubarb Lip Sync addon because it's free and also it's easier to use than Papagayo.&lt;/p&gt;
+&lt;h5&gt;Rhubarb Lip Sync&lt;span class="hx:absolute hx:-mt-20" id="rhubarb-lip-sync"&gt;&lt;/span&gt;
+&lt;a href="#rhubarb-lip-sync" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h5&gt;&lt;p&gt;This addon requires a pose library &lt;a href="https://github.com/scaredyfish/blender-rhubarb-lipsync/issues/28"target="_blank" rel="noopener"&gt;as of January 2022&lt;/a&gt;.
+In order to animate a model by shape keys, drivers of shape keys with bones have to be set.
+See next video for how to.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/vZVtUEEssxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h6&gt;Troubleshootings&lt;span class="hx:absolute hx:-mt-20" id="troubleshootings-1"&gt;&lt;/span&gt;
+&lt;a href="#troubleshootings-1" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h6&gt;&lt;p&gt;If you face an issue and couldn't see any messages on the Blender, a blender should start from CLI like Windows Powershell in order to figure out what happens.&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;PS C:\path&amp;gt; blender.exe&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+aria-label="Copy code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;####### The file format isn't supported&lt;/p&gt;
+&lt;p&gt;The audio file format must be either of a wav or ogg.&lt;/p&gt;
+&lt;p&gt;If you start a Blender from Powershell and try to read an audio file other than the above two formats, you can see an error message like next.&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;{ &amp;#34;type&amp;#34;: &amp;#34;start&amp;#34;, &amp;#34;file&amp;#34;: &amp;#34;C:\\path\\to\\Recording.m4a&amp;#34;, &amp;#34;log&amp;#34;: { &amp;#34;level&amp;#34;: &amp;#34;Info&amp;#34;, &amp;#34;message&amp;#34;: &amp;#34;Application startup. Input file: C:\\path\\to\\Recording.m4a.&amp;#34; } }
+{ &amp;#34;type&amp;#34;: &amp;#34;failure&amp;#34;, &amp;#34;reason&amp;#34;: &amp;#34;Error processing file C:\\path\\to\\Recording.m4a.\nCould not open sound file C:\\path\\to\\Recording.m4a.\nUnsupported file extension &amp;#39;.m4a&amp;#39;. Supported extensions are &amp;#39;.wav&amp;#39; and &amp;#39;.ogg&amp;#39;.&amp;#34;, &amp;#34;log&amp;#34;: { &amp;#34;level&amp;#34;: &amp;#34;Fatal&amp;#34;, &amp;#34;message&amp;#34;: &amp;#34;Application terminating with error: Error processing file C:\\path\\to\\Recording.m4a.\nCould not open sound file C:\\path\\to\\Recording.m4a.\nUnsupported file extension &amp;#39;.m4a&amp;#39;. Supported extensions are &amp;#39;.wav&amp;#39; and &amp;#39;.ogg&amp;#39;.&amp;#34; } }
+Error!!!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+aria-label="Copy code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;####### File sampling rate is too low&lt;/p&gt;
+&lt;p&gt;The sampling rate of an audio file format must be equal to 16K Hz or more.&lt;/p&gt;
+&lt;p&gt;Otherwise, you'll see an error message on Powershell like next.&lt;/p&gt;
+&lt;div class="hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code"&gt;
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;{ &amp;#34;type&amp;#34;: &amp;#34;start&amp;#34;, &amp;#34;file&amp;#34;: &amp;#34;C:\\path\\to\\Recording.wav&amp;#34;, &amp;#34;log&amp;#34;: { &amp;#34;level&amp;#34;: &amp;#34;Info&amp;#34;, &amp;#34;message&amp;#34;: &amp;#34;Application startup. Input file: C:\\path\\to\\Recording.wav.&amp;#34; } }
+{ &amp;#34;type&amp;#34;: &amp;#34;progress&amp;#34;, &amp;#34;value&amp;#34;: 0.00, &amp;#34;log&amp;#34;: { &amp;#34;level&amp;#34;: &amp;#34;Trace&amp;#34;, &amp;#34;message&amp;#34;: &amp;#34;Progress: 0%&amp;#34; } }
+{ &amp;#34;type&amp;#34;: &amp;#34;progress&amp;#34;, &amp;#34;value&amp;#34;: 0.01, &amp;#34;log&amp;#34;: { &amp;#34;level&amp;#34;: &amp;#34;Trace&amp;#34;, &amp;#34;message&amp;#34;: &amp;#34;Progress: 1%&amp;#34; } }
+{ &amp;#34;type&amp;#34;: &amp;#34;progress&amp;#34;, &amp;#34;value&amp;#34;: 0.02, &amp;#34;log&amp;#34;: { &amp;#34;level&amp;#34;: &amp;#34;Trace&amp;#34;, &amp;#34;message&amp;#34;: &amp;#34;Progress: 2%&amp;#34; } }
+{ &amp;#34;type&amp;#34;: &amp;#34;progress&amp;#34;, &amp;#34;value&amp;#34;: 0.03, &amp;#34;log&amp;#34;: { &amp;#34;level&amp;#34;: &amp;#34;Trace&amp;#34;, &amp;#34;message&amp;#34;: &amp;#34;Progress: 3%&amp;#34; } }
+{ &amp;#34;type&amp;#34;: &amp;#34;progress&amp;#34;, &amp;#34;value&amp;#34;: 0.04, &amp;#34;log&amp;#34;: { &amp;#34;level&amp;#34;: &amp;#34;Trace&amp;#34;, &amp;#34;message&amp;#34;: &amp;#34;Progress: 4%&amp;#34; } }
+{ &amp;#34;type&amp;#34;: &amp;#34;progress&amp;#34;, &amp;#34;value&amp;#34;: 0.05, &amp;#34;log&amp;#34;: { &amp;#34;level&amp;#34;: &amp;#34;Trace&amp;#34;, &amp;#34;message&amp;#34;: &amp;#34;Progress: 5%&amp;#34; } }
+{ &amp;#34;type&amp;#34;: &amp;#34;progress&amp;#34;, &amp;#34;value&amp;#34;: 0.06, &amp;#34;log&amp;#34;: { &amp;#34;level&amp;#34;: &amp;#34;Trace&amp;#34;, &amp;#34;message&amp;#34;: &amp;#34;Progress: 6%&amp;#34; } }
+{ &amp;#34;type&amp;#34;: &amp;#34;failure&amp;#34;, &amp;#34;reason&amp;#34;: &amp;#34;Error processing file C:\\path\\to\\Recording.wav.\nError performing speech recognition via PocketSphinx tools.\nUpsampling not supported. Input sample rate must not be below 16000Hz.&amp;#34;, &amp;#34;log&amp;#34;: { &amp;#34;level&amp;#34;: &amp;#34;Fatal&amp;#34;, &amp;#34;message&amp;#34;: &amp;#34;Application terminating with error: Error processing file C:\\path\\to\\Recording.wav.\nError performing speech recognition via PocketSphinx tools.\nUpsampling not supported. Input sample rate must not be below 16000Hz.&amp;#34; } }
+Error!!!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0"&gt;
+&lt;button
+class="hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50"
+title="Copy code"
+aria-label="Copy code"
+data-copied-label="Copied!"
+&gt;
+&lt;div class="hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;div class="hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4"&gt;&lt;/div&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Particle animation&lt;span class="hx:absolute hx:-mt-20" id="particle-animation"&gt;&lt;/span&gt;
+&lt;a href="#particle-animation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The next video was helpful to see how to set a particle animation.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/2bv973aqx-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;In order to do a similar thing&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add a &amp;quot;Particle System&amp;quot; into a Modifier of an object&lt;/li&gt;
+&lt;li&gt;Change these parameters in &lt;strong&gt;Properties Editor &amp;gt; Particle Properties&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;To stop particles falling down, set &lt;strong&gt;Field Weights &amp;gt; Gravitiy&lt;/strong&gt; to 0&lt;/li&gt;
+&lt;li&gt;To increase the number of particles, set &lt;strong&gt;Emission &amp;gt; Number&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;To change the mesh of eacah particle, set &lt;strong&gt;Render &amp;gt; Render As&lt;/strong&gt; from Halo to others like Object&lt;/li&gt;
+&lt;li&gt;To change the the size of each article, set &lt;strong&gt;Render &amp;gt; Scale&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;To change how each particle moves, add one of Force Field mesh, like Turbulence&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Use other tools or services&lt;span class="hx:absolute hx:-mt-20" id="use-other-tools-or-services"&gt;&lt;/span&gt;
+&lt;a href="#use-other-tools-or-services" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;&lt;a href="https://www.mixamo.com/#/"target="_blank" rel="noopener"&gt;Mixamo&lt;/a&gt;&lt;span class="hx:absolute hx:-mt-20" id="mixamo"&gt;&lt;/span&gt;
+&lt;a href="#mixamo" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Mixamo hosts character animaitons and they can be downloaded used.
+Their animations can be downloaded like a fbx file format and they can be imported into Blender.
+There is also an addon for &lt;a href="https://substance3d.adobe.com/plugins/mixamo-in-blender/"target="_blank" rel="noopener"&gt;Blender&lt;/a&gt; to reuse animations with the same model easily.
+See next video for more details for how to use this addon.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/yDc-E-o_I-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h3&gt;&lt;a href="https://vroid.com/en/studio"target="_blank" rel="noopener"&gt;VRoid Studio&lt;/a&gt;&lt;span class="hx:absolute hx:-mt-20" id="vroid-studio"&gt;&lt;/span&gt;
+&lt;a href="#vroid-studio" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;VRoid Studio is a tool to make 3D character very easily.&lt;/p&gt;
+&lt;p&gt;In order to import the &lt;code&gt;.vrm&lt;/code&gt; file exported from VRoid Studio, Use &lt;a href="https://github.com/saturday06/VRM_Addon_for_Blender"target="_blank" rel="noopener"&gt;VRM Addon for Blender&lt;/a&gt; addon.
+After importing, it can also validate a model or add rigs automatically.&lt;/p&gt;
+&lt;p&gt;Once it's imported, there are some data in the model&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Facial expressions: Face mesh has shape keys for facial expressions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;With Mixamo&lt;span class="hx:absolute hx:-mt-20" id="with-mixamo"&gt;&lt;/span&gt;
+&lt;a href="#with-mixamo" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;I failed to apply Mixamo animation to a VRoid model.
+These are issues I faced&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Import a VRoid model to Mixamo
+&lt;ul&gt;
+&lt;li&gt;Failed to import the model with a fbx file, but sometimes, it succeeds for some reasons
+&lt;ul&gt;
+&lt;li&gt;Exporting a fbx file with &amp;quot;Apply Transform&amp;quot; didn't help&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Failed to import the model after exporting a fbx file with &amp;quot;Copy Path&amp;quot; Mode and &amp;quot;Embed Textures&amp;quot;, to export materials&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Import a Mixamo animation into Blender
+&lt;ul&gt;
+&lt;li&gt;Failed to apply animation to the original Armature from imported Mixamo animation. Some animations succeeded for some reasons, though
+&lt;ul&gt;
+&lt;li&gt;Importing a fbx file with &amp;quot;Apply Transform&amp;quot; or &amp;quot;Manual Operation&amp;quot; didn't help&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other addons&lt;span class="hx:absolute hx:-mt-20" id="other-addons"&gt;&lt;/span&gt;
+&lt;a href="#other-addons" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;There are many free addons for Blender.
+For example, the next video explains 15 free addons.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Ggrict0I_M8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blender-addons.org/text-fx-addon/"target="_blank" rel="noopener"&gt;Text FX addon by Monaime&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Animate a text easily&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://mb-lab-community.github.io/MB-Lab.github.io/"target="_blank" rel="noopener"&gt;MB-Lab&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Model a human character&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ranjian0/building_tools"target="_blank" rel="noopener"&gt;Building Tools&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Model an architecture easily&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://andreasaust.gumroad.com/l/drop_it"target="_blank" rel="noopener"&gt;Drop it&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Drop an object to a surface&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Paid&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blender-archipack.org/"target="_blank" rel="noopener"&gt;Blender-Archipack&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Build an architecture like a door easily&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blendermarket.com/products/neoner"target="_blank" rel="noopener"&gt;Neoner&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Make a neon light effect&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Free materials&lt;span class="hx:absolute hx:-mt-20" id="free-materials"&gt;&lt;/span&gt;
+&lt;a href="#free-materials" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;3D Models&lt;span class="hx:absolute hx:-mt-20" id="3d-models"&gt;&lt;/span&gt;
+&lt;a href="#3d-models" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;In each model, it usually has a license so if you plan to use it for non-personal use, you need to check the license and whether it can be used or not.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.cgtrader.com/"target="_blank" rel="noopener"&gt;cgtrader&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://free3d.com/"target="_blank" rel="noopener"&gt;Free 3D&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://sketchfab.com/feed"target="_blank" rel="noopener"&gt;Sketchfab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.turbosquid.com/"target="_blank" rel="noopener"&gt;TURBOSQUID&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Note to import 3D models&lt;span class="hx:absolute hx:-mt-20" id="note-to-import-3d-models"&gt;&lt;/span&gt;
+&lt;a href="#note-to-import-3d-models" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;Make sure that 3D models can be imported into Blender. Some models are exported from other modeling tools and cannot be imported into Blender.&lt;/li&gt;
+&lt;li&gt;Make sure that the textures are imported correctly. Many of 3D models use textures and they are distributed in a different file sometimes.
+We need to download them and map textures with those files correctly on Blender.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Animation&lt;span class="hx:absolute hx:-mt-20" id="animation-1"&gt;&lt;/span&gt;
+&lt;a href="#animation-1" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mixamo.com/#/"target="_blank" rel="noopener"&gt;Mixamo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Learning web site&lt;span class="hx:absolute hx:-mt-20" id="learning-web-site"&gt;&lt;/span&gt;
+&lt;a href="#learning-web-site" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.linkedin.com/learning/blender-2-8-essential-training-2/introducing-blender-2-8-for-beginners?autoplay=true"target="_blank" rel="noopener"&gt;LinkedIn Learning: Introducing Blender 2.8 for beginners&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Animation</title><link>https://michael-freling.github.io/docs/animation/</link><pubDate>Sat, 13 Mar 2021 13:38:20 +0900</pubDate><guid>https://michael-freling.github.io/docs/animation/</guid><description>
+&lt;h1&gt;General&lt;/h1&gt;&lt;h2&gt;Color&lt;span class="hx:absolute hx:-mt-20" id="color"&gt;&lt;/span&gt;
+&lt;a href="#color" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Skin color pallete&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.jaredandlindsay.com/tutorialcdsample/html/chapter4-color1.html"target="_blank" rel="noopener"&gt;Anime CGing Tutorial: Color Choice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.pinterest.com/pin/187321665735895021/"target="_blank" rel="noopener"&gt;Skin color palette&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.deviantart.com/moon-apprentice/art/Human-Color-Palette-Remastered-607066343"target="_blank" rel="noopener"&gt;Color palette for skin, hair, and eyes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.schemecolor.com/real-skin-tones-color-palette.php"target="_blank" rel="noopener"&gt;Real Skin Tones Color Scheme&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Skin colors&lt;span class="hx:absolute hx:-mt-20" id="skin-colors"&gt;&lt;/span&gt;
+&lt;a href="#skin-colors" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;European&lt;span class="hx:absolute hx:-mt-20" id="european"&gt;&lt;/span&gt;
+&lt;a href="#european" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Example 1 from Anime CGing Tutorial.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;base: &lt;span style="color: #ecc4b8"&gt;#ecc4b8&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;shadow: &lt;span style="color: #c78d7d"&gt;#c78d7d&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;highlight: &lt;span style="color: #f8e9e6"&gt;#f8e9e6&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;2D animation&lt;/h1&gt;&lt;p&gt;&lt;a href="https://www.adobe.com/products/aftereffects.html"target="_blank" rel="noopener"&gt;Adobe After Effects&lt;/a&gt; is mainly described in this page.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How to show that a camera moves on one image
+&lt;ul&gt;
+&lt;li&gt;Scale in/out the image&lt;/li&gt;
+&lt;li&gt;Change the position of the image&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;How to organize assets
+&lt;ul&gt;
+&lt;li&gt;Use pre-compose. See &lt;a href="https://www.youtube.com/watch?v=xLcSAfNAAzw"target="_blank" rel="noopener"&gt;this video&lt;/a&gt; for more details.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Other resources&lt;span class="hx:absolute hx:-mt-20" id="other-resources"&gt;&lt;/span&gt;
+&lt;a href="#other-resources" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;&lt;a href="https://blog.motionisland.com/after-effects-presets-text-animation/#.YMTshPkza0p"target="_blank" rel="noopener"&gt;MotionIsland: After Effects Text Animation Presets Preview Gallery&lt;/a&gt;&lt;span class="hx:absolute hx:-mt-20" id="motionisland-after-effects-text-animation-presets-preview-gallery"&gt;&lt;/span&gt;
+&lt;a href="#motionisland-after-effects-text-animation-presets-preview-gallery" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;We can see a lot of previews of the presets of text animation in this one page simultaneously.
+It's really helpful to check how each text preset animates.&lt;/p&gt;
+&lt;h1&gt;3D animation&lt;/h1&gt;&lt;h2&gt;Character modeling&lt;span class="hx:absolute hx:-mt-20" id="character-modeling"&gt;&lt;/span&gt;
+&lt;a href="#character-modeling" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://vroid.com/en/studio"target="_blank" rel="noopener"&gt;VRoid Studio&lt;/a&gt; is the tool to create a 3D data of the avator very easily.
+&lt;ul&gt;
+&lt;li&gt;There are some free models in &lt;a href="https://hub.vroid.com/en/"target="_blank" rel="noopener"&gt;VRoid Hub&lt;/a&gt;, but they cannot be imported into VRoid Studio.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Reference&lt;span class="hx:absolute hx:-mt-20" id="reference"&gt;&lt;/span&gt;
+&lt;a href="#reference" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://vrm.dev/en/vrm_applications/"target="_blank" rel="noopener"&gt;VRM: VRM applications&lt;/a&gt;
+There are a list of applications that can use a .vrm file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Motion Capture&lt;span class="hx:absolute hx:-mt-20" id="motion-capture"&gt;&lt;/span&gt;
+&lt;a href="#motion-capture" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Deepmotion&lt;span class="hx:absolute hx:-mt-20" id="deepmotion"&gt;&lt;/span&gt;
+&lt;a href="#deepmotion" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.deepmotion.com/"target="_blank" rel="noopener"&gt;Deepmotion&lt;/a&gt; can change a video file into a motion capture data (bvh).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Sound effects&lt;span class="hx:absolute hx:-mt-20" id="sound-effects"&gt;&lt;/span&gt;
+&lt;a href="#sound-effects" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;There are some web sites to download sound effects freely.
+Some of them may be under licenses like &lt;a href="https://creativecommons.org/licenses/"target="_blank" rel="noopener"&gt;Creative Commons&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://freesound.org/"target="_blank" rel="noopener"&gt;freesound&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://mixkit.co/free-sound-effects/"target="_blank" rel="noopener"&gt;mixkit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pixabay.com/sound-effects/"target="_blank" rel="noopener"&gt;pixaboy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Text to Speech&lt;span class="hx:absolute hx:-mt-20" id="text-to-speech"&gt;&lt;/span&gt;
+&lt;a href="#text-to-speech" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Web services&lt;span class="hx:absolute hx:-mt-20" id="web-services"&gt;&lt;/span&gt;
+&lt;a href="#web-services" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Free&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://voicemaker.in/"target="_blank" rel="noopener"&gt;https://voicemaker.in/&lt;/a&gt;: 200 characters at most. There are some features like emphathize something or pitch.
+&lt;ul&gt;
+&lt;li&gt;Are voices from Amazon Polly?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ttsmp3.com/"target="_blank" rel="noopener"&gt;TTSMP3&lt;/a&gt;: 3,000 characters limit
+&lt;ul&gt;
+&lt;li&gt;Are voices from Amazon Polly?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.naturalreaders.com/index.html"target="_blank" rel="noopener"&gt;NaturalReader&lt;/a&gt;: For public use, it's not free&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://fromtexttospeech.com/"target="_blank" rel="noopener"&gt;fromtexttospeech&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.textfromtospeech.com/en/text-to-voice/"target="_blank" rel="noopener"&gt;textfromtospeech&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;It looks like it uses Windows text-to-speech for voices&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Paid&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://www.lovo.ai/"target="_blank" rel="noopener"&gt;LOVO&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://play.ht/pricing/"target="_blank" rel="noopener"&gt;Play.ht&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;There are types of Voices like Chat or Cheer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/polly/"target="_blank" rel="noopener"&gt;Amazon Polly&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;$4 per 1 million characterrs. Are voices from Amazon Polly's Standard?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Others&lt;span class="hx:absolute hx:-mt-20" id="others"&gt;&lt;/span&gt;
+&lt;a href="#others" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Windows has Text to Speech feature.
+See &lt;a href="https://support.microsoft.com/en-us/topic/how-to-download-text-to-speech-languages-for-windows-10-d5a6b612-b3ae-423f-afa5-4f6caf1ec5d3"target="_blank" rel="noopener"&gt;this support page&lt;/a&gt; of Microsoft for more details.&lt;/p&gt;
+&lt;h2&gt;Voice changer&lt;span class="hx:absolute hx:-mt-20" id="voice-changer"&gt;&lt;/span&gt;
+&lt;a href="#voice-changer" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Voice changers might be helpful to change voices and record voices for animations.&lt;/p&gt;
+&lt;p&gt;The software that can change both of pitch and formant is better to change a human's voice than others.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://koigoemoe.g2.xrea.com/koigoe/koigoe.html"target="_blank" rel="noopener"&gt;Koigoe&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Pitch and formant can be changed manually&lt;/li&gt;
+&lt;li&gt;Japanese language has to be installed in Windows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.kvraudio.com/product/rovee-by-g200kg"target="_blank" rel="noopener"&gt;Rovee&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;This is a VST plugin and this may need to use a VST Host application. I couldn't use some applications for this plugin probably because this plugin is old.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://booth.pm/en/items/1236505"target="_blank" rel="noopener"&gt;Gachikoe! Core&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://booth.pm/en/items/3432497"target="_blank" rel="noopener"&gt;バ美声&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are some articles to introduce the above voice changers. For example,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://eirifu.wordpress.com/2020/05/13/how-to-use-voice-changer-software-effectively/"target="_blank" rel="noopener"&gt;How to use Voice Changer software effectively&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.moguravr.com/voice-changer-selection/"target="_blank" rel="noopener"&gt;(Japanese) [2021 latest version] Must-see for those who want to &amp;quot;Babiniku&amp;quot;! 9 free and paid standard voice changers&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;It requires to translate the article to read in English&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are tons of other voice changers, too.
+But it was hard to change a voice because most of them supports only changing a pitch and not formant, and a voice becomes just like a robot.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://clownfish-translator.com/voicechanger/"target="_blank" rel="noopener"&gt;Clownfish Voice Changer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.auburnsounds.com/products/Graillon.html"target="_blank" rel="noopener"&gt;Graillon 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://screamingbee.com/morphvox-voice-changer"target="_blank" rel="noopener"&gt;MORPHVOX Pro&lt;/a&gt;: I haven't tried this&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://store.steampowered.com/app/1364390/Animaze_by_FaceRig/"target="_blank" rel="noopener"&gt;Animaze&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://voxal-voice-changer.en.uptodown.com/windows"target="_blank" rel="noopener"&gt;Voxal&lt;/a&gt;:&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.voicemod.net/"target="_blank" rel="noopener"&gt;Voicemod&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are some articles or videos to introduce some voice changers, for example,&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/z1Rf9ovAqn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;For VST plugins, there are other plugins so that we can use to get some effects, like a noise reduction.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://midination.com/vst/free-vst-plugins/free-noise-gate-vst-plugins/"target="_blank" rel="noopener"&gt;Article about a few noise reduction plugins&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Basics</title><link>https://michael-freling.github.io/docs/basics/</link><pubDate>Fri, 12 Mar 2021 01:51:07 +0900</pubDate><guid>https://michael-freling.github.io/docs/basics/</guid><description>
+&lt;h1&gt;Fonts&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;How to choose fonts
+&lt;ul&gt;
+&lt;li&gt;See &lt;a href="https://www.youtube.com/watch?v=obZX8oIjia4"target="_blank" rel="noopener"&gt;this video&lt;/a&gt; for details&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Best 10 fonts for editings
+&lt;ul&gt;
+&lt;li&gt;See &lt;a href="https://www.youtube.com/watch?v=GThNfGkp1Dw"target="_blank" rel="noopener"&gt;this video&lt;/a&gt; for details&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Web service to browse a lot of fonts at the same time
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://wordmark.it/"target="_blank" rel="noopener"&gt;wordmark.it&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Image&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;There is a tool to remove a background from an image, &lt;a href="https://www.remove.bg/"target="_blank" rel="noopener"&gt;https://www.remove.bg/&lt;/a&gt;, if you want to clip images and use them somewhere.
+&lt;ul&gt;
+&lt;li&gt;It's better to color edges of the clipped image like by a white color to use it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Video Editing</title><link>https://michael-freling.github.io/docs/video-editing/</link><pubDate>Wed, 10 Mar 2021 14:57:41 +0900</pubDate><guid>https://michael-freling.github.io/docs/video-editing/</guid><description>
+&lt;p&gt;This is written in March 2021.&lt;/p&gt;
+&lt;p&gt;In this page, Adobe Premiere Pro is mostly described.&lt;/p&gt;
+&lt;h1&gt;Workflow&lt;/h1&gt;&lt;p&gt;If you make a video from multiple other videos, then&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Prepare source videos&lt;/li&gt;
+&lt;li&gt;Clip some videos to make import time shorter and easy to edit
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ffmpeg&lt;/code&gt; might be helpful to do this&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Import them into Premiere Pro
+&lt;ul&gt;
+&lt;li&gt;Ingest settings: Use Proxy&lt;/li&gt;
+&lt;li&gt;Codec: Apple ProRes or DNxHR&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Edit a video&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;Codec&lt;/h1&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Format&lt;/th&gt;
+&lt;th&gt;H.264&lt;/th&gt;
+&lt;th&gt;ProRes&lt;/th&gt;
+&lt;th&gt;DNxHD/HR/HQ&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Compression rate&lt;/td&gt;
+&lt;td&gt;High&lt;/td&gt;
+&lt;td&gt;Low&lt;/td&gt;
+&lt;td&gt;?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Editing&lt;/td&gt;
+&lt;td&gt;Not good&lt;/td&gt;
+&lt;td&gt;Good&lt;/td&gt;
+&lt;td&gt;?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Image&lt;/td&gt;
+&lt;td&gt;8bit&lt;/td&gt;
+&lt;td&gt;10bit&lt;/td&gt;
+&lt;td&gt;8bit?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Audio&lt;/td&gt;
+&lt;td&gt;?&lt;/td&gt;
+&lt;td&gt;Uncompressed&lt;/td&gt;
+&lt;td&gt;?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Platform&lt;/td&gt;
+&lt;td&gt;?&lt;/td&gt;
+&lt;td&gt;Windows may not support&lt;/td&gt;
+&lt;td&gt;Cross platform&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;DNxHQ: Standard codec as of 2018&lt;/li&gt;
+&lt;li&gt;10 bit codec has more color and shade options than 8 bit codec&lt;/li&gt;
+&lt;li&gt;If a compression rate is higher, it is inefficient for video editing because it requires decompression during video editing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Import media&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;How to import &lt;code&gt;.webm&lt;/code&gt; file?
+&lt;ul&gt;
+&lt;li&gt;Install a &lt;a href="https://www.easefab.com/video-to-software/webm-to-adobe-premiere.html"target="_blank" rel="noopener"&gt;plugin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Which one is better to ingest, transcoding or using proxies?
+&lt;ul&gt;
+&lt;li&gt;I do not know so far.&lt;/li&gt;
+&lt;li&gt;Both of transcoding and proxies needs to encode a media and it takes long time if it's a big file. If media is 2GB, you may have to wait a couple of hours to finish it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Export media&lt;/h1&gt;&lt;p&gt;See &lt;a href="https://www.youtube.com/watch?v=AT8sU0MyncA&amp;amp;t=268s"target="_blank" rel="noopener"&gt;this video&lt;/a&gt; for more details about how to export videos faster in Premiere Pro.
+Here is a few tips from the video.
+For a complete tips, please watch the video.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Format and codec of a sequence
+&lt;ul&gt;
+&lt;li&gt;Choose lightweight but high quality format and codec. For instance,
+&lt;ul&gt;
+&lt;li&gt;Preview File Format: QuickTime&lt;/li&gt;
+&lt;li&gt;Codec: DNxHR/DNxHD or ProRes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Pre-render by hitting a return or enter key&lt;/li&gt;
+&lt;li&gt;Enable &amp;quot;Use Previews&amp;quot; when you export your video&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;About Bitrate ecoding settings under Video tab
+&lt;ul&gt;
+&lt;li&gt;Choose CBR (constant bitrates) and lower Target Bitrates for faster exporting
+&lt;ul&gt;
+&lt;li&gt;For example, to upload YouTube, YouTube recommendation for a HD video is 8Mbps bitrates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;Audio editing&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=2b23XoAlExs"target="_blank" rel="noopener"&gt;How to speed up or down audio without changing pitch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Troubleshootings for Adobe Premiere Pro&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;How to fix spikes seen on captions when a font size is big.
+&lt;ul&gt;
+&lt;li&gt;It seems there is no configuration to solve it on captions.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://community.adobe.com/t5/premiere-pro/spikes-on-captions/td-p/9997652?page=1"target="_blank" rel="noopener"&gt;Adobe Support Community&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.reddit.com/r/premiere/comments/gkua0c/help_spike_in_edge_caption/"target="_blank" rel="noopener"&gt;Reddit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Workaround is to use a drop shadowing effect. See &lt;a href="https://www.youtube.com/watch?v=CwTfcJisJw0"target="_blank" rel="noopener"&gt;this video&lt;/a&gt; for the tutorial of it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;How to show two videos side by side?
+&lt;ul&gt;
+&lt;li&gt;Set scale to 50 for both of two videos and change the positions of them&lt;/li&gt;
+&lt;li&gt;See &lt;a href="https://www.quora.com/How-do-I-make-videos-side-by-side-both-playing-at-the-same-time-in-Premiere-Pro-or-After-Effects"target="_blank" rel="noopener"&gt;this answer on Quora&lt;/a&gt; for more details.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;Other tools&lt;/h1&gt;&lt;h2&gt;ffmpeg&lt;span class="hx:absolute hx:-mt-20" id="ffmpeg"&gt;&lt;/span&gt;
+&lt;a href="#ffmpeg" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;ffmpeg is a useful command line tool to encode, trim, or do other things for video files.
+The example of trimming and copy a video without encoding is something like this &lt;code&gt;ffmpeg -i input.mp4 -ss HH:MM:SS -to HH:MM:SS -c copy output.mp4&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Here is brief explanation of each option:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Encoding: &lt;code&gt;-c&lt;/code&gt; option
+&lt;ul&gt;
+&lt;li&gt;See &lt;a href="https://macilatthefront.blogspot.com/2018/12/tutorial-using-ffmpeg-for-dnxhddnxhr.html"target="_blank" rel="noopener"&gt;Tutorial - Using FFMPEG for DNxHD/DNxHR encoding, resizing, and batch encoding&lt;/a&gt; for more details&lt;/li&gt;
+&lt;li&gt;Instead of &lt;code&gt;-c&lt;/code&gt;, &lt;code&gt;-c:a&lt;/code&gt; for audio and &lt;code&gt;-c:v&lt;/code&gt; for video can be used&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Trimming: &lt;code&gt;-ss&lt;/code&gt; and &lt;code&gt;-to&lt;/code&gt; options
+&lt;ul&gt;
+&lt;li&gt;See &lt;a href="https://www.arj.no/2018/05/18/trimvideo/"target="_blank" rel="noopener"&gt;Trim video files using FFmpeg&lt;/a&gt; or &lt;a href="https://stackoverflow.com/questions/18444194/cutting-the-videos-based-on-start-and-end-time-using-ffmpeg"target="_blank" rel="noopener"&gt;Cutting the videos based on start and end time using ffmpeg&lt;/a&gt; for more details.&lt;/li&gt;
+&lt;li&gt;When trimmings, there might be a black screen without showing anything on the beginning or end of the videos. It can be avoided by &lt;code&gt;-allow_negative_rs make_zero&lt;/code&gt;.
+&lt;ul&gt;
+&lt;li&gt;See &lt;a href="https://varhowto.com/cut-videos-ffmpeg/#How_to_avoid_the_black_screen_at_the_beginning"target="_blank" rel="noopener"&gt;How to avoid the black screen at the beginning?&lt;/a&gt; for more details&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Also, there is an other way to use ffmpeg.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Check a resolution of video: &lt;code&gt;ffmpeg -i [file]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Spleeter&lt;span class="hx:absolute hx:-mt-20" id="spleeter"&gt;&lt;/span&gt;
+&lt;a href="#spleeter" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Spleeter is a tool to extract audios from a video.
+See &lt;a href="https://github.com/deezer/spleeter"target="_blank" rel="noopener"&gt;its GitHub page&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;It doesn't require an off-vocal video to recognize an audio inside a video.&lt;/p&gt;
+&lt;h2&gt;Utagoe Vocal Ripper (歌声りっぷ)&lt;span class="hx:absolute hx:-mt-20" id="utagoe-vocal-ripper-歌声りっぷ"&gt;&lt;/span&gt;
+&lt;a href="#utagoe-vocal-ripper-%e6%ad%8c%e5%a3%b0%e3%82%8a%e3%81%a3%e3%81%b7" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;I've never used it.
+It extracts an audio from a video, the same as Spleeter.
+This requires an off-vocal video besides on-vocal one to extract.
+There is few English resource, but this is &lt;a href="https://medansy.net/remix-web-1-04"target="_blank" rel="noopener"&gt;an example post&lt;/a&gt; to explain this tool in Japanese.&lt;/p&gt;</description></item><item><title>Digital paintings</title><link>https://michael-freling.github.io/docs/digital-painting/</link><pubDate>Mon, 08 Mar 2021 14:12:20 +0900</pubDate><guid>https://michael-freling.github.io/docs/digital-painting/</guid><description>
+&lt;p&gt;This page is written on July 2020.&lt;/p&gt;
+&lt;p&gt;For anime-style digital painting, these 2 channels are really helpful for wide topics, especially if you understand Japanese.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/channel/UCxuipVSw8ajLZPgSyKmw6Ag/featured"target="_blank" rel="noopener"&gt;YouTube: さいとうなおきチャンネル&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/channel/UCHXgFLFyqR-XqtxfTH3qiYA/videos"target="_blank" rel="noopener"&gt;YouTube: Deep Blizzard's Art School&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In this page, you can see some links to videos on the above 2 channels, but in their videos, Japanese is mainly spoken and no English translations is added.&lt;/p&gt;
+&lt;h1&gt;Styles&lt;/h1&gt;&lt;p&gt;There are &lt;a href="https://www.clipstudio.net/how-to-draw/archives/154262"target="_blank" rel="noopener"&gt;some styles&lt;/a&gt; to paint colors.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Anime painting&lt;/li&gt;
+&lt;li&gt;Watercolor painting&lt;/li&gt;
+&lt;li&gt;Thick painting
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=iT8Rizer16U"target="_blank" rel="noopener"&gt;Deep Blizzard's Art School: かんたん！初心者向け厚塗り講座【超入門講座#20】&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Grisaille method
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=mJA2C8SBAMI"target="_blank" rel="noopener"&gt;Deep Blizzard's Art School: キレイに塗れる！グリザイユ画法【超入門講座#27】&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h1&gt;How to draw human characters&lt;/h1&gt;&lt;h2&gt;Basics&lt;span class="hx:absolute hx:-mt-20" id="basics"&gt;&lt;/span&gt;
+&lt;a href="#basics" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Colors
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=RHhyMraAxlI"target="_blank" rel="noopener"&gt;Deep Blizzard's Art School: 色使いはセンスじゃ無い！【超入門講座#04】訂正版&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Shade, shadow, and lights
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=XLHBf_6YQlQ"target="_blank" rel="noopener"&gt;Deep Blizzard's Art School: 影って何？光って何？【超入門講座#06】&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;This is video about shade and shadow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Anime-style painting&lt;span class="hx:absolute hx:-mt-20" id="anime-style-painting"&gt;&lt;/span&gt;
+&lt;a href="#anime-style-painting" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Differences to draw men and women&lt;span class="hx:absolute hx:-mt-20" id="differences-to-draw-men-and-women"&gt;&lt;/span&gt;
+&lt;a href="#differences-to-draw-men-and-women" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://www.clipstudio.net/oekaki/archives/152504"target="_blank" rel="noopener"&gt;How to draw a man/woman (Japanese)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ichi-up.net/2016/139"target="_blank" rel="noopener"&gt;How to draw backs of a man/woman (Japanese)&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Eyes&lt;span class="hx:absolute hx:-mt-20" id="eyes"&gt;&lt;/span&gt;
+&lt;a href="#eyes" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Basically, our eyes are consist of these things.
+It may be helpful to consider these parts while you are painting eyes.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Shadow&lt;/li&gt;
+&lt;li&gt;Iria&lt;/li&gt;
+&lt;li&gt;Retina&lt;/li&gt;
+&lt;li&gt;Pupil&lt;/li&gt;
+&lt;li&gt;Highlight&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Next 2 YouTube videos are helpful to understand how to paint eyes.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=63cQvMWCav8"target="_blank" rel="noopener"&gt;Deep Blizzard's Art School: 宝石の瞳を描く!!【超入門講座#07】&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=MJ70demT-2Y"target="_blank" rel="noopener"&gt;さいとうなおきチャンネル: 【完全公開!!】生き生きした目の描き方講座【イラスト講座】&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Hair&lt;span class="hx:absolute hx:-mt-20" id="hair"&gt;&lt;/span&gt;
+&lt;a href="#hair" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Watch 4 YouTube videos.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=qqgY5BiOdfE"target="_blank" rel="noopener"&gt;さいとうなおきチャンネル: 【反則技】髪の毛を簡単に描く方法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=_Pf_Eq7m06U"target="_blank" rel="noopener"&gt;さいとうなおきチャンネル: 【全部公開】魅力的な髪の塗り方講座&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://youtube.com/watch?v=Phw4bH4Yj5w"target="_blank" rel="noopener"&gt;Deep Blizzard's Art School: プロレベルになる髪の描き方の秘密！【超入門講座#10】&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=2MTRalGaLa0"target="_blank" rel="noopener"&gt;Deep Blizzard's Art School: 男キャラの髪の毛の描き方にはコツがあった！【超入門講座#11】&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Skin&lt;span class="hx:absolute hx:-mt-20" id="skin"&gt;&lt;/span&gt;
+&lt;a href="#skin" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;To paint the skin of human beings, four colors are mainly used.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Base color&lt;/li&gt;
+&lt;li&gt;Shade&lt;/li&gt;
+&lt;li&gt;Shadow&lt;/li&gt;
+&lt;li&gt;Highlight&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Next 2 videos are helpful.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=ibLN85CTOco"target="_blank" rel="noopener"&gt;Deep Blizzard's Art School: 失敗しない肌の色選び&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=2PWfq3Kp5Xw"target="_blank" rel="noopener"&gt;Palmie - お絵描き講座パルミー: 女性キャラクターの肌の塗り方講座 by Aちき&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h1&gt;Digital painting apps&lt;/h1&gt;&lt;h2&gt;Clip Studio Paint&lt;span class="hx:absolute hx:-mt-20" id="clip-studio-paint"&gt;&lt;/span&gt;
+&lt;a href="#clip-studio-paint" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Change the line color even after I painted?
+&lt;ul&gt;
+&lt;li&gt;Use transparency color lock not to paint the color to drawn pixels. See &lt;a href="https://conte-anime.jp/clip-studio/line-color"target="_blank" rel="noopener"&gt;this page&lt;/a&gt; for more details.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Use &amp;quot;Clip at Layer Below&amp;quot; in order to change the pixels only painted at the layer below.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h1&gt;Pen tablets&lt;/h1&gt;&lt;h2&gt;Configurations&lt;span class="hx:absolute hx:-mt-20" id="configurations"&gt;&lt;/span&gt;
+&lt;a href="#configurations" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=vaIrMCGkpOs"target="_blank" rel="noopener"&gt;さいとうなおきチャンネル: 板タブを3倍描きやすくする方法&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Troubleshooting&lt;span class="hx:absolute hx:-mt-20" id="troubleshooting"&gt;&lt;/span&gt;
+&lt;a href="#troubleshooting" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;In order to use pen tablets, I needed to push pens hard to tablets and it was getting me tired for a short time.
+&lt;ul&gt;
+&lt;li&gt;Configure sensitivity. See &lt;a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14105340159"target="_blank" rel="noopener"&gt;this page&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h1&gt;Process&lt;/h1&gt;&lt;h2&gt;Steps to draw an illustration for human beings&lt;span class="hx:absolute hx:-mt-20" id="steps-to-draw-an-illustration-for-human-beings"&gt;&lt;/span&gt;
+&lt;a href="#steps-to-draw-an-illustration-for-human-beings" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Decide briefly what illustration you will draw&lt;/li&gt;
+&lt;li&gt;Decide a layout of it&lt;/li&gt;
+&lt;li&gt;Take your photos that can be useful to draw your illustration
+&lt;ol&gt;
+&lt;li&gt;Set everythings, not only yourself, in photos as much as possible&lt;/li&gt;
+&lt;li&gt;Decide a camera position&lt;/li&gt;
+&lt;li&gt;Wear clothes for the illustration as much as possible&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h1&gt;Practices&lt;/h1&gt;&lt;h2&gt;Croquis&lt;span class="hx:absolute hx:-mt-20" id="croquis"&gt;&lt;/span&gt;
+&lt;a href="#croquis" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Croquis (drawing in a very short time) is one of the way to practice drawing.
+Here are links to help starting croquis.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://soramitama.com/archives/5159"target="_blank" rel="noopener"&gt;(Japanese) デッサンや30秒ドローイングに最適、人物クロッキー練習用サイトまとめ【無料・写真・動画】&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1&gt;Other software&lt;/h1&gt;&lt;p&gt;Some of the software introduced on videos written in this page.&lt;/p&gt;
+&lt;h2&gt;Useful tools for drawings&lt;span class="hx:absolute hx:-mt-20" id="useful-tools-for-drawings"&gt;&lt;/span&gt;
+&lt;a href="#useful-tools-for-drawings" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://www.pureref.com/"target="_blank" rel="noopener"&gt;PureRef: The simple reference image viewer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.art-pose.com/artpose.html"target="_blank" rel="noopener"&gt;ArtPose: The posing tool for artists on the go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://magicposer.com/"target="_blank" rel="noopener"&gt;MagicPoser: Easy 3D Characters for Creators&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/lllyasviel/style2paints"target="_blank" rel="noopener"&gt;Style2Paints: AI driven lineart colorization tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.diffchecker.com/image-diff/"target="_blank" rel="noopener"&gt;Diffchecker: Compare Text/Images and other file types&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Show differences between two images&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.pinterest.com/"target="_blank" rel="noopener"&gt;Pinterest&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Get ideas for your illustration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description></item></channel></rss>
