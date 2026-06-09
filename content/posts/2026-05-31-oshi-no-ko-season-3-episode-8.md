@@ -1,6 +1,6 @@
 ---
 title: Watching Oshi no Ko season 3 episode 8
-date: 2025-05-31
+date: 2026-05-31
 draft: false
 tags:
   - anime

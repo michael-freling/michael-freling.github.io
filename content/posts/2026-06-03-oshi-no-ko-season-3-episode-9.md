@@ -1,6 +1,6 @@
 ---
 title: Watching Oshi no Ko season 3 episode 9
-date: 2025-06-03
+date: 2026-06-03
 draft: false
 tags:
   - anime

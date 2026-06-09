@@ -1,6 +1,6 @@
 ---
 title: Watching Classroom of the Elite Season 4 Episode 1
-date: 2025-06-06
+date: 2026-06-06
 draft: false
 tags:
   - anime

@@ -1,6 +1,6 @@
 ---
 title: Watching Classroom of the Elite Season 4 Episode 3
-date: 2025-06-07 02:00:00
+date: 2026-06-07 02:00:00
 draft: false
 tags:
   - anime

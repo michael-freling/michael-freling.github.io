@@ -1,6 +1,6 @@
 ---
 title: Watching Oshi no Ko season 3 episode 10
-date: 2025-06-05
+date: 2026-06-05
 draft: false
 tags:
   - anime

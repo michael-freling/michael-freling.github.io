@@ -1,6 +1,6 @@
 ---
 title: Watching Oshi no Ko season 3 episode 6
-date: 2025-05-30 01:00:00
+date: 2026-05-30 01:00:00
 draft: false
 tags:
   - anime
