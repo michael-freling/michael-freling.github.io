@@ -1,0 +1,44 @@
+---
+title: First thoughts after watching Re:Zero season 4 episode 1
+date: 2026-06-21 01:00:00
+draft: false
+tags:
+  - anime
+  - Re:Zero
+  - Season 4
+  - Episode 1
+---
+
+I watched the Re:Zero season 4 episode 1.
+In the last season, Subaru fought against multiple Sin Archbishops with royal candidates of Lugunica's next ruler and their knights.
+And in the season, Julius was forgotten by everyone by the end.
+Also, Subaru got a dragon's cursed leg and arm instead of flesh.
+
+It started with a scene where they met outside and talked about him, confirming that everyone except Subaru had forgotten him.
+Then Anastasia suggested to meet with the Sage in Lugunica, Shaula. They are the one of the greatest heroes: the sword saint, who is obviously Reinhard, Dragon lord, I don't know who, and the Saint.
+The saint could save him from the nameless state, which was the curse of Gluttony.
+It's the 1st time hearing that Saint and wondered what he did for an entire time.
+It seems the Sage keeps their eyes on the seal for the Witch, obviously, but then what does Dragon lord do?
+
+Anyway, partway through the journey, Subaru suddenly realized that Anastasia is not actually herself.
+She is Echidna, which happens to be the same name as Echidona, the Witch of Greed, but the different.
+She is a fox in the fur worn by Anastasia, and she was an artificial spirit.
+I was a little bit confused, from when she became Echidna, or Foxidna? After season 4? Or was she actually from season 3?
+At least Priscilla noticed her too, so perhaps during season 3 but I forgot.
+But she wasn't hostile, so it's probably not a big issue.
+
+Then Subaru and others arrived at the Mansion of Roswaal's and met with a few people there.
+And then he tried to pick up Rem because the saint could save her like Julius, too.
+Subaru talked to Rem.
+That scene really pretends to show like she is a main heroine in this series. But at least it shows how Subaru is greedy that he wants to save everyone and also thinks Rem is special to him, though Emilia is the first.
+
+Then he also met a girl. I think she was on the season 1 who uses wolves to attack a Roswaal's village.
+I didn't expect her to appear again and also started going with them.
+But the place where the Saint lives sounds like surrounding by the Mabeasts, and she can use them, so that's why he needed helps from her.
+
+Then at the last, Garfield met with his mom, who forgot who he is and then told him her kids' names, which turned out to be Frederica and Garfield.
+Then Garfield was satisfied with his mom, perhaps because he wasn't forgotten completely and he missed her a lot.
+He is actually 15 or 16 if I remember correctly, and he was without his parents, so it's touching scene.
+
+This episode is just a start, and it tried to show a lot of scenes here and there.
+Let's see what's going to happen, and when a loop will start.
