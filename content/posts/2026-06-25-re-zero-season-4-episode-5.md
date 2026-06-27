@@ -28,6 +28,7 @@ Anastasia thought there were 5 rules, but Shaula only answered 4 rules, which fo
 One question they didn't answer was, who Shaula was?
 She lived for 400 years, and she wasn't a spirit at all, and she didn't even think a spirit is a trivial existence.
 Is she a mabeast? A demon? not sure.
+
 Shaula was very optimistic, positive, and reacted a lot so she might be fun character to see and write a script.
 
 Meili also talked about her past a little bit and it seems she wasn't really interested in knowing her biological parents.
