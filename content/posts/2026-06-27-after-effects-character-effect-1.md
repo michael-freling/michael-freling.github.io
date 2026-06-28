@@ -6,6 +6,7 @@ draft: false
 tags:
   - Adobe After Effect
   - Anime
+  - Character effects
 ---
 
 This is a blog post to collect effects which can be used for a character.
