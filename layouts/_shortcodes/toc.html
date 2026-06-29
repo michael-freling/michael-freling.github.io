@@ -1,0 +1,18 @@
+{{- /*
+  Inline table of contents for the current page, built from its headings.
+  Useful on posts, which don't render the sidebar TOC.
+
+  Heading levels follow markup.tableOfContents in hugo.yaml (start 2, end 4).
+
+  @param {string} title Heading shown above the list (default "Contents"; pass "" to hide).
+  @example {{< toc >}}  or  {{< toc title="On this page" >}}
+*/ -}}
+{{- $title := .Get "title" | default "Contents" -}}
+{{- with .Page.TableOfContents -}}
+  <div class="hextra-inline-toc">
+    {{- with $title -}}
+      <p class="hx:mb-2 hx:font-semibold hx:tracking-tight">{{ . }}</p>
+    {{- end -}}
+    {{ . }}
+  </div>
+{{- end -}}
