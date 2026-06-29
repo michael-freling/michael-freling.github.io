@@ -1,4 +1,217 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes for self made anime – Posts</title><link>https://michael-freling.github.io/posts/</link><description>Recent content in Posts on Notes for self made anime</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://michael-freling.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Character effects of Adobe After Effects</title><link>https://michael-freling.github.io/posts/2026/06/27/character-effects-of-adobe-after-effects/</link><pubDate>Sat, 27 Jun 2026 01:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/06/27/character-effects-of-adobe-after-effects/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes for self made anime – Posts</title><link>https://michael-freling.github.io/posts/</link><description>Recent content in Posts on Notes for self made anime</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://michael-freling.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Adobe After Effects</title><link>https://michael-freling.github.io/posts/2026/06/28/adobe-after-effects/</link><pubDate>Sun, 28 Jun 2026 01:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/06/28/adobe-after-effects/</guid><description>
+&lt;p&gt;This is a blog post to collect effects which can be used for a character.&lt;/p&gt;
+&lt;h2&gt;Basic usages&lt;span class="hx:absolute hx:-mt-20" id="basic-usages"&gt;&lt;/span&gt;
+&lt;a href="#basic-usages" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;When you alt-click a stopwatch icon on the left of Transform property like &lt;strong&gt;Position&lt;/strong&gt;, then it shows &lt;strong&gt;Expression&lt;/strong&gt; for it to change an animation using an expression.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Anime style speed line&lt;span class="hx:absolute hx:-mt-20" id="anime-style-speed-line"&gt;&lt;/span&gt;
+&lt;a href="#anime-style-speed-line" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Written in 2026-06-28.&lt;/p&gt;
+&lt;p&gt;This is based on&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/kRdyxiONCDg?si=VDS2s69sbwGVbzXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;del&gt;&lt;a href="https://www.youtube.com/watch?v=73T5zAZtCpc"target="_blank" rel="noopener"&gt;https://www.youtube.com/watch?v=73T5zAZtCpc&lt;/a&gt;&lt;/del&gt;: Not this video because it used a file I wasn't able to download.&lt;/p&gt;
+&lt;p&gt;The steps to create lines&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a background. Here add a gradient colored background
+&lt;ol&gt;
+&lt;li&gt;Add new layer Solid from &lt;strong&gt;New &amp;gt; Solid&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Add &lt;strong&gt;Gradient Ramp&lt;/strong&gt; effect. For eaxmple, On the layer, go to &lt;strong&gt;Effects &amp;gt; Effects &amp;amp; Presets&lt;/strong&gt;, search &amp;quot;Ramp&amp;quot; and add it&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Start Color&lt;/strong&gt; and &lt;strong&gt;End Color&lt;/strong&gt;, like end color gets darker.&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Ramp Shape&lt;/strong&gt; to &lt;strong&gt;Radial Ramp&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;Click and drag the Start of Ramp (the center) and End of Ramp (the outer radius)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Optional? Set &lt;strong&gt;Ramp Scatter&lt;/strong&gt; to like 200 to make it nicer looks&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Create a center light
+&lt;ol&gt;
+&lt;li&gt;Add new Solid Layer and add a &lt;strong&gt;Fill&lt;/strong&gt; effect&lt;/li&gt;
+&lt;li&gt;Change the &lt;strong&gt;Color&lt;/strong&gt; yellow&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Transform &amp;gt; Rotation&lt;/strong&gt; on 45 degrees&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Transform &amp;gt; Scale&lt;/strong&gt; to make it cover an entire screen&lt;/li&gt;
+&lt;li&gt;Set a mask
+&lt;ol&gt;
+&lt;li&gt;Select &lt;strong&gt;Rectangle Tool&lt;/strong&gt; on a tool bar and create a Mask on the layer with the part of the central light&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Mask Feather&lt;/strong&gt;. For example, 250. It makes a rectangle blur&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Mask Expansion&lt;/strong&gt; to make the light wider or narrower.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Create the base shadow line layer
+&lt;ol&gt;
+&lt;li&gt;Duplicate the center light layer and rename it &amp;quot;Line Shadows 01&amp;quot;&lt;/li&gt;
+&lt;li&gt;Remove the &lt;strong&gt;Fill&lt;/strong&gt; effect&lt;/li&gt;
+&lt;li&gt;Add a &lt;strong&gt;Fractal Noise&lt;/strong&gt; effect&lt;/li&gt;
+&lt;li&gt;Set the Property of the fractal noise effect
+&lt;ol&gt;
+&lt;li&gt;Set &lt;strong&gt;Contrast&lt;/strong&gt; to, for example, 2500, to remove blur&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Brightness&lt;/strong&gt; to, like 300, to separate white and black are clear&lt;/li&gt;
+&lt;li&gt;Go to &lt;strong&gt;Transform&lt;/strong&gt; and update the scale to look noises become noises with lines instead of rounded shapes
+&lt;ol&gt;
+&lt;li&gt;Disable &lt;strong&gt;Uniform Scaling&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Increase scale width and decrease scale height&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Animate the layer using &lt;strong&gt;Transform &amp;gt; Offset Turbulence&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;Create keyframe on the first layer for Offset Turbulance&lt;/li&gt;
+&lt;li&gt;Create keyframe on the last layer for Offset Turbulance, and set different values from the first key frame.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Alt-click &lt;strong&gt;Sub Settings &amp;gt; Evolution&lt;/strong&gt; and set &lt;code&gt;time * X&lt;/code&gt; in Expression. This is to increase the speed of a line&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Change the color of the lines
+&lt;ol&gt;
+&lt;li&gt;Set &amp;quot;Blending Mode&amp;quot; to &lt;strong&gt;Multiply&lt;/strong&gt;. I needed to click &amp;quot;Toggle Switches / Modes&amp;quot; on the bottom bar to show the Mode on each layer.&lt;/li&gt;
+&lt;li&gt;To make the color lighter,
+&lt;ol&gt;
+&lt;li&gt;Add an effect &lt;strong&gt;CC toner&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Change the &lt;strong&gt;Tones&lt;/strong&gt; to &lt;strong&gt;Duotone&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Set Shadows to the color darker than the background&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Add more variations of the shadow lines. Add as many layer as you want.
+&lt;ol&gt;
+&lt;li&gt;Duplicate the above &amp;quot;Line Shadows 01&amp;quot; layer into new layer&lt;/li&gt;
+&lt;li&gt;Update some properties to make them look different from the 01 layer. For example,
+&lt;ol&gt;
+&lt;li&gt;Update Contrast, Brightness, or Scale&lt;/li&gt;
+&lt;li&gt;Alt click &lt;strong&gt;Sub Settings &amp;gt; Evolution&lt;/strong&gt; and set the expression like &lt;code&gt;time - 200&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Create highlights. Add as many layer as you want.
+&lt;ol&gt;
+&lt;li&gt;Duplicate some shadows layer of existing highlights layers, and rename those layers to &amp;quot;Line Hightlights 01&amp;quot;&lt;/li&gt;
+&lt;li&gt;Set Blending Modes of the new layer &amp;quot;Screen&amp;quot;
+&lt;ol&gt;
+&lt;li&gt;Or set &amp;quot;Add&amp;quot; in a few layers depending on how they look&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Update &amp;quot;CC Toner&amp;quot; effect
+&lt;ol&gt;
+&lt;li&gt;Set &amp;quot;Highlights&amp;quot; to the black&lt;/li&gt;
+&lt;li&gt;Set &amp;quot;Shadows&amp;quot; to the brighter color&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Add some variations
+&lt;ol&gt;
+&lt;li&gt;Update &lt;strong&gt;Fractal Noise &amp;gt; Brightness&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Update &lt;strong&gt;Fractal Noise &amp;gt; Transform &amp;gt; Offset Turbulance&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Update &lt;strong&gt;Fractal Noise &amp;gt; Transform &amp;gt; Rotation&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Add more variations by adding &lt;strong&gt;Glow&lt;/strong&gt; effect. And update
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Glow Threshold&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Glow Radius&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Glow Intensity&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Create corner shadows
+&lt;ol&gt;
+&lt;li&gt;Duplicate the center light layer and rename it to a &amp;quot;corner shadows&amp;quot; layer&lt;/li&gt;
+&lt;li&gt;Update the Mode of &amp;quot;Mask 1&amp;quot; to &lt;strong&gt;Subtract&lt;/strong&gt; from &lt;strong&gt;Add&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Set the &lt;strong&gt;Fill &amp;gt; Color&lt;/strong&gt; black&lt;/li&gt;
+&lt;li&gt;Set the &lt;strong&gt;Transform &amp;gt; Opacity&lt;/strong&gt; not to make too dark&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Anime style speed line but the left top corner emits lights look like&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a background in the same way&lt;/li&gt;
+&lt;li&gt;Create the base shadow layer. On top of the same step as above
+&lt;ol&gt;
+&lt;li&gt;Add &lt;strong&gt;Corner Pin&lt;/strong&gt; effect on the Line Shadows layer&lt;/li&gt;
+&lt;li&gt;Drag the positions of each edge of the corner pin to move lines from one edge to another edge&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Add soft Light
+&lt;ol&gt;
+&lt;li&gt;Add new Solid layer&lt;/li&gt;
+&lt;li&gt;Add new mask with rounded shape&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Mask Feather&lt;/strong&gt; and &lt;strong&gt;Mask Expansion&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Set Blending Modes to Add&lt;/li&gt;
+&lt;li&gt;Add &lt;strong&gt;Fill&lt;/strong&gt; effect and set the color&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Add main light
+&lt;ol&gt;
+&lt;li&gt;Add new Solid layer&lt;/li&gt;
+&lt;li&gt;Set Blending Modes to &lt;strong&gt;Screen&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Add new mask with light emitting layer&lt;/li&gt;
+&lt;li&gt;Animate Mask Path by creating multiple key frames with multiple shapes&lt;/li&gt;
+&lt;li&gt;Add &lt;strong&gt;CC radial Radial Fast Blur&lt;/strong&gt; effect&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>First thoughts after watching Re:Zero season 4 episode 8</title><link>https://michael-freling.github.io/posts/2026/06/28/first-thoughts-after-watching-rezero-season-4-episode-8/</link><pubDate>Sun, 28 Jun 2026 01:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/06/28/first-thoughts-after-watching-rezero-season-4-episode-8/</guid><description>
+&lt;p&gt;I watched the Re:Zero season 4 episode 8.
+I remember the story for season 2 and 3 only a little, but don't remember the details of each character that much.
+&lt;strong&gt;This note includes a spoiler.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This episode was the best one in the season 4.
+At first, Subaru lost his memory, and talked to Emilia and Beako about it.
+Then he also met other people and was surprised by that fact.
+Julius was so upset about it and he couldn't even introduce himself to Subaru.
+Ram didn't believe about that fact and asked him in a different place.
+She was so upset and sad at the same time.
+I don't know how Ram felt about Rem, but at least Subaru was the only one who knew Rem before she went to sleep.
+So, that means nobody in the world knew her anymore.
+Then he and Julius introduced about themselves.
+Also, Foxidna introduced herself to other people, though at least Emilia noticed she was a spirit.
+I guessed it was because she contracted with a spirit, Pack.
+Ram was surprised, though.&lt;/p&gt;
+&lt;p&gt;Because they found Subaru fell down in the archive in the 3rd floor and he lost all of his memory in the world, everyone but Subaru went to the archive.
+He was walking around in the tower and was trying to figure out if he has some abilities like he did in the 1st episode in the 1st season.
+But then, someone pushed him and he fell down to the 1st floor and died.&lt;/p&gt;
+&lt;p&gt;Then he returned by death to the green spirit room.
+I was wondering what happened by this, and now, it returned after his memory was lost.
+So, he didn't know anything about Return by death, and was confused with the situation, just like he did in the 1st season.
+But he easily figured it out from the fact that everyone had the same conversations and they didn't know he was able to return.
+He got a chip on his shoulder because he didn't take any diary and couldn't figure out what happens.
+But it kinda makes sense because he couldn't tell or share anything about it so it won't help that much.
+Also, who can predict he lost only part of his memory.
+Actually, why did he lose only part of his memory? Because gluttony can eat only those in the world?&lt;/p&gt;
+&lt;p&gt;Anyway, then he wanted to tell about this ability, but he eavesdropped that they try not to join him in his group and he wanted to leave.
+Then he fell down to the tower, again.
+Who did it?
+There was a voice just before he fell down, but I couldn't recognize the voice.
+Meili? Foxidna?&lt;/p&gt;
+&lt;p&gt;Then he was very afraid of anyone because he didn't know who did it. After he woke up in his 3rd life, he jumped from the stone, ran to a random place, which was in front of Reid, but didn't say anything to him, and Reid pushed him to the downstairs.
+He was almost dead, but then the Witch came and saved him.
+Well, why and how could she come?
+He even didn't see her so probably he didn't recognize her.
+She came because the place was exactly like the graveyard? Or can she come only when he was about to be dead, but she couldn't save from the death?
+But she hadn't come until that time except the graveyard, so didn't totally make sense.&lt;/p&gt;
+&lt;p&gt;Anyway, Subaru survived, and others were really upset and Ram went ballistic and didn't want Subaru near Rem.
+Then he wanted to get out of the tower as soon as possible, so he left from the 1st floor.
+That was because he didn't know he was under an exam and the rule was he couldn't leave until the exam was solved.
+So Shaula was changed and she was going to go berserk, and before what happened, the episode ended.&lt;/p&gt;
+&lt;p&gt;The biggest question to me was, what could he do?
+I think he was dead again, and then Emilia will help him and got out of the situation.
+But the problem was 1. how to recover his memory and 2. who pushed Subaru and why, and 3. how to overcome the exam on the 2nd floor.
+No clue for the 1st problem. The 2nd point was because someone didn't believe him, maybe Meili, and thought it was a good timing to kill him?
+Then 3rd was... Subaru got his memory back and figure out how to win against Reid from the book he read, I guess.&lt;/p&gt;
+&lt;p&gt;That said, there were only 3 episodes in this arc, so will they finish this tower's arc in the season 4?&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Watched the 2nd time.&lt;/p&gt;
+&lt;p&gt;When the Witch came, Subaru noticed her.
+I think the Witch appeared because he was alone and there was no risk being seen by anyone else.
+The voice when Subaru was despairing was... who? Was it himself, just like he laughed at himself in season 1 just before being killed by Pack in the Petelgeus's episode?&lt;/p&gt;
+&lt;p&gt;Also, Meili said that he let his guard down the previous day, so I'm sure she was someone related to losing his memory.
+Then, probably she was the one who pushed him.
+But she was in the conversation just before Subaru fell down on the 2nd time, so she may not be?&lt;/p&gt;
+&lt;p&gt;In terms of animation, Shaula's eyes had 3 red highlights, but when Subaru left the tower, those highlights changed to 3 pupils.
+Were they made by magic or something, maybe.&lt;/p&gt;</description></item><item><title>Character effects of Adobe After Effects</title><link>https://michael-freling.github.io/posts/2026/06/27/character-effects-of-adobe-after-effects/</link><pubDate>Sat, 27 Jun 2026 01:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/06/27/character-effects-of-adobe-after-effects/</guid><description>
 &lt;p&gt;This is a blog post to collect effects which can be used for a character.&lt;/p&gt;
 &lt;h2&gt;Basic usages&lt;span class="hx:absolute hx:-mt-20" id="basic-usages"&gt;&lt;/span&gt;
 &lt;a href="#basic-usages" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;

@@ -1,0 +1,10 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes for self made anime – Character Effects</title><link>https://michael-freling.github.io/tags/character-effects/</link><description>Recent content in Character Effects on Notes for self made anime</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 27 Jun 2026 01:00:00 +0000</lastBuildDate><atom:link href="https://michael-freling.github.io/tags/character-effects/index.xml" rel="self" type="application/rss+xml"/><item><title>Character effects of Adobe After Effects</title><link>https://michael-freling.github.io/posts/2026/06/27/character-effects-of-adobe-after-effects/</link><pubDate>Sat, 27 Jun 2026 01:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/06/27/character-effects-of-adobe-after-effects/</guid><description>
+&lt;p&gt;This is a blog post to collect effects which can be used for a character.&lt;/p&gt;
+&lt;h2&gt;Basic usages&lt;span class="hx:absolute hx:-mt-20" id="basic-usages"&gt;&lt;/span&gt;
+&lt;a href="#basic-usages" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;When you alt-click a stopwatch icon on the left of Transform property like &lt;strong&gt;Position&lt;/strong&gt;, then it shows &lt;strong&gt;Expression&lt;/strong&gt; for it to change an animation using an expression.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Move&lt;span class="hx:absolute hx:-mt-20" id="move"&gt;&lt;/span&gt;
+&lt;a href="#move" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Written in 2026/06/27&lt;/p&gt;
+&lt;p&gt;We can use a layer's move by a function like &lt;code&gt;wiggle(1, 5)&lt;/code&gt;. This means the value changes about 1 time per second, with up to 5 pixels of variation from the original position.&lt;/p&gt;
+&lt;p&gt;For example, next animation is with &lt;code&gt;wiggle(4, 20)&lt;/code&gt; in Position property.&lt;/p&gt;</description></item></channel></rss>
