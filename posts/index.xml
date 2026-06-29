@@ -1,160 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes for self made anime – Posts</title><link>https://michael-freling.github.io/posts/</link><description>Recent content in Posts on Notes for self made anime</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://michael-freling.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Adobe After Effects</title><link>https://michael-freling.github.io/posts/2026/06/28/adobe-after-effects/</link><pubDate>Sun, 28 Jun 2026 01:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/06/28/adobe-after-effects/</guid><description>
-&lt;p&gt;This is a blog post to collect effects which can be used for a character.&lt;/p&gt;
-&lt;h2&gt;Basic usages&lt;span class="hx:absolute hx:-mt-20" id="basic-usages"&gt;&lt;/span&gt;
-&lt;a href="#basic-usages" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;When you alt-click a stopwatch icon on the left of Transform property like &lt;strong&gt;Position&lt;/strong&gt;, then it shows &lt;strong&gt;Expression&lt;/strong&gt; for it to change an animation using an expression.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Anime style speed line&lt;span class="hx:absolute hx:-mt-20" id="anime-style-speed-line"&gt;&lt;/span&gt;
-&lt;a href="#anime-style-speed-line" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Written in 2026-06-28.&lt;/p&gt;
-&lt;p&gt;This is based on&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/kRdyxiONCDg?si=VDS2s69sbwGVbzXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;del&gt;&lt;a href="https://www.youtube.com/watch?v=73T5zAZtCpc"target="_blank" rel="noopener"&gt;https://www.youtube.com/watch?v=73T5zAZtCpc&lt;/a&gt;&lt;/del&gt;: Not this video because it used a file I wasn't able to download.&lt;/p&gt;
-&lt;p&gt;The steps to create lines&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Create a background. Here add a gradient colored background
-&lt;ol&gt;
-&lt;li&gt;Add new layer Solid from &lt;strong&gt;New &amp;gt; Solid&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Add &lt;strong&gt;Gradient Ramp&lt;/strong&gt; effect. For eaxmple, On the layer, go to &lt;strong&gt;Effects &amp;gt; Effects &amp;amp; Presets&lt;/strong&gt;, search &amp;quot;Ramp&amp;quot; and add it&lt;/li&gt;
-&lt;li&gt;Set &lt;strong&gt;Start Color&lt;/strong&gt; and &lt;strong&gt;End Color&lt;/strong&gt;, like end color gets darker.&lt;/li&gt;
-&lt;li&gt;Set &lt;strong&gt;Ramp Shape&lt;/strong&gt; to &lt;strong&gt;Radial Ramp&lt;/strong&gt;
-&lt;ol&gt;
-&lt;li&gt;Click and drag the Start of Ramp (the center) and End of Ramp (the outer radius)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Optional? Set &lt;strong&gt;Ramp Scatter&lt;/strong&gt; to like 200 to make it nicer looks&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Create a center light
-&lt;ol&gt;
-&lt;li&gt;Add new Solid Layer and add a &lt;strong&gt;Fill&lt;/strong&gt; effect&lt;/li&gt;
-&lt;li&gt;Change the &lt;strong&gt;Color&lt;/strong&gt; yellow&lt;/li&gt;
-&lt;li&gt;Set &lt;strong&gt;Transform &amp;gt; Rotation&lt;/strong&gt; on 45 degrees&lt;/li&gt;
-&lt;li&gt;Set &lt;strong&gt;Transform &amp;gt; Scale&lt;/strong&gt; to make it cover an entire screen&lt;/li&gt;
-&lt;li&gt;Set a mask
-&lt;ol&gt;
-&lt;li&gt;Select &lt;strong&gt;Rectangle Tool&lt;/strong&gt; on a tool bar and create a Mask on the layer with the part of the central light&lt;/li&gt;
-&lt;li&gt;Set &lt;strong&gt;Mask Feather&lt;/strong&gt;. For example, 250. It makes a rectangle blur&lt;/li&gt;
-&lt;li&gt;Set &lt;strong&gt;Mask Expansion&lt;/strong&gt; to make the light wider or narrower.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Create the base shadow line layer
-&lt;ol&gt;
-&lt;li&gt;Duplicate the center light layer and rename it &amp;quot;Line Shadows 01&amp;quot;&lt;/li&gt;
-&lt;li&gt;Remove the &lt;strong&gt;Fill&lt;/strong&gt; effect&lt;/li&gt;
-&lt;li&gt;Add a &lt;strong&gt;Fractal Noise&lt;/strong&gt; effect&lt;/li&gt;
-&lt;li&gt;Set the Property of the fractal noise effect
-&lt;ol&gt;
-&lt;li&gt;Set &lt;strong&gt;Contrast&lt;/strong&gt; to, for example, 2500, to remove blur&lt;/li&gt;
-&lt;li&gt;Set &lt;strong&gt;Brightness&lt;/strong&gt; to, like 300, to separate white and black are clear&lt;/li&gt;
-&lt;li&gt;Go to &lt;strong&gt;Transform&lt;/strong&gt; and update the scale to look noises become noises with lines instead of rounded shapes
-&lt;ol&gt;
-&lt;li&gt;Disable &lt;strong&gt;Uniform Scaling&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Increase scale width and decrease scale height&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Animate the layer using &lt;strong&gt;Transform &amp;gt; Offset Turbulence&lt;/strong&gt;
-&lt;ol&gt;
-&lt;li&gt;Create keyframe on the first layer for Offset Turbulance&lt;/li&gt;
-&lt;li&gt;Create keyframe on the last layer for Offset Turbulance, and set different values from the first key frame.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Alt-click &lt;strong&gt;Sub Settings &amp;gt; Evolution&lt;/strong&gt; and set &lt;code&gt;time * X&lt;/code&gt; in Expression. This is to increase the speed of a line&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Change the color of the lines
-&lt;ol&gt;
-&lt;li&gt;Set &amp;quot;Blending Mode&amp;quot; to &lt;strong&gt;Multiply&lt;/strong&gt;. I needed to click &amp;quot;Toggle Switches / Modes&amp;quot; on the bottom bar to show the Mode on each layer.&lt;/li&gt;
-&lt;li&gt;To make the color lighter,
-&lt;ol&gt;
-&lt;li&gt;Add an effect &lt;strong&gt;CC toner&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Change the &lt;strong&gt;Tones&lt;/strong&gt; to &lt;strong&gt;Duotone&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Set Shadows to the color darker than the background&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Add more variations of the shadow lines. Add as many layer as you want.
-&lt;ol&gt;
-&lt;li&gt;Duplicate the above &amp;quot;Line Shadows 01&amp;quot; layer into new layer&lt;/li&gt;
-&lt;li&gt;Update some properties to make them look different from the 01 layer. For example,
-&lt;ol&gt;
-&lt;li&gt;Update Contrast, Brightness, or Scale&lt;/li&gt;
-&lt;li&gt;Alt click &lt;strong&gt;Sub Settings &amp;gt; Evolution&lt;/strong&gt; and set the expression like &lt;code&gt;time - 200&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Create highlights. Add as many layer as you want.
-&lt;ol&gt;
-&lt;li&gt;Duplicate some shadows layer of existing highlights layers, and rename those layers to &amp;quot;Line Hightlights 01&amp;quot;&lt;/li&gt;
-&lt;li&gt;Set Blending Modes of the new layer &amp;quot;Screen&amp;quot;
-&lt;ol&gt;
-&lt;li&gt;Or set &amp;quot;Add&amp;quot; in a few layers depending on how they look&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Update &amp;quot;CC Toner&amp;quot; effect
-&lt;ol&gt;
-&lt;li&gt;Set &amp;quot;Highlights&amp;quot; to the black&lt;/li&gt;
-&lt;li&gt;Set &amp;quot;Shadows&amp;quot; to the brighter color&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Add some variations
-&lt;ol&gt;
-&lt;li&gt;Update &lt;strong&gt;Fractal Noise &amp;gt; Brightness&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Update &lt;strong&gt;Fractal Noise &amp;gt; Transform &amp;gt; Offset Turbulance&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Update &lt;strong&gt;Fractal Noise &amp;gt; Transform &amp;gt; Rotation&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Add more variations by adding &lt;strong&gt;Glow&lt;/strong&gt; effect. And update
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Glow Threshold&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Glow Radius&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Glow Intensity&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Create corner shadows
-&lt;ol&gt;
-&lt;li&gt;Duplicate the center light layer and rename it to a &amp;quot;corner shadows&amp;quot; layer&lt;/li&gt;
-&lt;li&gt;Update the Mode of &amp;quot;Mask 1&amp;quot; to &lt;strong&gt;Subtract&lt;/strong&gt; from &lt;strong&gt;Add&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Set the &lt;strong&gt;Fill &amp;gt; Color&lt;/strong&gt; black&lt;/li&gt;
-&lt;li&gt;Set the &lt;strong&gt;Transform &amp;gt; Opacity&lt;/strong&gt; not to make too dark&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Anime style speed line but the left top corner emits lights look like&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Create a background in the same way&lt;/li&gt;
-&lt;li&gt;Create the base shadow layer. On top of the same step as above
-&lt;ol&gt;
-&lt;li&gt;Add &lt;strong&gt;Corner Pin&lt;/strong&gt; effect on the Line Shadows layer&lt;/li&gt;
-&lt;li&gt;Drag the positions of each edge of the corner pin to move lines from one edge to another edge&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Add soft Light
-&lt;ol&gt;
-&lt;li&gt;Add new Solid layer&lt;/li&gt;
-&lt;li&gt;Add new mask with rounded shape&lt;/li&gt;
-&lt;li&gt;Set &lt;strong&gt;Mask Feather&lt;/strong&gt; and &lt;strong&gt;Mask Expansion&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Set Blending Modes to Add&lt;/li&gt;
-&lt;li&gt;Add &lt;strong&gt;Fill&lt;/strong&gt; effect and set the color&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Add main light
-&lt;ol&gt;
-&lt;li&gt;Add new Solid layer&lt;/li&gt;
-&lt;li&gt;Set Blending Modes to &lt;strong&gt;Screen&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Add new mask with light emitting layer&lt;/li&gt;
-&lt;li&gt;Animate Mask Path by creating multiple key frames with multiple shapes&lt;/li&gt;
-&lt;li&gt;Add &lt;strong&gt;CC radial Radial Fast Blur&lt;/strong&gt; effect&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>First thoughts after watching Re:Zero season 4 episode 8</title><link>https://michael-freling.github.io/posts/2026/06/28/first-thoughts-after-watching-rezero-season-4-episode-8/</link><pubDate>Sun, 28 Jun 2026 01:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/06/28/first-thoughts-after-watching-rezero-season-4-episode-8/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes for self made anime – Posts</title><link>https://michael-freling.github.io/posts/</link><description>Recent content in Posts on Notes for self made anime</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://michael-freling.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>First thoughts after watching Re:Zero season 4 episode 8</title><link>https://michael-freling.github.io/posts/2026/06/28/first-thoughts-after-watching-rezero-season-4-episode-8/</link><pubDate>Sun, 28 Jun 2026 01:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/06/28/first-thoughts-after-watching-rezero-season-4-episode-8/</guid><description>
 &lt;p&gt;I watched the Re:Zero season 4 episode 8.
 I remember the story for season 2 and 3 only a little, but don't remember the details of each character that much.
 &lt;strong&gt;This note includes a spoiler.&lt;/strong&gt;&lt;/p&gt;
@@ -211,7 +55,178 @@ The voice when Subaru was despairing was... who? Was it himself, just like he la
 Then, probably she was the one who pushed him.
 But she was in the conversation just before Subaru fell down on the 2nd time, so she may not be?&lt;/p&gt;
 &lt;p&gt;In terms of animation, Shaula's eyes had 3 red highlights, but when Subaru left the tower, those highlights changed to 3 pupils.
-Were they made by magic or something, maybe.&lt;/p&gt;</description></item><item><title>Character effects of Adobe After Effects</title><link>https://michael-freling.github.io/posts/2026/06/27/character-effects-of-adobe-after-effects/</link><pubDate>Sat, 27 Jun 2026 01:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/06/27/character-effects-of-adobe-after-effects/</guid><description>
+Were they made by magic or something, maybe.&lt;/p&gt;</description></item><item><title>Anime style speed line effect</title><link>https://michael-freling.github.io/posts/2026/06/28/anime-style-speed-line-effect/</link><pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/06/28/anime-style-speed-line-effect/</guid><description>
+&lt;p&gt;This article was written in 2026-06-28.&lt;/p&gt;
+&lt;div class="hextra-inline-toc"&gt;&lt;p class="hx:mb-2 hx:font-semibold hx:tracking-tight"&gt;Contents&lt;/p&gt;&lt;nav id="TableOfContents"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#speed-lines"&gt;Speed lines&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#1-create-a-background"&gt;1. Create a background&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#2-create-a-center-light"&gt;2. Create a center light&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#3-create-the-base-shadow-line-layer"&gt;3. Create the base shadow line layer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#4-add-more-variations-of-the-shadow-lines"&gt;4. Add more variations of the shadow lines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#5-create-highlights"&gt;5. Create highlights&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#6-create-corner-shadows"&gt;6. Create corner shadows&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#corner-light-variation"&gt;Corner light variation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#1-create-a-background-in-the-same-way"&gt;1. Create a background in the same way&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#2-create-the-base-shadow-layer"&gt;2. Create the base shadow layer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#3-add-shadow-and-highlight-lines"&gt;3. Add shadow and highlight lines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#4-add-soft-light"&gt;4. Add soft light&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#5-add-main-light"&gt;5. Add main light&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+&lt;p&gt;I appreciated the next video which explains how to make the effect in details.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/kRdyxiONCDg?si=VDS2s69sbwGVbzXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;I had followed &lt;a href="https://www.youtube.com/watch?v=73T5zAZtCpc"target="_blank" rel="noopener"&gt;another video&lt;/a&gt; in the middle of the way but stopped because some files were not downloadable.&lt;/p&gt;
+&lt;h2&gt;Speed lines&lt;span class="hx:absolute hx:-mt-20" id="speed-lines"&gt;&lt;/span&gt;
+&lt;a href="#speed-lines" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The steps to create lines. I created next animation following these steps:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.gifyu.com/image/bdnY2"target="_blank" rel="noopener"&gt;&lt;img src="https://s13.gifyu.com/images/bdnY2.gif" alt="bdnY2.gif" loading="lazy" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;1. Create a background&lt;span class="hx:absolute hx:-mt-20" id="1-create-a-background"&gt;&lt;/span&gt;
+&lt;a href="#1-create-a-background" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Here add a gradient colored background.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add new layer Solid from &lt;strong&gt;New &amp;gt; Solid&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Add &lt;strong&gt;Gradient Ramp&lt;/strong&gt; effect. For eaxmple, On the layer, go to &lt;strong&gt;Effects &amp;gt; Effects &amp;amp; Presets&lt;/strong&gt;, search &amp;quot;Ramp&amp;quot; and add it&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Start Color&lt;/strong&gt; and &lt;strong&gt;End Color&lt;/strong&gt;, like end color gets darker.&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Ramp Shape&lt;/strong&gt; to &lt;strong&gt;Radial Ramp&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;Click and drag the Start of Ramp (the center) and End of Ramp (the outer radius)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Optional? Set &lt;strong&gt;Ramp Scatter&lt;/strong&gt; to like 200 to make it nicer looks&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;2. Create a center light&lt;span class="hx:absolute hx:-mt-20" id="2-create-a-center-light"&gt;&lt;/span&gt;
+&lt;a href="#2-create-a-center-light" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Add new Solid Layer and add a &lt;strong&gt;Fill&lt;/strong&gt; effect&lt;/li&gt;
+&lt;li&gt;Change the &lt;strong&gt;Color&lt;/strong&gt; yellow&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Transform &amp;gt; Rotation&lt;/strong&gt; on 45 degrees&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Transform &amp;gt; Scale&lt;/strong&gt; to make it cover an entire screen&lt;/li&gt;
+&lt;li&gt;Set a mask
+&lt;ol&gt;
+&lt;li&gt;Select &lt;strong&gt;Rectangle Tool&lt;/strong&gt; on a tool bar and create a Mask on the layer with the part of the central light&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Mask Feather&lt;/strong&gt;. For example, 250. It makes a rectangle blur&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Mask Expansion&lt;/strong&gt; to make the light wider or narrower.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;3. Create the base shadow line layer&lt;span class="hx:absolute hx:-mt-20" id="3-create-the-base-shadow-line-layer"&gt;&lt;/span&gt;
+&lt;a href="#3-create-the-base-shadow-line-layer" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Duplicate the center light layer and rename it &amp;quot;Line Shadows 01&amp;quot;&lt;/li&gt;
+&lt;li&gt;Remove the &lt;strong&gt;Fill&lt;/strong&gt; effect&lt;/li&gt;
+&lt;li&gt;Add a &lt;strong&gt;Fractal Noise&lt;/strong&gt; effect&lt;/li&gt;
+&lt;li&gt;Set the Property of the fractal noise effect
+&lt;ol&gt;
+&lt;li&gt;Set &lt;strong&gt;Contrast&lt;/strong&gt; to, for example, 2500, to remove blur&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Brightness&lt;/strong&gt; to, like 300, to separate white and black are clear&lt;/li&gt;
+&lt;li&gt;Go to &lt;strong&gt;Transform&lt;/strong&gt; and update the scale to look noises become noises with lines instead of rounded shapes
+&lt;ol&gt;
+&lt;li&gt;Disable &lt;strong&gt;Uniform Scaling&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Increase scale width and decrease scale height&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Animate the layer using &lt;strong&gt;Transform &amp;gt; Offset Turbulence&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;Create keyframe on the first layer for Offset Turbulance&lt;/li&gt;
+&lt;li&gt;Create keyframe on the last layer for Offset Turbulance, and set different values from the first key frame.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Alt-click &lt;strong&gt;Sub Settings &amp;gt; Evolution&lt;/strong&gt; and set &lt;code&gt;time * X&lt;/code&gt; in Expression. This is to increase the speed of a line&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Change the color of the lines
+&lt;ol&gt;
+&lt;li&gt;Set &amp;quot;Blending Mode&amp;quot; to &lt;strong&gt;Multiply&lt;/strong&gt;. I needed to click &amp;quot;Toggle Switches / Modes&amp;quot; on the bottom bar to show the Mode on each layer.&lt;/li&gt;
+&lt;li&gt;To make the color lighter,
+&lt;ol&gt;
+&lt;li&gt;Add an effect &lt;strong&gt;CC toner&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Change the &lt;strong&gt;Tones&lt;/strong&gt; to &lt;strong&gt;Duotone&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Set Shadows to the color darker than the background&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;4. Add more variations of the shadow lines&lt;span class="hx:absolute hx:-mt-20" id="4-add-more-variations-of-the-shadow-lines"&gt;&lt;/span&gt;
+&lt;a href="#4-add-more-variations-of-the-shadow-lines" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Add as many layer as you want.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Duplicate the above &amp;quot;Line Shadows 01&amp;quot; layer into new layer&lt;/li&gt;
+&lt;li&gt;Update some properties to make them look different from the 01 layer. For example,
+&lt;ol&gt;
+&lt;li&gt;Update Contrast, Brightness, or Scale&lt;/li&gt;
+&lt;li&gt;Alt click &lt;strong&gt;Sub Settings &amp;gt; Evolution&lt;/strong&gt; and set the expression like &lt;code&gt;time - 200&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;5. Create highlights&lt;span class="hx:absolute hx:-mt-20" id="5-create-highlights"&gt;&lt;/span&gt;
+&lt;a href="#5-create-highlights" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Add as many layer as you want.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Duplicate some shadows layer of existing highlights layers, and rename those layers to &amp;quot;Line Hightlights 01&amp;quot;&lt;/li&gt;
+&lt;li&gt;Set Blending Modes of the new layer &amp;quot;Screen&amp;quot;
+&lt;ol&gt;
+&lt;li&gt;Or set &amp;quot;Add&amp;quot; in a few layers depending on how they look&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Update &amp;quot;CC Toner&amp;quot; effect
+&lt;ol&gt;
+&lt;li&gt;Set &amp;quot;Highlights&amp;quot; to the black&lt;/li&gt;
+&lt;li&gt;Set &amp;quot;Shadows&amp;quot; to the brighter color&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Add some variations
+&lt;ol&gt;
+&lt;li&gt;Update &lt;strong&gt;Fractal Noise &amp;gt; Brightness&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Update &lt;strong&gt;Fractal Noise &amp;gt; Transform &amp;gt; Offset Turbulance&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Update &lt;strong&gt;Fractal Noise &amp;gt; Transform &amp;gt; Rotation&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Add more variations by adding &lt;strong&gt;Glow&lt;/strong&gt; effect. And update
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Glow Threshold&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Glow Radius&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Glow Intensity&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;6. Create corner shadows&lt;span class="hx:absolute hx:-mt-20" id="6-create-corner-shadows"&gt;&lt;/span&gt;
+&lt;a href="#6-create-corner-shadows" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Duplicate the center light layer and rename it to a &amp;quot;corner shadows&amp;quot; layer&lt;/li&gt;
+&lt;li&gt;Update the Mode of &amp;quot;Mask 1&amp;quot; to &lt;strong&gt;Subtract&lt;/strong&gt; from &lt;strong&gt;Add&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Set the &lt;strong&gt;Fill &amp;gt; Color&lt;/strong&gt; black&lt;/li&gt;
+&lt;li&gt;Set the &lt;strong&gt;Transform &amp;gt; Opacity&lt;/strong&gt; not to make too dark&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Corner light variation&lt;span class="hx:absolute hx:-mt-20" id="corner-light-variation"&gt;&lt;/span&gt;
+&lt;a href="#corner-light-variation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The above steps can be used for other cases like this animation.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.gifyu.com/image/bdnYS"target="_blank" rel="noopener"&gt;&lt;img src="https://s13.gifyu.com/images/bdnYS.gif" alt="bdnYS.gif" loading="lazy" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;1. Create a background in the same way&lt;span class="hx:absolute hx:-mt-20" id="1-create-a-background-in-the-same-way"&gt;&lt;/span&gt;
+&lt;a href="#1-create-a-background-in-the-same-way" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h3&gt;2. Create the base shadow layer&lt;span class="hx:absolute hx:-mt-20" id="2-create-the-base-shadow-layer"&gt;&lt;/span&gt;
+&lt;a href="#2-create-the-base-shadow-layer" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;On top of the same step as above.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add &lt;strong&gt;Corner Pin&lt;/strong&gt; effect on the Line Shadows layer&lt;/li&gt;
+&lt;li&gt;Drag the positions of each edge of the corner pin to move lines from one edge to another edge&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;3. Add shadow and highlight lines&lt;span class="hx:absolute hx:-mt-20" id="3-add-shadow-and-highlight-lines"&gt;&lt;/span&gt;
+&lt;a href="#3-add-shadow-and-highlight-lines" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Add shadow and highlight lines by following the same steps.&lt;/p&gt;
+&lt;h3&gt;4. Add soft light&lt;span class="hx:absolute hx:-mt-20" id="4-add-soft-light"&gt;&lt;/span&gt;
+&lt;a href="#4-add-soft-light" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Add new Solid layer&lt;/li&gt;
+&lt;li&gt;Add new mask with rounded shape&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Mask Feather&lt;/strong&gt; and &lt;strong&gt;Mask Expansion&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Set Blending Modes to Add&lt;/li&gt;
+&lt;li&gt;Add &lt;strong&gt;Fill&lt;/strong&gt; effect and set the color&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;5. Add main light&lt;span class="hx:absolute hx:-mt-20" id="5-add-main-light"&gt;&lt;/span&gt;
+&lt;a href="#5-add-main-light" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Add new Solid layer&lt;/li&gt;
+&lt;li&gt;Set Blending Modes to &lt;strong&gt;Screen&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Add new mask with light emitting layer&lt;/li&gt;
+&lt;li&gt;Animate Mask Path by creating multiple key frames with multiple shapes&lt;/li&gt;
+&lt;li&gt;Add &lt;strong&gt;CC radial Radial Fast Blur&lt;/strong&gt; effect&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>Character effects of Adobe After Effects</title><link>https://michael-freling.github.io/posts/2026/06/27/character-effects-of-adobe-after-effects/</link><pubDate>Sat, 27 Jun 2026 01:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/06/27/character-effects-of-adobe-after-effects/</guid><description>
 &lt;p&gt;This is a blog post to collect effects which can be used for a character.&lt;/p&gt;
 &lt;h2&gt;Basic usages&lt;span class="hx:absolute hx:-mt-20" id="basic-usages"&gt;&lt;/span&gt;
 &lt;a href="#basic-usages" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;

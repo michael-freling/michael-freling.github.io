@@ -1,18 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes for self made anime – Adobe After Effect</title><link>https://michael-freling.github.io/tags/adobe-after-effect/</link><description>Recent content in Adobe After Effect on Notes for self made anime</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 29 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://michael-freling.github.io/tags/adobe-after-effect/index.xml" rel="self" type="application/rss+xml"/><item><title>Adobe After Effects</title><link>https://michael-freling.github.io/docs/adobe-after-effects/</link><pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate><guid>https://michael-freling.github.io/docs/adobe-after-effects/</guid><description>
-&lt;h2&gt;Effect animations&lt;span class="hx:absolute hx:-mt-20" id="effect-animations"&gt;&lt;/span&gt;
-&lt;a href="#effect-animations" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Effect animations made in Adobe After Effects. Click one to open its page.&lt;/p&gt;
-&lt;div class="hextra-cards hx:mt-4 hx:gap-4 hx:grid not-prose" style="--hextra-cards-grid-cols: 3;"&gt;
-&lt;a
-class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-gray-100 hx:shadow-sm hx:hover:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-800 hx:dark:text-gray-50 hx:dark:hover:border-neutral-500 hx:dark:hover:bg-neutral-700" href="https://michael-freling.github.io/posts/2026/06/28/anime-style-speed-line-effect/"&gt;
-&lt;div class="hx:flex hx:gap-2"&gt;&lt;img class="hextra-card-image" style="width:50%" loading="lazy" decoding="async" alt="Anime style speed line" src="https://s13.gifyu.com/images/bdnY2.gif" /&gt;&lt;img class="hextra-card-image" style="width:50%" loading="lazy" decoding="async" alt="Anime style speed line" src="https://s13.gifyu.com/images/bdnYS.gif" /&gt;&lt;/div&gt;
-&lt;div class="hx:mt-auto"&gt;
-&lt;span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:pt-4 hx:px-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50"&gt;Anime style speed line&lt;/span&gt;&lt;/div&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-&lt;h2&gt;How to use After Effect&lt;span class="hx:absolute hx:-mt-20" id="how-to-use-after-effect"&gt;&lt;/span&gt;
-&lt;a href="#how-to-use-after-effect" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;When you alt-click a stopwatch icon on the left of Transform property like &lt;strong&gt;Position&lt;/strong&gt;, then it shows &lt;strong&gt;Expression&lt;/strong&gt; for it to change an animation using an expression.&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Anime style speed line effect</title><link>https://michael-freling.github.io/posts/2026/06/28/anime-style-speed-line-effect/</link><pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/06/28/anime-style-speed-line-effect/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes for self made anime – Effect Animation</title><link>https://michael-freling.github.io/tags/effect-animation/</link><description>Recent content in Effect Animation on Notes for self made anime</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 28 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://michael-freling.github.io/tags/effect-animation/index.xml" rel="self" type="application/rss+xml"/><item><title>Anime style speed line effect</title><link>https://michael-freling.github.io/posts/2026/06/28/anime-style-speed-line-effect/</link><pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/06/28/anime-style-speed-line-effect/</guid><description>
 &lt;p&gt;This article was written in 2026-06-28.&lt;/p&gt;
 &lt;div class="hextra-inline-toc"&gt;&lt;p class="hx:mb-2 hx:font-semibold hx:tracking-tight"&gt;Contents&lt;/p&gt;&lt;nav id="TableOfContents"&gt;
 &lt;ul&gt;
@@ -183,13 +169,4 @@ class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hid
 &lt;li&gt;Add new mask with light emitting layer&lt;/li&gt;
 &lt;li&gt;Animate Mask Path by creating multiple key frames with multiple shapes&lt;/li&gt;
 &lt;li&gt;Add &lt;strong&gt;CC radial Radial Fast Blur&lt;/strong&gt; effect&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>Character effects of Adobe After Effects</title><link>https://michael-freling.github.io/posts/2026/06/27/character-effects-of-adobe-after-effects/</link><pubDate>Sat, 27 Jun 2026 01:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/06/27/character-effects-of-adobe-after-effects/</guid><description>
-&lt;p&gt;This is a blog post to collect effects which can be used for a character.&lt;/p&gt;
-&lt;h2&gt;Basic usages&lt;span class="hx:absolute hx:-mt-20" id="basic-usages"&gt;&lt;/span&gt;
-&lt;a href="#basic-usages" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;When you alt-click a stopwatch icon on the left of Transform property like &lt;strong&gt;Position&lt;/strong&gt;, then it shows &lt;strong&gt;Expression&lt;/strong&gt; for it to change an animation using an expression.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Move&lt;span class="hx:absolute hx:-mt-20" id="move"&gt;&lt;/span&gt;
-&lt;a href="#move" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Written in 2026/06/27&lt;/p&gt;
-&lt;p&gt;We can use a layer's move by a function like &lt;code&gt;wiggle(1, 5)&lt;/code&gt;. This means the value changes about 1 time per second, with up to 5 pixels of variation from the original position.&lt;/p&gt;
-&lt;p&gt;For example, next animation is with &lt;code&gt;wiggle(4, 20)&lt;/code&gt; in Position property.&lt;/p&gt;</description></item></channel></rss>
+&lt;/ol&gt;</description></item></channel></rss>
