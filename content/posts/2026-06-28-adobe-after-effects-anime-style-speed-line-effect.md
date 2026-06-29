@@ -1,25 +1,18 @@
 ---
-title: Adobe After Effects
-date: 2026-06-28 01:00:00
-last_modified_at: 2026-06-28 01:00:00
+title: Anime style speed line effect
+date: 2026-06-28
+last_modified_at: 2026-06-29
 draft: false
 tags:
   - Adobe After Effect
   - Anime
+  - Effect animation
 ---
 
-This is a blog post to collect effects which can be used for a character.
+[![bdnY2.gif](https://s13.gifyu.com/images/bdnY2.gif)](https://www.gifyu.com/image/bdnY2)
 
-## Basic usages
-
-- When you alt-click a stopwatch icon on the left of Transform property like **Position**, then it shows **Expression** for it to change an animation using an expression.
-
-
-## Anime style speed line
-
-Written in 2026-06-28.
-
-This is based on
+This was written in 2026-06-28.
+This was based on
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kRdyxiONCDg?si=VDS2s69sbwGVbzXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -90,21 +83,27 @@ The steps to create lines
     4. Set the **Transform > Opacity** not to make too dark
 
 
-Anime style speed line but the left top corner emits lights look like
+These steps can be used for other cases like next animation.
+
+[![bdnYS.gif](https://s13.gifyu.com/images/bdnYS.gif)](https://www.gifyu.com/image/bdnYS)
+
+
+For the left top corner emits lights like next,
 
 1. Create a background in the same way
 2. Create the base shadow layer. On top of the same step as above
     1. Add **Corner Pin** effect on the Line Shadows layer
     2. Drag the positions of each edge of the corner pin to move lines from one edge to another edge
+3. Add shadow and highlight lines by following the same steps
 3. Add soft Light
     1. Add new Solid layer
-    3. Add new mask with rounded shape
-    4. Set **Mask Feather** and **Mask Expansion**
-    5. Set Blending Modes to Add
-    6. Add **Fill** effect and set the color
+    2. Add new mask with rounded shape
+    3. Set **Mask Feather** and **Mask Expansion**
+    4. Set Blending Modes to Add
+    5. Add **Fill** effect and set the color
 4. Add main light
     1. Add new Solid layer
-    4. Set Blending Modes to **Screen**
-    2. Add new mask with light emitting layer
-    3. Animate Mask Path by creating multiple key frames with multiple shapes
-    6. Add **CC radial Radial Fast Blur** effect
+    2. Set Blending Modes to **Screen**
+    3. Add new mask with light emitting layer
+    4. Animate Mask Path by creating multiple key frames with multiple shapes
+    5. Add **CC radial Radial Fast Blur** effect

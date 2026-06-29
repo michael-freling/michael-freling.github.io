@@ -1,0 +1,48 @@
+{{- /*
+  A card that shows multiple images in a single card, then links to one page.
+  Built on top of Hextra's card markup so it matches the theme styling.
+
+  @param {string} link The link the card points to.
+  @param {string} title The title shown under the images.
+  @param {string} subtitle Optional subtitle text.
+  @inner One image URL per line (local or remote).
+
+  @example
+    {{< cards >}}
+      {{< card-gallery link="effects/foo/" title="Speed lines" >}}
+      https://example.com/a.gif
+      https://example.com/b.gif
+      {{< /card-gallery >}}
+    {{< /cards >}}
+*/ -}}
+{{- $link := .Get "link" -}}
+{{- $title := .Get "title" -}}
+{{- $subtitle := .Get "subtitle" -}}
+{{- $images := slice -}}
+{{- range (split (.Inner | default "") "\n") -}}
+  {{- with (trim . " \t\r") -}}
+    {{- $images = $images | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $count := len $images -}}
+{{- $width := cond (gt $count 0) (printf "%d%%" (div 100 $count)) "100%" -}}
+
+{{- $external := strings.HasPrefix $link "http" -}}
+{{- $href := cond (strings.HasPrefix $link "/") ($link | relURL) $link -}}
+
+<a
+  class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-gray-100 hx:shadow-sm hx:hover:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-800 hx:dark:text-gray-50 hx:dark:hover:border-neutral-500 hx:dark:hover:bg-neutral-700"
+  {{- with $link }} href="{{ $href }}"{{ with $external }} target="_blank" rel="noreferrer"{{ end }}{{ end -}}
+>
+  <div class="hx:flex hx:gap-2">
+    {{- range $images -}}
+      <img class="hextra-card-image" style="width:{{ $width }}" loading="lazy" decoding="async" alt="{{ $title }}" src="{{ . | safeURL }}" />
+    {{- end -}}
+  </div>
+  <div class="hx:mt-auto">
+    <span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:pt-4 hx:px-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">{{ $title }}</span>
+    {{- with $subtitle -}}
+      <div class="hextra-card-subtitle hx:line-clamp-3 hx:text-sm hx:font-normal hx:text-gray-500 hx:dark:text-gray-400 hx:px-4 hx:mb-4 hx:mt-2">{{ . | markdownify }}</div>
+    {{- end -}}
+  </div>
+</a>
