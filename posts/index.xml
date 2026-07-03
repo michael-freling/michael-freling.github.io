@@ -360,7 +360,6 @@ Then, probably she was the one who pushed him.
 But she was in the conversation just before Subaru fell down on the 2nd time, so she may not be?&lt;/p&gt;
 &lt;p&gt;In terms of animation, Shaula's eyes had 3 red highlights, but when Subaru left the tower, those highlights changed to 3 pupils.
 Were they made by magic or something, maybe.&lt;/p&gt;</description></item><item><title>Anime style speed line effect</title><link>https://michael-freling.github.io/posts/2026/06/28/anime-style-speed-line-effect/</link><pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/06/28/anime-style-speed-line-effect/</guid><description>
-&lt;p&gt;This article was written in 2026-06-28.&lt;/p&gt;
 &lt;div class="hextra-inline-toc"&gt;&lt;p class="hx:mb-2 hx:font-semibold hx:tracking-tight"&gt;Contents&lt;/p&gt;&lt;nav id="TableOfContents"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#speed-lines"&gt;Speed lines&lt;/a&gt;
@@ -382,14 +381,24 @@ Were they made by magic or something, maybe.&lt;/p&gt;</description></item><item
 &lt;li&gt;&lt;a href="#5-add-main-light"&gt;5. Add main light&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;&lt;a href="#zoom-speed-lines-variation"&gt;Zoom speed lines variation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#1-add-speed-lines"&gt;1. Add speed lines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#2-update-speed-lines-to-animate-from-one-point"&gt;2. Update speed lines to animate from one point&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#3-hide-the-central-point"&gt;3. Hide the central point&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#4-move-the-speed-lines-to-the-edge-of-a-screen"&gt;4. Move the speed lines to the edge of a screen.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/nav&gt;
 &lt;/div&gt;
-&lt;p&gt;I appreciated the next video which explains how to make the effect in details.&lt;/p&gt;
+&lt;p&gt;I appreciated the next videos which explains how to make the effect in details.&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/kRdyxiONCDg?si=VDS2s69sbwGVbzXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/SwypQfVAEug?si=dBLErtGZHRvFzL9C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;I had followed &lt;a href="https://www.youtube.com/watch?v=73T5zAZtCpc"target="_blank" rel="noopener"&gt;another video&lt;/a&gt; in the middle of the way but stopped because some files were not downloadable.&lt;/p&gt;
 &lt;h2&gt;Speed lines&lt;span class="hx:absolute hx:-mt-20" id="speed-lines"&gt;&lt;/span&gt;
-&lt;a href="#speed-lines" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The steps to create lines. I created next animation following these steps:&lt;/p&gt;
+&lt;a href="#speed-lines" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This section was written in June 28, 2026.&lt;/p&gt;
+&lt;p&gt;The steps to create lines. I created next animation following these steps:&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.gifyu.com/image/bdnY2"target="_blank" rel="noopener"&gt;&lt;img src="https://s13.gifyu.com/images/bdnY2.gif" alt="bdnY2.gif" loading="lazy" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;1. Create a background&lt;span class="hx:absolute hx:-mt-20" id="1-create-a-background"&gt;&lt;/span&gt;
 &lt;a href="#1-create-a-background" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Here add a gradient colored background.&lt;/p&gt;
@@ -504,7 +513,8 @@ Were they made by magic or something, maybe.&lt;/p&gt;</description></item><item
 &lt;li&gt;Set the &lt;strong&gt;Transform &amp;gt; Opacity&lt;/strong&gt; not to make too dark&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2&gt;Corner light variation&lt;span class="hx:absolute hx:-mt-20" id="corner-light-variation"&gt;&lt;/span&gt;
-&lt;a href="#corner-light-variation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The above steps can be used for other cases like this animation.&lt;/p&gt;
+&lt;a href="#corner-light-variation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This section was written in June 28, 2026.&lt;/p&gt;
+&lt;p&gt;The above steps can be used for other cases like this animation.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://www.gifyu.com/image/bdnYS"target="_blank" rel="noopener"&gt;&lt;img src="https://s13.gifyu.com/images/bdnYS.gif" alt="bdnYS.gif" loading="lazy" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;1. Create a background in the same way&lt;span class="hx:absolute hx:-mt-20" id="1-create-a-background-in-the-same-way"&gt;&lt;/span&gt;
 &lt;a href="#1-create-a-background-in-the-same-way" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h3&gt;2. Create the base shadow layer&lt;span class="hx:absolute hx:-mt-20" id="2-create-the-base-shadow-layer"&gt;&lt;/span&gt;
@@ -530,6 +540,67 @@ Were they made by magic or something, maybe.&lt;/p&gt;</description></item><item
 &lt;li&gt;Add new mask with light emitting layer&lt;/li&gt;
 &lt;li&gt;Animate Mask Path by creating multiple key frames with multiple shapes&lt;/li&gt;
 &lt;li&gt;Add &lt;strong&gt;CC radial Radial Fast Blur&lt;/strong&gt; effect&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Zoom speed lines variation&lt;span class="hx:absolute hx:-mt-20" id="zoom-speed-lines-variation"&gt;&lt;/span&gt;
+&lt;a href="#zoom-speed-lines-variation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This section was written in July 3, 2026 and result of animation looks like next:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.gifyu.com/image/bdjn6"target="_blank" rel="noopener"&gt;&lt;img src="https://s13.gifyu.com/images/bdjn6.gif" alt="bdjn6.gif" loading="lazy" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is the variation explained from the video:&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/SwypQfVAEug?si=dBLErtGZHRvFzL9C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;In this video, &amp;quot;Turbulent Noise&amp;quot; effect is used instead of &amp;quot;Fractal Noise&amp;quot;.
+And the most important effect for this zoom version is the&lt;/p&gt;
+&lt;h3&gt;1. Add speed lines&lt;span class="hx:absolute hx:-mt-20" id="1-add-speed-lines"&gt;&lt;/span&gt;
+&lt;a href="#1-add-speed-lines" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This is almost the same steps as &amp;quot;Create the base shadow line layer&amp;quot; on the above steps&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add new Solid layer, and add Turbulent Noise effect&lt;/li&gt;
+&lt;li&gt;For the effect on the layer
+&lt;ol&gt;
+&lt;li&gt;Set &lt;strong&gt;Contract&lt;/strong&gt; to higher value to reduce blur&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Brightness&lt;/strong&gt; to lower value to reduce white pixels&lt;/li&gt;
+&lt;li&gt;Disable &lt;strong&gt;Transform &amp;gt; Uniform Scaling&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Transform &amp;gt; Scale Width&lt;/strong&gt; and &lt;strong&gt;Transform &amp;gt; Scale Height&lt;/strong&gt; to such values that lines can be seen.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Animate the effect by
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Alt Click &lt;strong&gt;Transform &amp;gt; Offset Turbulence&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;While the entire expression of Offset Turbulence was selected, drag a spiral icon of Offset Turbulence into the offset of &lt;strong&gt;Offset Turbulence&lt;/strong&gt;
+3. It should change an expression from &lt;code&gt;effect(&amp;quot;Turbulent Noise&amp;quot;)(13)&lt;/code&gt; to next&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; temp = effect(&amp;quot;Turbulent Noise&amp;quot;)(&amp;quot;Offset Turbulence&amp;quot;)[0];
+[temp, temp]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update the 2nd line from &lt;code&gt;[temp, temp]&lt;/code&gt; to &lt;code&gt;[temp, time * 5000]&lt;/code&gt;. This changes the Y axis's value depending on a time frame.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;2. Update speed lines to animate from one point&lt;span class="hx:absolute hx:-mt-20" id="2-update-speed-lines-to-animate-from-one-point"&gt;&lt;/span&gt;
+&lt;a href="#2-update-speed-lines-to-animate-from-one-point" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Add new Adjustment layer and add an effect &amp;quot;Polar Coordinates&amp;quot;&lt;/li&gt;
+&lt;li&gt;For the effect on the new layer
+&lt;ol&gt;
+&lt;li&gt;Set &lt;strong&gt;Type of Conversion&lt;/strong&gt; to &amp;quot;Rect to Polar&amp;quot;&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Interpolation&lt;/strong&gt; to 100%&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;3. Hide the central point&lt;span class="hx:absolute hx:-mt-20" id="3-hide-the-central-point"&gt;&lt;/span&gt;
+&lt;a href="#3-hide-the-central-point" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Add new Solid layer&lt;/li&gt;
+&lt;li&gt;Set the background of the layer to Black&lt;/li&gt;
+&lt;li&gt;Select a mask of &amp;quot;Ellipse tool&amp;quot; and mask the center of the point&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;4. Move the speed lines to the edge of a screen.&lt;span class="hx:absolute hx:-mt-20" id="4-move-the-speed-lines-to-the-edge-of-a-screen"&gt;&lt;/span&gt;
+&lt;a href="#4-move-the-speed-lines-to-the-edge-of-a-screen" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The video explained until the above steps. However, I've seen that there was the empty spaces that lines do not move on the edges.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.gifyu.com/image/bdjn8"target="_blank" rel="noopener"&gt;&lt;img src="https://s13.gifyu.com/images/bdjn8.gif" alt="bdjn8.gif" loading="lazy" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So in order to make lines move to them, I needed to do these changes.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pre-compute all layers.&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Transform &amp;gt; Scale&lt;/strong&gt; on the composition to make the speed line go to the edges&lt;/li&gt;
 &lt;/ol&gt;</description></item><item><title>Character effects of Adobe After Effects</title><link>https://michael-freling.github.io/posts/2026/06/27/character-effects-of-adobe-after-effects/</link><pubDate>Sat, 27 Jun 2026 01:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/06/27/character-effects-of-adobe-after-effects/</guid><description>
 &lt;p&gt;This is a blog post to collect effects which can be used for a character.&lt;/p&gt;
 &lt;h2&gt;Basic usages&lt;span class="hx:absolute hx:-mt-20" id="basic-usages"&gt;&lt;/span&gt;
