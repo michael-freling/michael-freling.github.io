@@ -1,25 +1,28 @@
 ---
 title: Anime style speed line effect
 date: 2026-06-28
-last_modified_at: 2026-06-29
+last_modified_at: 2026-07-03
 draft: false
 tags:
   - Adobe After Effect
   - Anime
   - Effect animation
+  - Anime speed lines
 ---
-
-This article was written in 2026-06-28.
 
 {{< toc >}}
 
-I appreciated the next video which explains how to make the effect in details.
+I appreciated the next videos which explains how to make the effect in details.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kRdyxiONCDg?si=VDS2s69sbwGVbzXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SwypQfVAEug?si=dBLErtGZHRvFzL9C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 I had followed [another video](https://www.youtube.com/watch?v=73T5zAZtCpc) in the middle of the way but stopped because some files were not downloadable.
 
 ## Speed lines
+
+This section was written in June 28, 2026.
 
 The steps to create lines. I created next animation following these steps:
 
@@ -106,6 +109,8 @@ Add as many layer as you want.
 
 ## Corner light variation
 
+This section was written in June 28, 2026.
+
 The above steps can be used for other cases like this animation.
 
 [![bdnYS.gif](https://s13.gifyu.com/images/bdnYS.gif)](https://www.gifyu.com/image/bdnYS)
@@ -138,3 +143,65 @@ Add shadow and highlight lines by following the same steps.
 3. Add new mask with light emitting layer
 4. Animate Mask Path by creating multiple key frames with multiple shapes
 5. Add **CC radial Radial Fast Blur** effect
+
+
+## Zoom speed lines variation
+
+This section was written in July 3, 2026 and result of animation looks like next:
+
+[![bdjn6.gif](https://s13.gifyu.com/images/bdjn6.gif)](https://www.gifyu.com/image/bdjn6)
+
+This is the variation explained from the video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SwypQfVAEug?si=dBLErtGZHRvFzL9C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+In this video, "Turbulent Noise" effect is used instead of "Fractal Noise".
+And the most important effect for this zoom version is the
+
+### 1. Add speed lines
+
+This is almost the same steps as "Create the base shadow line layer" on the above steps
+
+1. Add new Solid layer, and add Turbulent Noise effect
+2. For the effect on the layer
+    1. Set **Contract** to higher value to reduce blur
+    2. Set **Brightness** to lower value to reduce white pixels
+    2. Disable **Transform > Uniform Scaling**
+    3. Set **Transform > Scale Width** and **Transform > Scale Height** to such values that lines can be seen.
+3. Animate the effect by
+    1. Alt Click **Transform > Offset Turbulence**
+    2. While the entire expression of Offset Turbulence was selected, drag a spiral icon of Offset Turbulence into the offset of **Offset Turbulence**
+        3. It should change an expression from `effect("Turbulent Noise")(13)` to next
+
+            temp = effect("Turbulent Noise")("Offset Turbulence")[0];
+            [temp, temp]
+
+    3. Update the 2nd line from `[temp, temp]` to `[temp, time * 5000]`. This changes the Y axis's value depending on a time frame.
+
+
+### 2. Update speed lines to animate from one point
+
+1. Add new Adjustment layer and add an effect "Polar Coordinates"
+2. For the effect on the new layer
+    1. Set **Type of Conversion** to "Rect to Polar"
+    2. Set **Interpolation** to 100%
+
+
+### 3. Hide the central point
+
+1. Add new Solid layer
+2. Set the background of the layer to Black
+3. Select a mask of "Ellipse tool" and mask the center of the point
+
+
+### 4. Move the speed lines to the edge of a screen.
+
+The video explained until the above steps. However, I've seen that there was the empty spaces that lines do not move on the edges.
+
+[![bdjn8.gif](https://s13.gifyu.com/images/bdjn8.gif)](https://www.gifyu.com/image/bdjn8)
+
+So in order to make lines move to them, I needed to do these changes.
+
+1. Pre-compute all layers.
+2. Set **Transform > Scale** on the composition to make the speed line go to the edges

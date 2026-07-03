@@ -17,6 +17,7 @@ Effect animations made in Adobe After Effects. Click one to open its page.
     title="Anime style speed line" >}}
   https://s13.gifyu.com/images/bdnY2.gif
   https://s13.gifyu.com/images/bdnYS.gif
+  https://s13.gifyu.com/images/bdjn6.gif
   {{< /card-gallery >}}
 {{< /cards >}}
 
