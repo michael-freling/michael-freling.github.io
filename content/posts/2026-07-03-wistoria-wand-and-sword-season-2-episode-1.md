@@ -1,5 +1,5 @@
 ---
-title: First thoughts after watching Wistoria: Wand and Sword episode 13 (season 2, episode 1)
+title: "First thoughts after watching Wistoria: Wand and Sword episode 13 (season 2, episode 1)"
 date: 2026-07-03 01:00:00
 draft: false
 tags:
