@@ -1,6 +1,6 @@
 ---
 title: "Random thoughts after re-watching Saga of Tanya the Evil episode 1"
-date: 2026-07-03 01:00:00
+date: 2026-07-04 01:00:00
 draft: false
 tags:
   - Anime
