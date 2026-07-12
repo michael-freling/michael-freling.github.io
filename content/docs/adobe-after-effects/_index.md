@@ -19,8 +19,13 @@ Effect animations made in Adobe After Effects. Click one to open its page.
   https://s13.gifyu.com/images/bdnYS.gif
   https://s13.gifyu.com/images/bdjn6.gif
   {{< /card-gallery >}}
-{{< /cards >}}
 
+  {{< card-gallery
+    link="/posts/2026/07/05/anime-style-fire/"
+    title="Anime style fire">}}
+  https://s13.gifyu.com/images/bdygf.gif
+  {{< /card-gallery >}}
+{{< /cards >}}
 
 ## How to use After Effect
 

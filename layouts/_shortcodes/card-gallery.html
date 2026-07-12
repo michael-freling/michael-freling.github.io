@@ -24,9 +24,6 @@
     {{- $images = $images | append . -}}
   {{- end -}}
 {{- end -}}
-{{- $count := len $images -}}
-{{- $width := cond (gt $count 0) (printf "%d%%" (div 100 $count)) "100%" -}}
-
 {{- $external := strings.HasPrefix $link "http" -}}
 {{- $href := cond (strings.HasPrefix $link "/") ($link | relURL) $link -}}
 
@@ -34,9 +31,13 @@
   class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-gray-100 hx:shadow-sm hx:hover:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-800 hx:dark:text-gray-50 hx:dark:hover:border-neutral-500 hx:dark:hover:bg-neutral-700"
   {{- with $link }} href="{{ $href }}"{{ with $external }} target="_blank" rel="noreferrer"{{ end }}{{ end -}}
 >
-  <div class="hx:flex hx:gap-2">
+  {{- /* Fixed strip height (not aspect-ratio, which images can stretch) so
+    every card's image area is the same height regardless of image count.
+    Images keep their natural aspect ratio within it, centered, so each one
+    is shown in full without cropping. */ -}}
+  <div class="hx:flex hx:gap-2 hx:justify-center" style="height: 10rem">
     {{- range $images -}}
-      <img class="hextra-card-image" style="width:{{ $width }}" loading="lazy" decoding="async" alt="{{ $title }}" src="{{ . | safeURL }}" />
+      <img class="hextra-card-image" style="height: 100%; max-width: 100%; object-fit: contain" loading="lazy" decoding="async" alt="{{ $title }}" src="{{ . | safeURL }}" />
     {{- end -}}
   </div>
   <div class="hx:mt-auto">
