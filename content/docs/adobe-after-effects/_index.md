@@ -1,7 +1,7 @@
 ---
 title: Adobe After Effects
 date: 2026-06-29
-last_modified_at: 2026-06-29
+last_modified_at: 2026-07-12
 draft: false
 tags:
   - Adobe After Effect
@@ -24,6 +24,14 @@ Effect animations made in Adobe After Effects. Click one to open its page.
     link="/posts/2026/07/05/anime-style-fire/"
     title="Anime style fire">}}
   https://s13.gifyu.com/images/bdygf.gif
+  {{< /card-gallery >}}
+
+  {{< card-gallery
+    link="/posts/2026/07/12/anime-style-lightning-effect/"
+    title="Anime style lightning" >}}
+  https://s13.gifyu.com/images/bdJHR.gif
+  https://s13.gifyu.com/images/bdJK2.gif
+  https://s13.gifyu.com/images/bdJHC.gif
   {{< /card-gallery >}}
 {{< /cards >}}
 
