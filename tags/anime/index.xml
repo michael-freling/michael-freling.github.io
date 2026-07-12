@@ -154,7 +154,201 @@ Or was she just a psychopath and didn't care her life? Maybe.&lt;/p&gt;
 And the jewell of her chest, I guess magic jewell, lit up at that time from red to green, as it does when she uses her magic.&lt;/p&gt;
 &lt;p&gt;Also, with an army's uniform, Tanya brought her bag in front and her transceiver and some devices on the back.
 Maybe at the time, the machine isn't so small so they needed to bring that big one.
-Then when she self destructed, she both of the bag and the devices were gone by her explosion.&lt;/p&gt;</description></item><item><title>Random thoughts after re-watching Saga of Tanya the Evil episode 1</title><link>https://michael-freling.github.io/posts/2026/07/04/random-thoughts-after-re-watching-saga-of-tanya-the-evil-episode-1/</link><pubDate>Sat, 04 Jul 2026 01:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/07/04/random-thoughts-after-re-watching-saga-of-tanya-the-evil-episode-1/</guid><description>
+Then when she self destructed, she both of the bag and the devices were gone by her explosion.&lt;/p&gt;</description></item><item><title>Anime style fire</title><link>https://michael-freling.github.io/posts/2026/07/05/anime-style-fire/</link><pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/07/05/anime-style-fire/</guid><description>
+&lt;div class="hextra-inline-toc"&gt;&lt;p class="hx:mb-2 hx:font-semibold hx:tracking-tight"&gt;Contents&lt;/p&gt;&lt;nav id="TableOfContents"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#fire-animation"&gt;Fire animation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#1-create-a-fire-with-one-color"&gt;1. Create a fire with one color&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#2-create-an-inner-fire"&gt;2. Create an inner fire&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#3-create-sparks"&gt;3. Create sparks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#4-create-another-sparks"&gt;4. Create another sparks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#5-compose-all-compositions"&gt;5. Compose all compositions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+&lt;p&gt;I appreciated the next video which explains how to make the effect in details. Use &lt;code&gt;audio&lt;/code&gt; on the Android App to auto-translate.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/4KwAQF46x-s?si=Jx6EZyLTXLJPwkHx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h2&gt;Fire animation&lt;span class="hx:absolute hx:-mt-20" id="fire-animation"&gt;&lt;/span&gt;
+&lt;a href="#fire-animation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This section was written on July, 2026.&lt;/p&gt;
+&lt;p&gt;The core parts of this frame are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shape layer to draw a shape&lt;/li&gt;
+&lt;li&gt;Use Wave Warp and CC Sphere effects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Next animation was the one I made by following steps:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.gifyu.com/image/bdygf"target="_blank" rel="noopener"&gt;&lt;img src="https://s13.gifyu.com/images/bdygf.gif" alt="bdygf.gif" loading="lazy" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;1. Create a fire with one color&lt;span class="hx:absolute hx:-mt-20" id="1-create-a-fire-with-one-color"&gt;&lt;/span&gt;
+&lt;a href="#1-create-a-fire-with-one-color" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Create a composition main and select it&lt;/li&gt;
+&lt;li&gt;Select &amp;quot;Path&amp;quot; tool and add a rough shape of a water drop. It should create a &amp;quot;Shape Layer&amp;quot;
+&lt;ol&gt;
+&lt;li&gt;Click and drag each point to enable to make the edge round instead of straight lines&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Set the colors of Stroke and Fill to orange and name the layer to &lt;strong&gt;Orange&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Add the effect &lt;strong&gt;Wave Warp&lt;/strong&gt; to the layer and set Property
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Wave Type&lt;/strong&gt; to the &lt;strong&gt;Circle&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Wave Height&lt;/strong&gt; 25, &lt;strong&gt;Wave Width&lt;/strong&gt; 80, &lt;strong&gt;Direction&lt;/strong&gt;'s angle to 35, for instance&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Pinning&lt;/strong&gt; to the &lt;strong&gt;Bottom edge&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Preview the animation and see if it already looks like a fire&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Duplicate the effect and set Properties
+&lt;ol&gt;
+&lt;li&gt;Wave Height -25&lt;/li&gt;
+&lt;li&gt;Direction's angle to -40&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;In order not to move the bottom of the shape
+&lt;ol&gt;
+&lt;li&gt;add new ellipse on the bottom of the shape as a new layer.&lt;/li&gt;
+&lt;li&gt;Rename the layer as orange_core&lt;/li&gt;
+&lt;li&gt;Copy 2 effects of Wave Warp effects from the orange layer into the orange_core layer&lt;/li&gt;
+&lt;li&gt;On the properties on the first Wave Warp
+&lt;ol&gt;
+&lt;li&gt;Set the Wave Height to 15&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;On the properties of the 2nd Wave Warp
+3. Set the Wave Type to &lt;strong&gt;Smooth Noise&lt;/strong&gt;
+4. Set the Wave Height to 100
+5. Set the Wave Speed to 0.5&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Adjust the path's shapes of the layer orange when needed&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;2. Create an inner fire&lt;span class="hx:absolute hx:-mt-20" id="2-create-an-inner-fire"&gt;&lt;/span&gt;
+&lt;a href="#2-create-an-inner-fire" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Duplicate the orange layers and name them to yellow and yellow_core layers&lt;/li&gt;
+&lt;li&gt;Change the color of the new layers to yellow&lt;/li&gt;
+&lt;li&gt;Set the paths of the Contents of the yellow layer to make it smaller than orange&lt;/li&gt;
+&lt;li&gt;Set the properties of the yellow layer
+&lt;ol&gt;
+&lt;li&gt;Set the direction to a different value from orange layer, like 3&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;3. Create sparks&lt;span class="hx:absolute hx:-mt-20" id="3-create-sparks"&gt;&lt;/span&gt;
+&lt;a href="#3-create-sparks" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Duplicate the composition main and create sparks 1&lt;/li&gt;
+&lt;li&gt;In the sparks 1 composition, delete layers o&lt;/li&gt;
+&lt;li&gt;Set the properties of the 2nd Wave Warp of the layer
+&lt;ol&gt;
+&lt;li&gt;Set Wave Height to -150&lt;/li&gt;
+&lt;li&gt;Set Direction's degree to -36&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Duplicate the 2nd Wave Warp, and of the new Wave Warp, set
+&lt;ol&gt;
+&lt;li&gt;Wave Type to &lt;strong&gt;Smooth Noise&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Wave Height to 30&lt;/li&gt;
+&lt;li&gt;Wave Width to 100&lt;/li&gt;
+&lt;li&gt;Direction to -40&lt;/li&gt;
+&lt;li&gt;Wave Speed to 0.5&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Duplicate the orange layer and delete 2nd and 3rd Wave Warp effects&lt;/li&gt;
+&lt;li&gt;Set following properties of the 1st Wave Warp on the new layer:
+&lt;ol&gt;
+&lt;li&gt;Wave Type to Uncircle&lt;/li&gt;
+&lt;li&gt;Wave Height to 230&lt;/li&gt;
+&lt;li&gt;Wave Width to 135&lt;/li&gt;
+&lt;li&gt;Direction to -25&lt;/li&gt;
+&lt;li&gt;Wave Speed to 0.5&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Set the Mode of the new layer to Silhouette Alpha to extract all animations that are below those layers by the layer&lt;/li&gt;
+&lt;li&gt;To make the frame smaller, to set the path of the first layer to smaller&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;4. Create another sparks&lt;span class="hx:absolute hx:-mt-20" id="4-create-another-sparks"&gt;&lt;/span&gt;
+&lt;a href="#4-create-another-sparks" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Create sparks for far from the core of a fire&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Duplicate the composition &amp;quot;sparks 1&amp;quot; and rename it to &amp;quot;sparks 2&amp;quot;&lt;/li&gt;
+&lt;li&gt;On the 1st orange layer
+3. Set the path to make it wider and a little taller
+4. Set the following properties of 2nd Wave Warp effect:
+1. Wave Height to 60 from -150&lt;/li&gt;
+&lt;li&gt;On the 2nd orange layer
+&lt;ol&gt;
+&lt;li&gt;Set the path to the similar width as the first layer&lt;/li&gt;
+&lt;li&gt;Set the following properties of Wave Warp effect:
+&lt;ol&gt;
+&lt;li&gt;Wave Height to 200&lt;/li&gt;
+&lt;li&gt;Wave Width to 100&lt;/li&gt;
+&lt;li&gt;Direction to -40&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;In order to make the central part of this animation less, duplicate the 2nd layer
+&lt;ol&gt;
+&lt;li&gt;Set the path to thinner&lt;/li&gt;
+&lt;li&gt;Set the following properties of Wave Warp effect:
+&lt;ol&gt;
+&lt;li&gt;Wave Type to Circle&lt;/li&gt;
+&lt;li&gt;Wave Height to 25&lt;/li&gt;
+&lt;li&gt;Wave Width to 80&lt;/li&gt;
+&lt;li&gt;Direction to -36&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Duplicate the first Wave Warp effect and set the following properties of new effect:
+&lt;ol&gt;
+&lt;li&gt;Wave Type to Smooth Noise&lt;/li&gt;
+&lt;li&gt;Wave Height to -260&lt;/li&gt;
+&lt;li&gt;Wave Width to 180&lt;/li&gt;
+&lt;li&gt;Direction to -40&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;5. Compose all compositions&lt;span class="hx:absolute hx:-mt-20" id="5-compose-all-compositions"&gt;&lt;/span&gt;
+&lt;a href="#5-compose-all-compositions" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Select all compositions, fire, sparks 1, and sparks 2 and create another composition by &amp;quot;New Comp from Selection&amp;quot;. Let's say it's &amp;quot;finish&amp;quot;&lt;/li&gt;
+&lt;li&gt;Add an effect &amp;quot;CC Sphere&amp;quot; on sparks 2 composition in the &amp;quot;finish&amp;quot; composition and set properties of the effect by followings:
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Rotation &amp;gt; Rotation Y&lt;/strong&gt; to 60 degrees&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Radius&lt;/strong&gt; to 400&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Light &amp;gt; Light intensity&lt;/strong&gt; to 0&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Shading &amp;gt; Ambient&lt;/strong&gt; to 100&lt;/li&gt;
+&lt;li&gt;Set Offset to make them to go around the center
+6. &lt;strong&gt;Note that I created the animation as the portrait, but that caused this animation failed to go around to the top of the fire composition's fire. The fix was to set the size of composition of spark 2 to the square&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Duplicate the composition and update Rotation Rotation Y's degree and offset to make it go around in the other side.&lt;/li&gt;
+&lt;li&gt;To adjust a few effects, add a new Adjustment layer and on the layer
+&lt;ol&gt;
+&lt;li&gt;add &amp;quot;Roughten Edges&amp;quot; effect
+&lt;ol&gt;
+&lt;li&gt;And set Border to 4&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;I cannot see any difference&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Add a new effect &lt;strong&gt;Posterize Time&lt;/strong&gt; and set:
+&lt;ol&gt;
+&lt;li&gt;Set Frame rate to 12&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Add a new effect &lt;strong&gt;Glow&lt;/strong&gt;
+&lt;ol&gt;
+&lt;li&gt;Set Glow intensity to 0.7, for example&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Duplicate the Glow effect&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Adjust properties like colors on each layers for cleaning up&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Afterward, the video didn't describe anything, so I updated a few things by myself&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add &lt;strong&gt;Fill&lt;/strong&gt; effect to spark 1 composition to make the color red&lt;/li&gt;
+&lt;li&gt;I made the spark 2's composition to shorter&lt;/li&gt;
+&lt;li&gt;Duplicate the spark 2 again, set &lt;strong&gt;Transform Y's degree&lt;/strong&gt;, add Fill effect to change the color&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>Random thoughts after re-watching Saga of Tanya the Evil episode 1</title><link>https://michael-freling.github.io/posts/2026/07/04/random-thoughts-after-re-watching-saga-of-tanya-the-evil-episode-1/</link><pubDate>Sat, 04 Jul 2026 01:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/07/04/random-thoughts-after-re-watching-saga-of-tanya-the-evil-episode-1/</guid><description>
 &lt;blockquote&gt;
 &lt;p&gt;This note includes a spoiler.&lt;/p&gt;
 &lt;/blockquote&gt;
