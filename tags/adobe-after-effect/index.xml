@@ -206,6 +206,11 @@ class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hid
 &lt;div class="hx:mt-auto"&gt;
 &lt;span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:pt-4 hx:px-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50"&gt;Anime style fire&lt;/span&gt;&lt;/div&gt;
 &lt;/a&gt;
+&lt;a
+class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-gray-100 hx:shadow-sm hx:hover:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-800 hx:dark:text-gray-50 hx:dark:hover:border-neutral-500 hx:dark:hover:bg-neutral-700" href="https://michael-freling.github.io/posts/2026/07/12/anime-style-lightning-effect/"&gt;&lt;div class="hx:flex hx:gap-2 hx:justify-center" style="height: 10rem"&gt;&lt;img class="hextra-card-image" style="height: 100%; max-width: 100%; object-fit: contain" loading="lazy" decoding="async" alt="Anime style lightning" src="https://s13.gifyu.com/images/bdJHR.gif" /&gt;&lt;img class="hextra-card-image" style="height: 100%; max-width: 100%; object-fit: contain" loading="lazy" decoding="async" alt="Anime style lightning" src="https://s13.gifyu.com/images/bdJK2.gif" /&gt;&lt;img class="hextra-card-image" style="height: 100%; max-width: 100%; object-fit: contain" loading="lazy" decoding="async" alt="Anime style lightning" src="https://s13.gifyu.com/images/bdJHC.gif" /&gt;&lt;/div&gt;
+&lt;div class="hx:mt-auto"&gt;
+&lt;span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:pt-4 hx:px-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50"&gt;Anime style lightning&lt;/span&gt;&lt;/div&gt;
+&lt;/a&gt;
 &lt;/div&gt;
 &lt;h2&gt;How to use After Effect&lt;span class="hx:absolute hx:-mt-20" id="how-to-use-after-effect"&gt;&lt;/span&gt;
 &lt;a href="#how-to-use-after-effect" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;

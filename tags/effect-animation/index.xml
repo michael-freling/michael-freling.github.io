@@ -1,4 +1,86 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes for self made anime – Effect Animation</title><link>https://michael-freling.github.io/tags/effect-animation/</link><description>Recent content in Effect Animation on Notes for self made anime</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 05 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://michael-freling.github.io/tags/effect-animation/index.xml" rel="self" type="application/rss+xml"/><item><title>Anime style fire</title><link>https://michael-freling.github.io/posts/2026/07/05/anime-style-fire/</link><pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/07/05/anime-style-fire/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes for self made anime – Effect Animation</title><link>https://michael-freling.github.io/tags/effect-animation/</link><description>Recent content in Effect Animation on Notes for self made anime</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 12 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://michael-freling.github.io/tags/effect-animation/index.xml" rel="self" type="application/rss+xml"/><item><title>Anime style lightning effect</title><link>https://michael-freling.github.io/posts/2026/07/12/anime-style-lightning-effect/</link><pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/07/12/anime-style-lightning-effect/</guid><description>
+&lt;div class="hextra-inline-toc"&gt;&lt;p class="hx:mb-2 hx:font-semibold hx:tracking-tight"&gt;Contents&lt;/p&gt;&lt;nav id="TableOfContents"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#lightning-animation"&gt;Lightning animation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#1-base-layer"&gt;1. Base layer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#2-core-lightning-layer"&gt;2. Core lightning layer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#variations-of-advanced-lightning"&gt;Variations of Advanced Lightning&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#bouncey"&gt;Bouncey&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#anywhere"&gt;Anywhere&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+&lt;p&gt;I appreciated the next video which explains how to make the effect in details.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/5JHFggQ8Cqs?si=G_kUZJLJumj2QhU5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h2&gt;Lightning animation&lt;span class="hx:absolute hx:-mt-20" id="lightning-animation"&gt;&lt;/span&gt;
+&lt;a href="#lightning-animation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This section was written on July, 2026.&lt;/p&gt;
+&lt;p&gt;Next animation was the one I made by following steps:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.gifyu.com/image/bdJHR"target="_blank" rel="noopener"&gt;&lt;img src="https://s13.gifyu.com/images/bdJHR.gif" alt="bdJHR.gif" loading="lazy" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;1. Base layer&lt;span class="hx:absolute hx:-mt-20" id="1-base-layer"&gt;&lt;/span&gt;
+&lt;a href="#1-base-layer" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Create new solid layer&lt;/li&gt;
+&lt;li&gt;Add an effect &lt;strong&gt;Advanced Lightning&lt;/strong&gt; and set following properties:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Glow Settings &amp;gt; Forking&lt;/strong&gt; to 0, to remove lightning hairs&lt;/li&gt;
+&lt;li&gt;Change other settings on &lt;strong&gt;Glow settings&lt;/strong&gt; and &lt;strong&gt;Core Settings&lt;/strong&gt; to get what you want&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Animate the layer by
+&lt;ul&gt;
+&lt;li&gt;Clicking the stop watch on the &lt;strong&gt;Conductivity State&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Set the different values of &lt;strong&gt;Conductivity State&lt;/strong&gt; in a few key frames&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;2. Core lightning layer&lt;span class="hx:absolute hx:-mt-20" id="2-core-lightning-layer"&gt;&lt;/span&gt;
+&lt;a href="#2-core-lightning-layer" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This will change the color of the core of the lightning to the color you want
+It's because core and glow settings use screen-style blend instead of normal blend.
+So if the core color is a bright color like white, this isn't necessary.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Duplicate the first layer.&lt;/li&gt;
+&lt;li&gt;Set the properties on the new layer:
+&lt;ol&gt;
+&lt;li&gt;Set &lt;strong&gt;Glow Settings &amp;gt; Radius&lt;/strong&gt; to 0&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Core Settings &amp;gt; Color&lt;/strong&gt; to the color you want&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;On the previous layer, set &lt;strong&gt;Core Settings &amp;gt; Radius&lt;/strong&gt; to 0&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Then I was able to get what I wanted.
+The video did pre-compose the new layer, add &lt;strong&gt;Fill&lt;/strong&gt; effect and change the color of the effect, but I didn't see any difference.&lt;/p&gt;
+&lt;h3&gt;Variations of Advanced Lightning&lt;span class="hx:absolute hx:-mt-20" id="variations-of-advanced-lightning"&gt;&lt;/span&gt;
+&lt;a href="#variations-of-advanced-lightning" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The above lightning only goes from top to bottom, because the &lt;strong&gt;Lightning Type&lt;/strong&gt; is Direction.
+We can get some different animations with different lightning types.
+Here are a few examples I played around.&lt;/p&gt;
+&lt;p&gt;However, for more details about Advanced Lightning effect, next video was the most helpful for me to walk through the details:&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/YJ8jXYU9lYs?si=YkUEMn_3cYqbGIUc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h4&gt;Bouncey&lt;span class="hx:absolute hx:-mt-20" id="bouncey"&gt;&lt;/span&gt;
+&lt;a href="#bouncey" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Here is the lightning animation with Bouncey &lt;strong&gt;Lightning Type&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.gifyu.com/image/bdJK2"target="_blank" rel="noopener"&gt;&lt;img src="https://s13.gifyu.com/images/bdJK2.gif" alt="bdJK2.gif" loading="lazy" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Anywhere&lt;span class="hx:absolute hx:-mt-20" id="anywhere"&gt;&lt;/span&gt;
+&lt;a href="#anywhere" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;If it's set as &amp;quot;Anywhere&amp;quot;, the lightning goes everywhere.
+The example of the animation is next:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.gifyu.com/image/bdJHC"target="_blank" rel="noopener"&gt;&lt;img src="https://s13.gifyu.com/images/bdJHC.gif" alt="bdJHC.gif" loading="lazy" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Rough steps to create this was&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add new solid layer with &lt;strong&gt;Advanced Lightning&lt;/strong&gt; effect, and set
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Lightning Type&lt;/strong&gt; to Anywhere&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Conductivity State&lt;/strong&gt; to make this animated&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Forking&lt;/strong&gt; to &lt;strong&gt;50%&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Core Settings&lt;/strong&gt; and &lt;strong&gt;Glow Settings&lt;/strong&gt; as we want to&lt;/li&gt;
+&lt;li&gt;Enable &lt;strong&gt;Composite on Original&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Set &lt;strong&gt;Outer Radius&lt;/strong&gt; to make the effect enough to go a lightning from one edge to another&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Duplicate the Advanced Lightning 3 times and on each set &lt;strong&gt;Origin&lt;/strong&gt; to put them on 4 edges&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>Anime style fire</title><link>https://michael-freling.github.io/posts/2026/07/05/anime-style-fire/</link><pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/07/05/anime-style-fire/</guid><description>
 &lt;div class="hextra-inline-toc"&gt;&lt;p class="hx:mb-2 hx:font-semibold hx:tracking-tight"&gt;Contents&lt;/p&gt;&lt;nav id="TableOfContents"&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="#fire-animation"&gt;Fire animation&lt;/a&gt;
