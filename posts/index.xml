@@ -676,7 +676,61 @@ Was she herself here? Or maybe not?&lt;/p&gt;
 They did a good job here.
 The animation of Tanya's big spell she casted when she was over 10,000 meters were, instead of visual effects from natures, they're more like mechanical with a lot of gears.
 That might be because she isn't natural at all.&lt;/p&gt;
-&lt;p&gt;Anyway, here is what I thought in the episode 1.&lt;/p&gt;</description></item><item><title>First thoughts after watching Wistoria: Wand and Sword episode 13 (season 2, episode 1)</title><link>https://michael-freling.github.io/posts/2026/07/03/first-thoughts-after-watching-wistoria-wand-and-sword-episode-13-season-2-episode-1/</link><pubDate>Fri, 03 Jul 2026 01:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/07/03/first-thoughts-after-watching-wistoria-wand-and-sword-episode-13-season-2-episode-1/</guid><description>
+&lt;p&gt;Anyway, here is what I thought in the episode 1.&lt;/p&gt;</description></item><item><title>Sparkling Stars animation</title><link>https://michael-freling.github.io/posts/2026/07/04/sparkling-stars-animation/</link><pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/07/04/sparkling-stars-animation/</guid><description>
+&lt;div class="hextra-inline-toc"&gt;&lt;p class="hx:mb-2 hx:font-semibold hx:tracking-tight"&gt;Contents&lt;/p&gt;&lt;nav id="TableOfContents"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#sparkling-stars-animation"&gt;Sparkling stars animation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#1-make-a-star-object-and-animate-it"&gt;1. Make a star object and animate it&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#2-create-an-entire-animation"&gt;2. Create an entire animation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+&lt;p&gt;I appreciated the next video which explains how to make the effect in details.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lu7QTLSc9rE?si=ffJHXWFt5sE-5qLV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h2&gt;Sparkling stars animation&lt;span class="hx:absolute hx:-mt-20" id="sparkling-stars-animation"&gt;&lt;/span&gt;
+&lt;a href="#sparkling-stars-animation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;I created next animation following these steps:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.gifyu.com/image/bdnY2"target="_blank" rel="noopener"&gt;&lt;img src="https://s13.gifyu.com/images/bdnY2.gif" alt="bdnY2.gif" loading="lazy" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;1. Make a star object and animate it&lt;span class="hx:absolute hx:-mt-20" id="1-make-a-star-object-and-animate-it"&gt;&lt;/span&gt;
+&lt;a href="#1-make-a-star-object-and-animate-it" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Add new Shape layer &lt;strong&gt;New &amp;gt; Shape&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;On the right of &lt;strong&gt;Shape Layer1 &amp;gt; Contents&lt;/strong&gt;, there is a button &lt;strong&gt;Add&lt;/strong&gt;. With that,
+&lt;ol&gt;
+&lt;li&gt;Add &lt;strong&gt;Ellipse&lt;/strong&gt; and make the size fits to your composition&lt;/li&gt;
+&lt;li&gt;Add &lt;strong&gt;Fill&lt;/strong&gt; and then change the color like yellow&lt;/li&gt;
+&lt;li&gt;Add *&lt;strong&gt;Pucker &amp;amp; Bloat&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Animate this star.
+&lt;ol&gt;
+&lt;li&gt;Change the &lt;strong&gt;Pucker &amp;amp; Bloat &amp;gt; Amount&lt;/strong&gt; and &lt;strong&gt;Transform &amp;gt; Scale&lt;/strong&gt; to make this star animated. In the example,
+2. Set the 1st key frame to set -45 Amount and Scale 0, and
+3. Set the next key frame to set a different Amount and Scale 0
+4. In the middle of the above key frames, set the Scale to 100&lt;/li&gt;
+&lt;li&gt;Go to a Graph editor by selecting a Graph icon. Right click and select &lt;strong&gt;Edit Value Graph&lt;/strong&gt;. Use &lt;strong&gt;Easy Ease&lt;/strong&gt; to make the graph to have a longer time around the scale is 100%&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Rename the layer like &lt;strong&gt;Star&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Add a &lt;strong&gt;Outer Glow&lt;/strong&gt; effect on the Star layer and the set properties
+&lt;ol&gt;
+&lt;li&gt;The Color as the same color as the Shape&lt;/li&gt;
+&lt;li&gt;Set the Size and Opacity&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Add this Shape layer into a new composition, like Star&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;2. Create an entire animation&lt;span class="hx:absolute hx:-mt-20" id="2-create-an-entire-animation"&gt;&lt;/span&gt;
+&lt;a href="#2-create-an-entire-animation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Create new composition, let's say &amp;quot;Compositing&amp;quot;&lt;/li&gt;
+&lt;li&gt;Duplicate Star compositions as many starts as you want, and then change them look random like
+&lt;ol&gt;
+&lt;li&gt;Set properties of Scale or Rotation&lt;/li&gt;
+&lt;li&gt;Change the keyframes timing on animations&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>First thoughts after watching Wistoria: Wand and Sword episode 13 (season 2, episode 1)</title><link>https://michael-freling.github.io/posts/2026/07/03/first-thoughts-after-watching-wistoria-wand-and-sword-episode-13-season-2-episode-1/</link><pubDate>Fri, 03 Jul 2026 01:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/07/03/first-thoughts-after-watching-wistoria-wand-and-sword-episode-13-season-2-episode-1/</guid><description>
 &lt;p&gt;I watched the Wistoria: Wand and Sword episode 13.
 I remembered in the season 1, the main chracter, Will, who couldn't use the magic in the magic academy, was trying to catch up with his childhood friend, Elfie.
 And in the last episode, Will and 5 other characters had an accident in a dungeon but they were able to defeat a strong monster by using his sword consuming Sion's magic.
@@ -2365,106 +2419,4 @@ data-copied-label="Copied!"
 &lt;script src="https://unpkg.com/@videojs/http-streaming@3.8.0/dist/videojs-http-streaming.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
 videojs('video');
-&lt;/script&gt;</description></item><item><title>Blender Scale Text by Each Letter</title><link>https://michael-freling.github.io/posts/2023/12/17/blender-scale-text-by-each-letter/</link><pubDate>Sun, 17 Dec 2023 00:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2023/12/17/blender-scale-text-by-each-letter/</guid><description>
-&lt;p&gt;This was written using Blender 4.0 by a Blender novice.&lt;/p&gt;
-&lt;p&gt;The animation in this post looks like next.&lt;/p&gt;
-&lt;p&gt;&lt;video src="https://michael-freling.github.io/posts/2023/2023-12-17-blender-scale-text-by-each-letter/videos/step4.mp4" width="100%" height="auto" controls&gt;&lt;/video&gt;&lt;/p&gt;
-&lt;p&gt;Except step 4, I referred to &lt;a href="https://blender.stackexchange.com/questions/277352/scale-individual-letters-separately-from-string-to-curves-geometry-nodes-in-blen"target="_blank" rel="noopener"&gt;this stackexchange answer&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;Step 1: Scale an entire text on Geometry Nodes&lt;span class="hx:absolute hx:-mt-20" id="step-1-scale-an-entire-text-on-geometry-nodes"&gt;&lt;/span&gt;
-&lt;a href="#step-1-scale-an-entire-text-on-geometry-nodes" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src="https://michael-freling.github.io/posts/2023/2023-12-17-blender-scale-text-by-each-letter/images/step1.png" alt="" loading="lazy" /&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Add a &lt;strong&gt;Instances &amp;gt; Scale Instances&lt;/strong&gt; node and connect between &lt;strong&gt;Group Input&lt;/strong&gt; and &lt;strong&gt;Group Output&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Set &lt;strong&gt;Y&lt;/strong&gt; of &lt;strong&gt;Scale&lt;/strong&gt; to 2.0 and make sure the text scales&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Add a &lt;strong&gt;Utilities &amp;gt; Text &amp;gt; String to Curves&lt;/strong&gt; node and set the &lt;strong&gt;String&lt;/strong&gt; field on the node
-&lt;ul&gt;
-&lt;li&gt;Connect from &lt;strong&gt;Curve Instances&lt;/strong&gt; of &lt;strong&gt;String to Curves&lt;/strong&gt; to &lt;strong&gt;Instances&lt;/strong&gt; of &lt;strong&gt;Scale Instances&lt;/strong&gt; instead of &lt;strong&gt;Group Input&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Add a &lt;strong&gt;Curve &amp;gt; Operations &amp;gt; Fill Curve&lt;/strong&gt; and put it between &lt;strong&gt;String to Curves&lt;/strong&gt; and &lt;strong&gt;Scale Instances&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Note that I couldn't figure out how to use the text of its mesh from the &lt;strong&gt;Geometry Input&lt;/strong&gt; node for following animation steps correctly.&lt;/p&gt;
-&lt;h2&gt;Step 2: Animate texts by time frame&lt;span class="hx:absolute hx:-mt-20" id="step-2-animate-texts-by-time-frame"&gt;&lt;/span&gt;
-&lt;a href="#step-2-animate-texts-by-time-frame" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;video src="https://michael-freling.github.io/posts/2023/2023-12-17-blender-scale-text-by-each-letter/videos/step2.mp4" width="100%" height="auto" controls&gt;&lt;/video&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Add a &lt;strong&gt;Input &amp;gt; Scene &amp;gt; Scene Time&lt;/strong&gt; node&lt;/li&gt;
-&lt;li&gt;Add a &lt;strong&gt;Utilities &amp;gt; Math &amp;gt; Map Range&lt;/strong&gt; node and on the node,
-&lt;ul&gt;
-&lt;li&gt;Connect the &lt;strong&gt;Frame&lt;/strong&gt; of the &lt;strong&gt;Scene Time&lt;/strong&gt; node to the &lt;strong&gt;Value&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Connect the &lt;strong&gt;Result&lt;/strong&gt; to the &lt;strong&gt;Scale&lt;/strong&gt; of the &lt;strong&gt;Scale Instances&lt;/strong&gt; node&lt;/li&gt;
-&lt;li&gt;Update the &lt;strong&gt;From Max&lt;/strong&gt; and &lt;strong&gt;To Max&lt;/strong&gt; values for testing. For example,
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;From Max&lt;/strong&gt;: Set 10 so that the text gets the biggest size at 10 keyframe&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;To Max&lt;/strong&gt;: The max scale size of the text&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;This is optional for an animation to change pop up a text from the bottom center instaed of bottom left of each letter. On the &lt;strong&gt;String to Curve&lt;/strong&gt; node,
-&lt;ul&gt;
-&lt;li&gt;Updbate &lt;strong&gt;Pivot Point&lt;/strong&gt; to &lt;strong&gt;Bottom Center&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Connect the output of &lt;strong&gt;Pivot Point&lt;/strong&gt; to &lt;strong&gt;Center&lt;/strong&gt; of &lt;strong&gt;Scale Instance&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;What Map Range does is to convert the value from &lt;code&gt;(From Min, From Max)&lt;/code&gt; to &lt;code&gt;(To Min, To Max)&lt;/code&gt; &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-&lt;h2&gt;Step 3: Animate texts by each letter&lt;span class="hx:absolute hx:-mt-20" id="step-3-animate-texts-by-each-letter"&gt;&lt;/span&gt;
-&lt;a href="#step-3-animate-texts-by-each-letter" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;video src="https://michael-freling.github.io/posts/2023/2023-12-17-blender-scale-text-by-each-letter/videos/step3.mp4" width="100%" height="auto" controls&gt;&lt;/video&gt;&lt;/p&gt;
-&lt;p&gt;Now use the &lt;strong&gt;Index&lt;/strong&gt;&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt; node to change the scale for each letter via &lt;strong&gt;Map Range&lt;/strong&gt; node.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Add a &lt;strong&gt;Geometry &amp;gt; Read &amp;gt; Index&lt;/strong&gt; node&lt;/li&gt;
-&lt;li&gt;Add a &lt;strong&gt;Utilities &amp;gt; Math &amp;gt; Math&lt;/strong&gt; node, which is used for the interval frames of each letter, and on the node
-&lt;ul&gt;
-&lt;li&gt;Update the function to &lt;strong&gt;Multiply&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Connect the output from the &lt;strong&gt;Index&lt;/strong&gt; node to one of &lt;strong&gt;Value&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Connect the output of &lt;strong&gt;Value&lt;/strong&gt; on this node to the &lt;strong&gt;From Min&lt;/strong&gt; of the &lt;strong&gt;Map Range&lt;/strong&gt; node&lt;/li&gt;
-&lt;li&gt;Set another &lt;strong&gt;Value&lt;/strong&gt; to an arbitarily number like 10 for the interval&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Add a &lt;strong&gt;Utilities &amp;gt; Math &amp;gt; Math&lt;/strong&gt; node, which is used for how long it takes to scale each letter, and on the node,
-&lt;ul&gt;
-&lt;li&gt;Update the function to &lt;strong&gt;Add&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Connect the output of &lt;strong&gt;Value&lt;/strong&gt; on the &lt;strong&gt;Multiply&lt;/strong&gt; node to the one of the &lt;strong&gt;Value&lt;/strong&gt; of this node&lt;/li&gt;
-&lt;li&gt;Connect the output of &lt;strong&gt;Value&lt;/strong&gt; on this node to the &lt;strong&gt;From Max&lt;/strong&gt; of the &lt;strong&gt;Map Range&lt;/strong&gt; node&lt;/li&gt;
-&lt;li&gt;Set another &lt;strong&gt;Value&lt;/strong&gt; to an arbitarily number like 20 for how long takes to animate each letter&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;Step 4: Animate texts like soft objects&lt;span class="hx:absolute hx:-mt-20" id="step-4-animate-texts-like-soft-objects"&gt;&lt;/span&gt;
-&lt;a href="#step-4-animate-texts-like-soft-objects" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Animate texts like following squash and stretch principle.
-I couldn't refer to anywhere, so there might be a better way.&lt;/p&gt;
-&lt;p&gt;&lt;video src="https://michael-freling.github.io/posts/2023/2023-12-17-blender-scale-text-by-each-letter/videos/step4.mp4" width="100%" height="auto" controls&gt;&lt;/video&gt;&lt;/p&gt;
-&lt;p&gt;The logic of this animation looks like next.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Decide what is the max scale of each letter, let's say &lt;code&gt;threshold&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Assuming the value of the &lt;strong&gt;Map Range&lt;/strong&gt; node is &lt;code&gt;v_index&lt;/code&gt;,
-&lt;ul&gt;
-&lt;li&gt;Set the &lt;strong&gt;To Max&lt;/strong&gt; of the &lt;strong&gt;Map Range&lt;/strong&gt; node to &lt;code&gt;2 * (threshold - 1) + 1&lt;/code&gt;, let's say &lt;code&gt;t_max&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Set the scale
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;t_max + 1 - s&lt;/code&gt; if &lt;code&gt;v_index &amp;gt; threshold&lt;/code&gt;,&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;v_index&lt;/code&gt; otherwise&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Note that the speed for a text to be bigger than 1.0 to &lt;code&gt;threshold&lt;/code&gt;, and from &lt;code&gt;threshold&lt;/code&gt; to 1.0 is the same.&lt;/p&gt;
-&lt;p&gt;To change the scale value based on the value by the above formula, I used &lt;strong&gt;Greater Than&lt;/strong&gt; and &lt;strong&gt;Mix&lt;/strong&gt; nodes by connecting the output of &lt;strong&gt;Greater Than&lt;/strong&gt; to &lt;strong&gt;Factor&lt;/strong&gt; of &lt;strong&gt;Mix&lt;/strong&gt;.
-Other than that, add many &lt;strong&gt;Math&lt;/strong&gt; nodes to calculate the above.&lt;/p&gt;
-&lt;h1&gt;Reference&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://blender.stackexchange.com/questions/277352/scale-individual-letters-separately-from-string-to-curves-geometry-nodes-in-blen"target="_blank" rel="noopener"&gt;Stackexchange answer&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="footnotes" role="doc-endnotes"&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="https://docs.blender.org/manual/en/4.0/modeling/geometry_nodes/utilities/math/map_range.html"target="_blank" rel="noopener"&gt;Blender 4.0 Manual: Map Range node&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id="fn:2"&gt;
-&lt;p&gt;&lt;a href="https://docs.blender.org/manual/en/4.0/modeling/geometry_nodes/geometry/read/input_index.html"target="_blank" rel="noopener"&gt;Blender 4.0 Manual: Index node&lt;/a&gt;&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description></item></channel></rss>
+&lt;/script&gt;</description></item></channel></rss>

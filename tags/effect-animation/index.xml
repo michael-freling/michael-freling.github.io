@@ -274,6 +274,60 @@ The example of the animation is next:&lt;/p&gt;
 &lt;li&gt;Add &lt;strong&gt;Fill&lt;/strong&gt; effect to spark 1 composition to make the color red&lt;/li&gt;
 &lt;li&gt;I made the spark 2's composition to shorter&lt;/li&gt;
 &lt;li&gt;Duplicate the spark 2 again, set &lt;strong&gt;Transform Y's degree&lt;/strong&gt;, add Fill effect to change the color&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>Sparkling Stars animation</title><link>https://michael-freling.github.io/posts/2026/07/04/sparkling-stars-animation/</link><pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/07/04/sparkling-stars-animation/</guid><description>
+&lt;div class="hextra-inline-toc"&gt;&lt;p class="hx:mb-2 hx:font-semibold hx:tracking-tight"&gt;Contents&lt;/p&gt;&lt;nav id="TableOfContents"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#sparkling-stars-animation"&gt;Sparkling stars animation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#1-make-a-star-object-and-animate-it"&gt;1. Make a star object and animate it&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#2-create-an-entire-animation"&gt;2. Create an entire animation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+&lt;p&gt;I appreciated the next video which explains how to make the effect in details.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lu7QTLSc9rE?si=ffJHXWFt5sE-5qLV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h2&gt;Sparkling stars animation&lt;span class="hx:absolute hx:-mt-20" id="sparkling-stars-animation"&gt;&lt;/span&gt;
+&lt;a href="#sparkling-stars-animation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;I created next animation following these steps:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.gifyu.com/image/bdnY2"target="_blank" rel="noopener"&gt;&lt;img src="https://s13.gifyu.com/images/bdnY2.gif" alt="bdnY2.gif" loading="lazy" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;1. Make a star object and animate it&lt;span class="hx:absolute hx:-mt-20" id="1-make-a-star-object-and-animate-it"&gt;&lt;/span&gt;
+&lt;a href="#1-make-a-star-object-and-animate-it" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Add new Shape layer &lt;strong&gt;New &amp;gt; Shape&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;On the right of &lt;strong&gt;Shape Layer1 &amp;gt; Contents&lt;/strong&gt;, there is a button &lt;strong&gt;Add&lt;/strong&gt;. With that,
+&lt;ol&gt;
+&lt;li&gt;Add &lt;strong&gt;Ellipse&lt;/strong&gt; and make the size fits to your composition&lt;/li&gt;
+&lt;li&gt;Add &lt;strong&gt;Fill&lt;/strong&gt; and then change the color like yellow&lt;/li&gt;
+&lt;li&gt;Add *&lt;strong&gt;Pucker &amp;amp; Bloat&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Animate this star.
+&lt;ol&gt;
+&lt;li&gt;Change the &lt;strong&gt;Pucker &amp;amp; Bloat &amp;gt; Amount&lt;/strong&gt; and &lt;strong&gt;Transform &amp;gt; Scale&lt;/strong&gt; to make this star animated. In the example,
+2. Set the 1st key frame to set -45 Amount and Scale 0, and
+3. Set the next key frame to set a different Amount and Scale 0
+4. In the middle of the above key frames, set the Scale to 100&lt;/li&gt;
+&lt;li&gt;Go to a Graph editor by selecting a Graph icon. Right click and select &lt;strong&gt;Edit Value Graph&lt;/strong&gt;. Use &lt;strong&gt;Easy Ease&lt;/strong&gt; to make the graph to have a longer time around the scale is 100%&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Rename the layer like &lt;strong&gt;Star&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Add a &lt;strong&gt;Outer Glow&lt;/strong&gt; effect on the Star layer and the set properties
+&lt;ol&gt;
+&lt;li&gt;The Color as the same color as the Shape&lt;/li&gt;
+&lt;li&gt;Set the Size and Opacity&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Add this Shape layer into a new composition, like Star&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;2. Create an entire animation&lt;span class="hx:absolute hx:-mt-20" id="2-create-an-entire-animation"&gt;&lt;/span&gt;
+&lt;a href="#2-create-an-entire-animation" class="subheading-anchor" aria-label="Permalink for this section"&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Create new composition, let's say &amp;quot;Compositing&amp;quot;&lt;/li&gt;
+&lt;li&gt;Duplicate Star compositions as many starts as you want, and then change them look random like
+&lt;ol&gt;
+&lt;li&gt;Set properties of Scale or Rotation&lt;/li&gt;
+&lt;li&gt;Change the keyframes timing on animations&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
 &lt;/ol&gt;</description></item><item><title>Anime style speed line effect</title><link>https://michael-freling.github.io/posts/2026/06/28/anime-style-speed-line-effect/</link><pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate><guid>https://michael-freling.github.io/posts/2026/06/28/anime-style-speed-line-effect/</guid><description>
 &lt;div class="hextra-inline-toc"&gt;&lt;p class="hx:mb-2 hx:font-semibold hx:tracking-tight"&gt;Contents&lt;/p&gt;&lt;nav id="TableOfContents"&gt;
 &lt;ul&gt;
