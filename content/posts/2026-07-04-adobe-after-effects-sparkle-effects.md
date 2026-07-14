@@ -17,11 +17,6 @@ I appreciated the next video which explains how to make the effect in details.
 
 
 ## Sparkling stars animation
-
-I created next animation following these steps:
-
-[![bdnY2.gif](https://s13.gifyu.com/images/bdnY2.gif)](https://www.gifyu.com/image/bdnY2)
-
 ### 1. Make a star object and animate it
 
 1. Add new Shape layer **New > Shape**
