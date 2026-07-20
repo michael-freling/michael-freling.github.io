@@ -1,6 +1,6 @@
 ---
 title: "First thoughts after watching I Made Friends with the Second Prettiest Girl in My Class Episode 1"
-date: 2026-07-17 01:00:00
+date: 2026-07-17 02:00:00
 draft: false
 tags:
   - Anime

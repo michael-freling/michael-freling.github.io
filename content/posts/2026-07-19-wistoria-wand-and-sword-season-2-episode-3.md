@@ -1,6 +1,6 @@
 ---
 title: "First thoughts after watching Wistoria: Wand and Sword episode 15 (season 2, episode 3)"
-date: 2026-07-19 01:00:00
+date: 2026-07-19 03:00:00
 draft: false
 tags:
   - Anime
